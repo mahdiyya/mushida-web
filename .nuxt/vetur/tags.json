@@ -1,0 +1,32 @@
+{
+  "CardSimple": {
+    "description": "Auto imported from components/CardSimple.vue"
+  },
+  "CardStructure": {
+    "description": "Auto imported from components/CardStructure.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Hero": {
+    "description": "Auto imported from components/Hero.vue"
+  },
+  "HeroSub": {
+    "description": "Auto imported from components/HeroSub.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Nav": {
+    "description": "Auto imported from components/Nav.vue"
+  },
+  "NewsCard": {
+    "description": "Auto imported from components/NewsCard.vue"
+  },
+  "RecommendedCard": {
+    "description": "Auto imported from components/RecommendedCard.vue"
+  },
+  "SubNav": {
+    "description": "Auto imported from components/SubNav.vue"
+  }
+}
