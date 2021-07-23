@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
@@ -89,6 +88,3 @@ sw.*
 
 # Vim swap files
 *.swp
-=======
-node_modules
->>>>>>> main
