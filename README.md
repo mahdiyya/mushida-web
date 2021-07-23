@@ -1,4 +1,13 @@
-# mushida
+# MUSHIDA Website
+
+:mosque: Redesigning and Rebuilding mushida.org to modern website using NUXT JS
+
+:star: Technology used for this website are:
+
+1. NUXT JS
+2. Wordpress REST API
+3. PWA
+4. AXIOS
 
 ## Build Setup
 
