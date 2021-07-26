@@ -86,7 +86,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"mushida","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Muslimat Hidayatullah - Organisasi Wanita Islam Indonesia","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Website resmi Muslimat Hidayatullah (Mushida) — organisasi pendukung yang berinduk pada ormas Islam nasional Hidayatullah yang dideklarasikan pada tahun 2000 di Gunung Tembak, Balikpapan, Kalimantan Timur."},{"hid":"keywords","name":"keywords","content":"mushida, muslimat hidayatullah, hidayatullah, organisasi wanita, organisasi wanit islam indonesia, organisasi wanita indonesia, islam, sistematika nuzulnya wahyu, snw"},{"hid":"author","name":"author","content":"mahdiyya"},{"hid":"publisher","name":"publisher","content":"Muslimat Hidayatullah"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,
