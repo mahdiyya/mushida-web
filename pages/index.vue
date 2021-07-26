@@ -2,8 +2,14 @@
   <section class="hero">
     <client-only>
       <swiper ref="carousel" class="swiper" :options="swiperOptions">
-        <swiper-slide v-for="index in 6" :key="index">
-          <Hero :index="index" />
+        <swiper-slide v-for="feature in features" :key="feature.id">
+          <Hero
+            :imagefeature="feature.fimg_url"
+            :titlefeature="feature.title.rendered"
+            :overviewfeature="feature.excerpt.rendered"
+            :slugfeature="feature.slug"
+            :datefeature="feature.date"
+          />
         </swiper-slide>
         <div slot="pagination" class="swiper-pagination" />
         <div slot="button-next" class="swiper-button-next" />
@@ -13,6 +19,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'SwiperNuxt',
   data () {
@@ -33,6 +40,18 @@ export default {
       }
     }
   },
+  async fetch ({ store }) {
+    try {
+      const res = await axios.get('https://admin.mushida.org/wp-json/wp/v2/posts?categories=52&order=asc')
+      store.commit('featuredPosts', res.data)
+    } catch (error) {
+    }
+  },
+  computed: {
+    features () {
+      return this.$store.state.features
+    }
+  },
   methods: {
   }
 }
@@ -40,24 +59,10 @@ export default {
 
 <style lang="scss" scope>
 .hero {
-  height: auto;
-  .swiper {
-    height: 300px;
-    width: 100%;
-    .swiper-slide {
-      text-align: center;
-      font-size: 38px;
-      font-weight: 700;
-      background-color: #eee;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .swiper-pagination {
-      > .swiper-pagination-bullet {
-        background-color: red;
-      }
-    }
-  }
+  background: linear-gradient(180deg, #3c634d 44.4%, #184e2f 100%);
+}
+.swiper {
+  height: 100vh;
+  width: 100%;
 }
 </style>

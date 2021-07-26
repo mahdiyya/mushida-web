@@ -2,18 +2,34 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   // target: 'static',
   head: {
-    title: 'mushida',
+    title: 'Muslimat Hidayatullah - Organisasi Wanita Islam Indonesia',
     meta: [
       { charset: 'utf-8' },
       {
         name: 'viewport',
-        content:
-          'width=device-width, initial-scale=1',
+        content: 'width=device-width, initial-scale=1',
       },
       {
         hid: 'description',
         name: 'description',
-        content: '',
+        content:
+          'Website resmi Muslimat Hidayatullah (Mushida) — organisasi pendukung yang berinduk pada ormas Islam nasional Hidayatullah yang dideklarasikan pada tahun 2000 di Gunung Tembak, Balikpapan, Kalimantan Timur.',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'mushida, muslimat hidayatullah, hidayatullah, organisasi wanita, organisasi wanit islam indonesia, organisasi wanita indonesia, islam, sistematika nuzulnya wahyu, snw',
+      },
+      {
+        hid: 'author',
+        name: 'author',
+        content: 'mahdiyya',
+      },
+      {
+        hid: 'publisher',
+        name: 'publisher',
+        content: 'Muslimat Hidayatullah',
       },
     ],
     link: [
@@ -22,17 +38,20 @@ export default {
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
+      {
+        rel: 'canonical',
+        href: 'https://www.mushida.org/',
+      },
     ],
   },
 
   // Global CSS
-  css: ['swiper/css/swiper.css'],
+  css: ['swiper/css/swiper.css', '~/assets/css/style'],
 
   // Plugins to run before rendering page
   plugins: [
     {
-      src:
-        '@/plugins/nuxt-swiper-plugin.js',
+      src: '@/plugins/nuxt-swiper-plugin.js',
       mode: 'client',
     },
   ],
@@ -45,6 +64,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/pwa',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules
@@ -57,8 +77,7 @@ export default {
 
   // Axios module configuration
   axios: {
-    baseURL:
-      'https://admin.mushida.org/wp-json/wp/v2',
+    baseURL: 'https://admin.mushida.org/wp-json/wp/v2',
   },
 
   // PWA module configuration
@@ -66,6 +85,22 @@ export default {
     manifest: {
       lang: 'en',
       theme_color: '#0C4524',
+      useWebmanifestExtension: false,
+      name: 'Muslimat Hidayatullah',
+      short_name: 'Mushida',
+    },
+  },
+  googleFonts: {
+    display: 'swap',
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    families: {
+      'Playfair+Display': [700, 900],
+      Montserrat: {
+        wght: [300, 500, 700],
+        ital: [300, 700],
+      },
     },
   },
 

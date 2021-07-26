@@ -6,7 +6,6 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _0ff488bb = () => interopDefault(import('..\\pages\\berita.vue' /* webpackChunkName: "pages/berita" */))
 const _1f465a2b = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
-const _68b49c72 = () => interopDefault(import('..\\pages\\tentang-kami\\index.vue' /* webpackChunkName: "pages/tentang-kami/index" */))
 const _c899e862 = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-murobbiya-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-murobbiya-pusat" */))
 const _201aeccc = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-penasihat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-penasihat" */))
 const _01b64118 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-pusat" */))
@@ -37,10 +36,6 @@ export const routerOptions = {
     path: "/privacy-policy",
     component: _1f465a2b,
     name: "privacy-policy"
-  }, {
-    path: "/tentang-kami",
-    component: _68b49c72,
-    name: "tentang-kami"
   }, {
     path: "/struktur-organisasi/majelis-murobbiya-pusat",
     component: _c899e862,
