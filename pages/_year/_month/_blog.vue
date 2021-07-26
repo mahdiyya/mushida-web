@@ -2,7 +2,9 @@
   <div class="container">
     <section>
       <h1>{{ article[0].title.rendered }}</h1>
-      <article v-html="article[0].content.rendered" />
+      <article>
+        {{ article[0].content.rendered }}
+      </article>
     </section>
   </div>
 </template>
@@ -14,9 +16,7 @@ export default {
     try {
       const res = await axios.get(`https://admin.mushida.org/wp-json/wp/v2/posts/?slug=${params.blog}`)
       store.commit('articleData', res.data)
-      console.log(res)
     } catch (error) {
-      console.log(error)
     }
   },
   computed: {

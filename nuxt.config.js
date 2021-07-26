@@ -38,11 +38,15 @@ export default {
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
+      {
+        rel: 'canonical',
+        href: 'https://www.mushida.org/',
+      },
     ],
   },
 
   // Global CSS
-  css: ['swiper/css/swiper.css'],
+  css: ['swiper/css/swiper.css', '~/assets/css/style'],
 
   // Plugins to run before rendering page
   plugins: [
@@ -60,6 +64,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/pwa',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules
@@ -80,6 +85,22 @@ export default {
     manifest: {
       lang: 'en',
       theme_color: '#0C4524',
+      useWebmanifestExtension: false,
+      name: 'Muslimat Hidayatullah',
+      short_name: 'Mushida',
+    },
+  },
+  googleFonts: {
+    display: 'swap',
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    families: {
+      'Playfair+Display': [700, 900],
+      Montserrat: {
+        wght: [300, 500, 700],
+        ital: [300, 700],
+      },
     },
   },
 

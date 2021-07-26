@@ -1,5 +1,5 @@
 {
-  "title": "mushida",
+  "title": "Muslimat Hidayatullah",
   "meta": [
     {
       "hid": "charset",
@@ -18,7 +18,7 @@
     {
       "hid": "apple-mobile-web-app-title",
       "name": "apple-mobile-web-app-title",
-      "content": "mushida"
+      "content": "Muslimat Hidayatullah"
     },
     {
       "hid": "theme-color",
@@ -35,13 +35,13 @@
       "hid": "og:title",
       "name": "og:title",
       "property": "og:title",
-      "content": "mushida"
+      "content": "Muslimat Hidayatullah"
     },
     {
       "hid": "og:site_name",
       "name": "og:site_name",
       "property": "og:site_name",
-      "content": "mushida"
+      "content": "Muslimat Hidayatullah"
     }
   ],
   "link": [
@@ -58,7 +58,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.ab527a6e.json",
+      "href": "/_nuxt/manifest.4c2f4640.json",
       "hid": "manifest"
     }
   ],

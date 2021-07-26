@@ -10,7 +10,7 @@
         >
           {{ post.title.rendered }}
         </nuxt-link>
-        <div class="post" v-html="post.excerpt.rendered" />
+        <div class="post">{{ post.excerpt.rendered }}</div>
       </div>
     </div>
     <p>{{ totalpages }}</p>
@@ -26,7 +26,6 @@ export default {
       store.commit('frontPagePosts', res.data)
       store.commit('totalPage', res.headers['x-wp-totalpages'])
     } catch (error) {
-      console.log(error)
     }
   },
   computed: {
