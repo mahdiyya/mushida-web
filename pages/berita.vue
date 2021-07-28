@@ -3,13 +3,13 @@
     <div>
       <h1 class="title">Lats Posts Checker</h1>
       <div v-for="post in posts" :key="post.id" class="post">
-        <nuxt-link
+        <NuxtLink
           :to="`${post.date.substr(0, 4)}/${post.date.substr(5, 2)}/${
             post.slug
           }`"
         >
           {{ post.title.rendered }}
-        </nuxt-link>
+        </NuxtLink>
         <div class="post">{{ post.excerpt.rendered }}</div>
       </div>
     </div>

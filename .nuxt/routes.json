@@ -3,36 +3,37 @@
     "name": "berita",
     "path": "/berita",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita.vue",
-    "chunkName": "pages/berita",
-    "_name": "_0ff488bb"
+    "chunkName": "pages/berita"
+  },
+  {
+    "name": "kontak",
+    "path": "/kontak",
+    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\kontak.vue",
+    "chunkName": "pages/kontak"
   },
   {
     "name": "privacy-policy",
     "path": "/privacy-policy",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\privacy-policy.vue",
-    "chunkName": "pages/privacy-policy",
-    "_name": "_1f465a2b"
+    "chunkName": "pages/privacy-policy"
   },
   {
     "name": "struktur-organisasi-majelis-murobbiya-pusat",
     "path": "/struktur-organisasi/majelis-murobbiya-pusat",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\majelis-murobbiya-pusat.vue",
-    "chunkName": "pages/struktur-organisasi/majelis-murobbiya-pusat",
-    "_name": "_c899e862"
+    "chunkName": "pages/struktur-organisasi/majelis-murobbiya-pusat"
   },
   {
     "name": "struktur-organisasi-majelis-penasihat",
     "path": "/struktur-organisasi/majelis-penasihat",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\majelis-penasihat.vue",
-    "chunkName": "pages/struktur-organisasi/majelis-penasihat",
-    "_name": "_201aeccc"
+    "chunkName": "pages/struktur-organisasi/majelis-penasihat"
   },
   {
     "name": "struktur-organisasi-pengurus-pusat",
     "path": "/struktur-organisasi/pengurus-pusat",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\pengurus-pusat.vue",
-    "chunkName": "pages/struktur-organisasi/pengurus-pusat",
-    "_name": "_01b64118"
+    "chunkName": "pages/struktur-organisasi/pengurus-pusat"
   },
   {
     "path": "/struktur-organisasi/pengurus-wilayah",
@@ -43,45 +44,38 @@
         "name": "struktur-organisasi-pengurus-wilayah",
         "path": "",
         "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\pengurus-wilayah\\\\index.vue",
-        "chunkName": "pages/struktur-organisasi/pengurus-wilayah/index",
-        "_name": "_956bd89c"
+        "chunkName": "pages/struktur-organisasi/pengurus-wilayah/index"
       }
-    ],
-    "_name": "_5cbbf6d0"
+    ]
   },
   {
     "name": "tentang-kami-piagam-gunug-tembak",
     "path": "/tentang-kami/piagam-gunug-tembak",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\piagam-gunug-tembak.vue",
-    "chunkName": "pages/tentang-kami/piagam-gunug-tembak",
-    "_name": "_842b51a6"
+    "chunkName": "pages/tentang-kami/piagam-gunug-tembak"
   },
   {
     "name": "tentang-kami-sejarah",
     "path": "/tentang-kami/sejarah",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah.vue",
-    "chunkName": "pages/tentang-kami/sejarah",
-    "_name": "_3b2bb310"
+    "chunkName": "pages/tentang-kami/sejarah"
   },
   {
     "name": "tentang-kami-visi-misi",
     "path": "/tentang-kami/visi-misi",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\visi-misi.vue",
-    "chunkName": "pages/tentang-kami/visi-misi",
-    "_name": "_799a4d96"
+    "chunkName": "pages/tentang-kami/visi-misi"
   },
   {
     "name": "index",
     "path": "/",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_19616224"
+    "chunkName": "pages/index"
   },
   {
     "name": "year-month-blog",
     "path": "/:year/:month?/:blog?",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\_year\\\\_month\\\\_blog.vue",
-    "chunkName": "pages/_year/_month/_blog",
-    "_name": "_07a6b7d8"
+    "chunkName": "pages/_year/_month/_blog"
   }
 ]

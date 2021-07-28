@@ -3,7 +3,7 @@
     <article>
       <h2>{{ titlefeature }}</h2>
       <div class="overview" v-html="overviewfeature" />
-      <nuxt-link
+      <NuxtLink
         :to="`${datefeature.substr(0, 4)}/${datefeature.substr(
           5,
           2
@@ -19,7 +19,7 @@
           height="24"
           class="img-icon"
         >
-      </nuxt-link>
+      </NuxtLink>
     </article>
     <figure>
       <img :src="imagefeature" :alt="titlefeature">
@@ -69,7 +69,7 @@ export default {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     h2 {
-      font-size: 48px;
+      font-size: calc(16px + 2vw);
       margin-bottom: 2rem;
       overflow: hidden;
       -webkit-box-orient: vertical;
@@ -92,6 +92,11 @@ export default {
     }
   }
 }
+@media all and (min-width: 1920px) {
+  .swiper--slide article {
+    padding-top: 20rem;
+  }
+}
 .swiper-slide-duplicate-active .swiper--slide {
   article {
     opacity: 1;
@@ -100,6 +105,26 @@ export default {
 .swiper-slide.swiper-slide-active .swiper--slide {
   article {
     opacity: 1;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .swiper--slide {
+    flex-direction: column;
+    justify-content: flex-end;
+    figure {
+      width: 100vw;
+      padding-left: 0vw;
+      padding-bottom: 5vh;
+      padding-top: 0rem;
+      height: 62vh;
+      order: -1;
+    }
+    article {
+      flex: 0 0 38%;
+      max-width: 100%;
+      padding: 0rem 6vw 2rem 6vw;
+    }
   }
 }
 </style>
