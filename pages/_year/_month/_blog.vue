@@ -12,18 +12,19 @@
 <script>
 import axios from 'axios'
 export default {
-  async fetch ({ params, store }) {
+  async fetch({ params, store }) {
     try {
-      const res = await axios.get(`https://admin.mushida.org/wp-json/wp/v2/posts/?slug=${params.blog}`)
+      const res = await axios.get(
+        `https://admin.mushida.org/wp-json/wp/v2/posts/?slug=${params.blog}`,
+      )
       store.commit('articleData', res.data)
-    } catch (error) {
-    }
+    } catch (error) {}
   },
   computed: {
-    article () {
+    article() {
       return this.$store.state.article
-    }
-  }
+    },
+  },
 }
 </script>
 

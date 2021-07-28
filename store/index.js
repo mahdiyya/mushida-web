@@ -1,20 +1,20 @@
 export const state = () => ({
   posts: [],
   article: [],
-  features: []
+  features: [],
 })
 
 export const mutations = {
-  frontPagePosts (state, posts) {
+  frontPagePosts(state, posts) {
     state.posts = posts
   },
-  totalPage (state, totalpages) {
+  totalPage(state, totalpages) {
     state.totalpages = totalpages
   },
-  articleData (state, article) {
+  articleData(state, article) {
     state.article = article
   },
-  featuredPosts (state, features) {
+  featuredPosts(state, features) {
     state.features = features
-  }
+  },
 }
