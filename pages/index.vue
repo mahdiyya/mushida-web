@@ -25,13 +25,13 @@
         class="accessories"
         width="518"
         height="426"
-      >
+      />
       <article class="section-container">
         <h2 class="text-green">Jati Diri Hidayatullah</h2>
         <div class="grid">
           <div class="card simple">
             <div class="row">
-              <img src="images/icon-wahyu.svg" alt="icon snw">
+              <img src="images/icon-wahyu.svg" alt="icon snw" />
               <h3 class="text-green">Sistematika Wahyu</h3>
             </div>
             <p>
@@ -42,7 +42,7 @@
           </div>
           <div class="card simple">
             <div class="row">
-              <img src="images/icon-ahlusunah.svg" alt="icon ahlusunah">
+              <img src="images/icon-ahlusunah.svg" alt="icon ahlusunah" />
               <h3 class="text-green">Ahlus Sunnah wal Jama'ah</h3>
             </div>
             <p>
@@ -53,7 +53,7 @@
           </div>
           <div class="card simple">
             <div class="row">
-              <img src="images/icon=alharakah.svg" alt="icon alharakah">
+              <img src="images/icon=alharakah.svg" alt="icon alharakah" />
               <h3 class="text-green">Al-Harakah Al-Jihadiyah</h3>
             </div>
             <p>
@@ -63,7 +63,7 @@
           </div>
           <div class="card simple">
             <div class="row">
-              <img src="images/icon-jamaah.svg" alt="icon imamah">
+              <img src="images/icon-jamaah.svg" alt="icon imamah" />
               <h3 class="text-green">Imamah & Jamaah</h3>
             </div>
             <p>
@@ -74,7 +74,7 @@
           </div>
           <div class="card simple">
             <div class="row">
-              <img src="images/icon-jamaatun.svg" alt="icon jamaah">
+              <img src="images/icon-jamaatun.svg" alt="icon jamaah" />
               <h3 class="text-green">Jama’atun Minal Muslimin</h3>
             </div>
             <p>
@@ -84,7 +84,7 @@
           </div>
           <div class="card simple">
             <div class="row">
-              <img src="images/icon-wasathiyah.svg" alt="icon snw">
+              <img src="images/icon-wasathiyah.svg" alt="icon snw" />
               <h3 class="text-green">Al- Wasathiyah</h3>
             </div>
             <p>
@@ -102,14 +102,14 @@
         class="accessories"
         width="396"
         height="486"
-      >
+      />
       <article class="section-container row">
         <img
           src="images/tentang-kami.jpg"
           alt="masjid gunung tembak"
           width="400"
           height="450"
-        >
+        />
         <div class="text text-white">
           <h2>Tentang Kami</h2>
           <p>
@@ -130,7 +130,7 @@
     </section>
     <section class="pengurus">
       <article class="section-container">
-        <h2><span>Pengurus Tingkat Pusat</span> <br>Muslimat Hidayatullah</h2>
+        <h2><span>Pengurus Tingkat Pusat</span> <br />Muslimat Hidayatullah</h2>
       </article>
     </section>
   </main>

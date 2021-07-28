@@ -12,23 +12,11 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:nuxt/recommended',
   ],
-  plugins: ['prettier'],
+  plugins: [],
   // add your custom rules here
   rules: {
+    'vue/no-console': 1,
+    'vue/no-v-html': 1,
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
-    'vue/no-v-html': 0,
-    'no-console': 0,
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'never',
-          normal: 'always',
-          component: 'always',
-        },
-        svg: 'always',
-        math: 'always',
-      },
-    ],
   },
 }
