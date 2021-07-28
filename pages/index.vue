@@ -140,7 +140,7 @@
 import axios from 'axios'
 export default {
   name: 'SwiperNuxt',
-  data () {
+  data() {
     return {
       swiperOptions: {
         loop: true,
@@ -150,28 +150,28 @@ export default {
         pagination: {
           el: '.swiper-pagination',
           dynamicBullets: true,
-          type: 'fraction'
+          type: 'fraction',
         },
         navigation: {
-          nextEl: '.swiper-button-next'
-        }
-      }
+          nextEl: '.swiper-button-next',
+        },
+      },
     }
   },
-  async fetch ({ store }) {
+  async fetch({ store }) {
     try {
-      const res = await axios.get('https://admin.mushida.org/wp-json/wp/v2/posts?categories=52&order=asc')
+      const res = await axios.get(
+        'https://admin.mushida.org/wp-json/wp/v2/posts?categories=52&order=asc'
+      )
       store.commit('featuredPosts', res.data)
-    } catch (error) {
-    }
+    } catch (error) {}
   },
   computed: {
-    features () {
+    features() {
       return this.$store.state.features
-    }
+    },
   },
-  methods: {
-  }
+  methods: {},
 }
 </script>
 
