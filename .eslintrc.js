@@ -12,8 +12,8 @@ module.exports = {
   // add your custom rules here
   rules: {
     'vue/singleline-html-element-content-newline': 'off',
-    'comm-dangle': 'off',
+    'comm-dangle': 'always',
     'space-before-function-paren': 'warn',
-    'array-bracket-spacing': 'on',
+    'array-bracket-spacing': 'off',
   },
 }
