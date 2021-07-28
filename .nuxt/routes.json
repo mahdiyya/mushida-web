@@ -7,6 +7,13 @@
     "_name": "_0ff488bb"
   },
   {
+    "name": "kontak",
+    "path": "/kontak",
+    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\kontak.vue",
+    "chunkName": "pages/kontak",
+    "_name": "_1092ef30"
+  },
+  {
     "name": "privacy-policy",
     "path": "/privacy-policy",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\privacy-policy.vue",

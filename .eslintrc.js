@@ -7,13 +7,15 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
-  extends: ['@nuxtjs', 'plugin:nuxt/recommended'],
+  extends: [
+    '@nuxtjs',
+    'plugin:prettier/recommended',
+    'plugin:nuxt/recommended',
+  ],
   plugins: [],
   // add your custom rules here
   rules: {
-    'vue/singleline-html-element-content-newline': 'off',
-    'comm-dangle': 'off',
-    'space-before-function-paren': 'warn',
-    'array-bracket-spacing': 'on',
+    'vue/no-v-html': 1,
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 }

@@ -15,8 +15,10 @@
     "@nuxtjs/axios": "^5.13.1",
     "core-js": "^2.6.12",
     "nuxt": "^2.13.3",
+    "remove": "^0.1.5",
     "swiper": "^5.4.5",
-    "vue-awesome-swiper": "^4.1.1"
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-eslint-parser": "~7.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
@@ -25,12 +27,13 @@
     "@nuxtjs/pwa": "^3.3.5",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.7.0",
     "fibers": "^5.0.0",
     "prettier": "^1.9.1",
-    "prettier-eslint": "^12.0.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "sass": "^1.35.2",
