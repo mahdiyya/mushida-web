@@ -5,12 +5,12 @@
         src="images/logo-mushida.png"
         alt="logo muslimat hidayatullah"
         class="default"
-      >
+      />
       <img
         src="images/logo-mushida-full-white.png"
         alt="logo mushida white"
         class="white"
-      >
+      />
     </div>
     <div class="nav-container row">
       <NuxtLink class="nav-link" to="/">Beranda</NuxtLink>
@@ -54,17 +54,14 @@
       <NuxtLink class="nav-link" to="berita">Berita dan Artikel</NuxtLink>
       <NuxtLink class="nav-link" to="kontak">Kontak Kami</NuxtLink>
       <span id="search" class="nav-link">
-        <img src="images/search.svg" alt="search button">
+        <img src="images/search.svg" alt="search button" />
       </span>
     </div>
   </nav>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

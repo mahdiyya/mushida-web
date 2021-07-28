@@ -4,9 +4,9 @@
       <h1 class="title">Lats Posts Checker</h1>
       <div v-for="post in posts" :key="post.id" class="post">
         <NuxtLink
-          :to="`${post.date.substr(0, 4)}/${post.date.substr(5, 2)}/${
-            post.slug
-          }`"
+          :to="
+            `${post.date.substr(0, 4)}/${post.date.substr(5, 2)}/${post.slug}`
+          "
         >
           {{ post.title.rendered }}
         </NuxtLink>
@@ -20,22 +20,23 @@
 <script>
 import axios from 'axios'
 export default {
-  async fetch ({ store }) {
+  async fetch({ store }) {
     try {
-      const res = await axios.get('https://admin.mushida.org/wp-json/wp/v2/posts?page=1')
+      const res = await axios.get(
+        'https://admin.mushida.org/wp-json/wp/v2/posts?page=1',
+      )
       store.commit('frontPagePosts', res.data)
       store.commit('totalPage', res.headers['x-wp-totalpages'])
-    } catch (error) {
-    }
+    } catch (error) {}
   },
   computed: {
-    posts () {
+    posts() {
       return this.$store.state.posts
     },
-    totalpages () {
+    totalpages() {
       return this.$store.state.totalpages
-    }
-  }
+    },
+  },
 }
 </script>
 

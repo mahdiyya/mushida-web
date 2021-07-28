@@ -6,10 +6,12 @@
       <div class="overview" v-html="overviewfeature" />
       <!-- eslint-enable -->
       <NuxtLink
-        :to="`${datefeature.substr(0, 4)}/${datefeature.substr(
-          5,
-          2
-        )}/${slugfeature}`"
+        :to="
+          `${datefeature.substr(0, 4)}/${datefeature.substr(
+            5,
+            2,
+          )}/${slugfeature}`
+        "
         class="btn white arrow"
         rel="noreferrer noopener"
       >
@@ -20,11 +22,11 @@
           width="24"
           height="24"
           class="img-icon"
-        >
+        />
       </NuxtLink>
     </article>
     <figure>
-      <img :src="imagefeature" :alt="titlefeature">
+      <img :src="imagefeature" :alt="titlefeature" />
     </figure>
   </div>
 </template>
@@ -34,25 +36,25 @@ export default {
   props: {
     imagefeature: {
       type: String,
-      default: null
+      default: null,
     },
     titlefeature: {
       type: String,
-      default: null
+      default: null,
     },
     overviewfeature: {
       type: String,
-      default: null
+      default: null,
     },
     slugfeature: {
       type: String,
-      default: null
+      default: null,
     },
     datefeature: {
       type: String,
-      default: null
-    }
-  }
+      default: null,
+    },
+  },
 }
 </script>
 

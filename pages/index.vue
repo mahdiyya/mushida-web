@@ -161,7 +161,7 @@ export default {
   async fetch({ store }) {
     try {
       const res = await axios.get(
-        'https://admin.mushida.org/wp-json/wp/v2/posts?categories=52&order=asc'
+        'https://admin.mushida.org/wp-json/wp/v2/posts?categories=52&order=asc',
       )
       store.commit('featuredPosts', res.data)
     } catch (error) {}
