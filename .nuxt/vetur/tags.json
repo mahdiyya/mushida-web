@@ -1,7 +1,4 @@
 {
-  "CardSimple": {
-    "description": "Auto imported from components/CardSimple.vue"
-  },
   "CardStructure": {
     "description": "Auto imported from components/CardStructure.vue"
   },
@@ -13,9 +10,6 @@
   },
   "HeroSub": {
     "description": "Auto imported from components/HeroSub.vue"
-  },
-  "Logo": {
-    "description": "Auto imported from components/Logo.vue"
   },
   "Nav": {
     "description": "Auto imported from components/Nav.vue"

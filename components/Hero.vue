@@ -2,7 +2,9 @@
   <div class="swiper--slide text-white">
     <article>
       <h2>{{ titlefeature }}</h2>
+      <!-- eslint-disable vue/no-v-html -->
       <div class="overview" v-html="overviewfeature" />
+      <!-- eslint-enable -->
       <NuxtLink
         :to="`${datefeature.substr(0, 4)}/${datefeature.substr(
           5,

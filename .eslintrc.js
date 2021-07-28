@@ -16,5 +16,19 @@ module.exports = {
   // add your custom rules here
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'vue/no-v-html': 0,
+    'no-console': 0,
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'never',
+          normal: 'always',
+          component: 'always',
+        },
+        svg: 'always',
+        math: 'always',
+      },
+    ],
   },
 }
