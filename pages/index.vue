@@ -107,6 +107,7 @@
         <img
           src="images/tentang-kami.jpg"
           alt="masjid gunung tembak"
+          class="round"
           width="400"
           height="450"
         />
@@ -129,10 +130,46 @@
       </article>
     </section>
     <section class="pengurus">
+      <img
+        src="images/circle-big.svg"
+        alt="half circle big"
+        class="accessories top"
+        width="396"
+        height="486"
+      />
+      <img
+        src="images/circle-small.svg"
+        alt="small half circle"
+        class="accessories bottom"
+        width="246"
+        height="210"
+      />
       <article class="section-container">
         <h2><span>Pengurus Tingkat Pusat</span> <br />Muslimat Hidayatullah</h2>
+        <div class="grid">
+          <div class="card-organitation green arrow-org">
+            <h3>Hani Akbar, S.Sos.I</h3>
+            <p class="position"><b>KETUA UMUM</b></p>
+          </div>
+          <div class="card-organitation arrow-org">
+            <h3>Dra. Leni Syahnidar Djamil</h3>
+            <p class="position"><b>SEKJEND PP</b></p>
+          </div>
+          <div class="card-organitation green arrow-org">
+            <h3>Ir. Emi Pitoyanti</h3>
+            <p class="position"><b>MAJELIS MURABBIYAH PUSAT</b></p>
+          </div>
+          <div class="card-organitation">
+            <h3>Hj Aida Chered</h3>
+            <p class="position"><b>MAJELIS PENASIHAT</b></p>
+          </div>
+        </div>
+        <NuxtLink class="btn outline" to="struktur-organisasi/majelis-penasihat"
+          >Lihat Selengkapnya</NuxtLink
+        >
       </article>
     </section>
+    <Footer />
   </main>
 </template>
 
@@ -216,7 +253,6 @@ export default {
   article {
     justify-content: space-between;
     align-items: center;
-    padding: 10vh 6vw;
     img {
       width: 390px;
       height: 464px;
@@ -226,6 +262,99 @@ export default {
   .text {
     width: 60%;
     height: auto;
+  }
+}
+.pengurus {
+  .accessories {
+    position: absolute;
+    height: auto;
+    &.top {
+      top: -2px;
+      right: 0;
+      width: 396px;
+    }
+    &.bottom {
+      bottom: 0;
+      left: 0;
+      width: 196px;
+    }
+  }
+  h2 {
+    color: #0c4524;
+    span {
+      font-size: 40px;
+      color: #404040;
+    }
+  }
+  .btn {
+    margin: 2rem auto;
+  }
+
+  .card-organitation {
+    position: relative;
+    padding: 2.5rem 2rem;
+    padding-bottom: 8rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 16px 60px -40px rgba(0, 0, 0, 0.35);
+
+    z-index: 2;
+    h3 {
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 1.4;
+      color: #404040;
+    }
+    .position {
+      position: absolute;
+      bottom: -1.5rem;
+      left: 1rem;
+      font-size: 18px;
+      padding: 1rem 1.5rem;
+      border-radius: 4rem;
+      background: #0c4524;
+      color: #fff;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      right: -3rem;
+      top: 50%;
+      z-index: 0;
+      width: 3rem;
+      height: 1rem;
+      border-top: 2px dashed;
+      border-color: #a7a7a7;
+    }
+    &:nth-child(n + 4) {
+      &:before {
+        display: none;
+      }
+    }
+    &.green {
+      background: linear-gradient(180deg, #0c4524 0%, #3b7151 100%);
+      box-shadow: 0px 16px 60px -40px #000000;
+      h3 {
+        color: #fff;
+      }
+      .position {
+        background: #fff;
+        color: #0c4524;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .pengurus {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5rem;
+      margin: 6rem 0;
+    }
   }
 }
 </style>
