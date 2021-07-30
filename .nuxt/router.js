@@ -12,8 +12,14 @@ const _201aeccc = () => interopDefault(import('..\\pages\\struktur-organisasi\\m
 const _01b64118 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-pusat" */))
 const _5cbbf6d0 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah" */))
 const _956bd89c = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah\\index.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah/index" */))
-const _842b51a6 = () => interopDefault(import('..\\pages\\tentang-kami\\piagam-gunug-tembak.vue' /* webpackChunkName: "pages/tentang-kami/piagam-gunug-tembak" */))
+const _43af607d = () => interopDefault(import('..\\pages\\tentang-kami\\piagam-gunung-tembak.vue' /* webpackChunkName: "pages/tentang-kami/piagam-gunung-tembak" */))
 const _3b2bb310 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah.vue' /* webpackChunkName: "pages/tentang-kami/sejarah" */))
+const _3d8be11c = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\index.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/index" */))
+const _404d5fd3 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2005.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2005" */))
+const _41bbc2ed = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2010.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2010" */))
+const _41d7f1ef = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2012.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2012" */))
+const _422c7ef5 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2018.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2018" */))
+const _43709b8c = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2020.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2020" */))
 const _799a4d96 = () => interopDefault(import('..\\pages\\tentang-kami\\visi-misi.vue' /* webpackChunkName: "pages/tentang-kami/visi-misi" */))
 const _19616224 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _07a6b7d8 = () => interopDefault(import('..\\pages\\_year\\_month\\_blog.vue' /* webpackChunkName: "pages/_year/_month/_blog" */))
@@ -62,13 +68,37 @@ export const routerOptions = {
       name: "struktur-organisasi-pengurus-wilayah"
     }]
   }, {
-    path: "/tentang-kami/piagam-gunug-tembak",
-    component: _842b51a6,
-    name: "tentang-kami-piagam-gunug-tembak"
+    path: "/tentang-kami/piagam-gunung-tembak",
+    component: _43af607d,
+    name: "tentang-kami-piagam-gunung-tembak"
   }, {
     path: "/tentang-kami/sejarah",
     component: _3b2bb310,
-    name: "tentang-kami-sejarah"
+    children: [{
+      path: "",
+      component: _3d8be11c,
+      name: "tentang-kami-sejarah"
+    }, {
+      path: "2005",
+      component: _404d5fd3,
+      name: "tentang-kami-sejarah-2005"
+    }, {
+      path: "2010",
+      component: _41bbc2ed,
+      name: "tentang-kami-sejarah-2010"
+    }, {
+      path: "2012",
+      component: _41d7f1ef,
+      name: "tentang-kami-sejarah-2012"
+    }, {
+      path: "2018",
+      component: _422c7ef5,
+      name: "tentang-kami-sejarah-2018"
+    }, {
+      path: "2020",
+      component: _43709b8c,
+      name: "tentang-kami-sejarah-2020"
+    }]
   }, {
     path: "/tentang-kami/visi-misi",
     component: _799a4d96,

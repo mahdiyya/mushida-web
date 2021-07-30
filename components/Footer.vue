@@ -111,7 +111,7 @@
             rel="noreferrer noopener"
           >
             <img
-              src="images/facebook.svg"
+              src="/images/facebook.svg"
               alt="facebook mushida"
               width="28"
               height="28"
@@ -125,7 +125,7 @@
             height="28"
           >
             <img
-              src="images/instagram.svg"
+              src="/images/instagram.svg"
               alt="instagram mushida"
               width="28"
               height="28"
@@ -137,7 +137,7 @@
             rel="noreferrer noopener"
           >
             <img
-              src="images/youtube.svg"
+              src="/images/youtube.svg"
               alt="youtube mushida"
               width="28"
               height="28"
@@ -145,7 +145,7 @@
           </a>
           <a target="blank_" href="" rel="noreferrer noopener">
             <img
-              src="images/whatsapp.svg"
+              src="/images/whatsapp.svg"
               alt="whatsapp mushida"
               width="28"
               height="28"

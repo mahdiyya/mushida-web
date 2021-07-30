@@ -57,17 +57,60 @@
     "_name": "_5cbbf6d0"
   },
   {
-    "name": "tentang-kami-piagam-gunug-tembak",
-    "path": "/tentang-kami/piagam-gunug-tembak",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\piagam-gunug-tembak.vue",
-    "chunkName": "pages/tentang-kami/piagam-gunug-tembak",
-    "_name": "_842b51a6"
+    "name": "tentang-kami-piagam-gunung-tembak",
+    "path": "/tentang-kami/piagam-gunung-tembak",
+    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\piagam-gunung-tembak.vue",
+    "chunkName": "pages/tentang-kami/piagam-gunung-tembak",
+    "_name": "_43af607d"
   },
   {
-    "name": "tentang-kami-sejarah",
     "path": "/tentang-kami/sejarah",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah.vue",
     "chunkName": "pages/tentang-kami/sejarah",
+    "children": [
+      {
+        "name": "tentang-kami-sejarah",
+        "path": "",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\index.vue",
+        "chunkName": "pages/tentang-kami/sejarah/index",
+        "_name": "_3d8be11c"
+      },
+      {
+        "name": "tentang-kami-sejarah-2005",
+        "path": "2005",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2005.vue",
+        "chunkName": "pages/tentang-kami/sejarah/2005",
+        "_name": "_404d5fd3"
+      },
+      {
+        "name": "tentang-kami-sejarah-2010",
+        "path": "2010",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2010.vue",
+        "chunkName": "pages/tentang-kami/sejarah/2010",
+        "_name": "_41bbc2ed"
+      },
+      {
+        "name": "tentang-kami-sejarah-2012",
+        "path": "2012",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2012.vue",
+        "chunkName": "pages/tentang-kami/sejarah/2012",
+        "_name": "_41d7f1ef"
+      },
+      {
+        "name": "tentang-kami-sejarah-2018",
+        "path": "2018",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2018.vue",
+        "chunkName": "pages/tentang-kami/sejarah/2018",
+        "_name": "_422c7ef5"
+      },
+      {
+        "name": "tentang-kami-sejarah-2020",
+        "path": "2020",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2020.vue",
+        "chunkName": "pages/tentang-kami/sejarah/2020",
+        "_name": "_43709b8c"
+      }
+    ],
     "_name": "_3b2bb310"
   },
   {

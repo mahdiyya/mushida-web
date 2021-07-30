@@ -7,7 +7,6 @@ export { default as HeroSub } from '../..\\components\\HeroSub.vue'
 export { default as Nav } from '../..\\components\\Nav.vue'
 export { default as NewsCard } from '../..\\components\\NewsCard.vue'
 export { default as RecommendedCard } from '../..\\components\\RecommendedCard.vue'
-export { default as SubNav } from '../..\\components\\SubNav.vue'
 
 export const LazyCardStructure = import('../..\\components\\CardStructure.vue' /* webpackChunkName: "components/card-structure" */).then(c => wrapFunctional(c.default || c))
 export const LazyFooter = import('../..\\components\\Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
@@ -16,4 +15,3 @@ export const LazyHeroSub = import('../..\\components\\HeroSub.vue' /* webpackChu
 export const LazyNav = import('../..\\components\\Nav.vue' /* webpackChunkName: "components/nav" */).then(c => wrapFunctional(c.default || c))
 export const LazyNewsCard = import('../..\\components\\NewsCard.vue' /* webpackChunkName: "components/news-card" */).then(c => wrapFunctional(c.default || c))
 export const LazyRecommendedCard = import('../..\\components\\RecommendedCard.vue' /* webpackChunkName: "components/recommended-card" */).then(c => wrapFunctional(c.default || c))
-export const LazySubNav = import('../..\\components\\SubNav.vue' /* webpackChunkName: "components/sub-nav" */).then(c => wrapFunctional(c.default || c))

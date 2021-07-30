@@ -48,7 +48,31 @@ $lineargradient: linear-gradient(180deg, #0c4524 0%, #3b7151 100%);
     transform: translate3d(100%, 0, 0);
   }
 }
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
 
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .fadeOutRight {
   animation-name: fadeOutRight;
 }
@@ -115,15 +139,37 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  min-height: 6vh;
   width: 100%;
   background: $white;
   z-index: 10000;
   transition: all 0.3s ease-out;
+
+  .animate {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      opacity: 0;
+      height: 1px;
+      top: 50%;
+      left: 2vw;
+      transform: translateY(10px);
+      background: #404040;
+      transition: all 0.3s ease-out;
+    }
+    &:hover {
+      &::after {
+        opacity: 1;
+        width: calc(100% - 4vw);
+      }
+    }
+  }
+
   .logo {
     padding-left: 5vw;
     height: 48px;
+    transition: all 0.3s ease-out;
     img {
       max-width: 15vw;
       object-fit: contain;
@@ -142,46 +188,209 @@ nav {
   }
   .nav-container {
     width: max-content;
-    height: 100%;
     padding: 0 5vw;
     justify-content: flex-end;
     align-items: center;
     .nav-link {
       font-size: $d--small;
-      padding: 1vw 2vw;
+      display: flex;
+      padding: 0 2vw;
+      align-items: center;
+      min-height: 6vh;
+      min-height: 80px;
       text-decoration: none;
       font-weight: 400;
       color: $black !important;
+      transition: all 0.3s ease-out;
     }
   }
 
   &.homepage {
     background: transparent;
+    transition: all 0.3s ease-in-out;
     .logo .default {
       opacity: 0;
       width: 0;
-      height: 0;
+      transition: all 0.3s ease-in-out;
     }
     .logo .white {
       opacity: 1;
       height: 100%;
       width: auto;
+      transition: all 0.3s ease-in-out;
     }
     .nav-container {
       background: $white;
       border-radius: 0 0 0 12px;
+      .nav-link {
+        min-height: 80px;
+      }
+    }
+  }
+  &.scrolled {
+    background: $white;
+    box-shadow: 0px 6px 80px rgba(0, 0, 0, 0.25);
+    .logo {
+      height: 36px;
+    }
+    .logo .default {
+      opacity: 1;
+      height: 100%;
+      width: auto;
+      object-position: center center;
+    }
+    .logo .white {
+      opacity: 0;
+      width: 0;
+    }
+    .nav-container {
+      border-radius: 0;
+      background: transparent;
+      .nav-link {
+        min-height: unset !important;
+        height: auto !important;
+        max-height: unset !important;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      #search {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+  #search {
+    cursor: pointer;
+    z-index: 3;
+    img {
+      width: calc(10px + 0.7vw);
+      height: calc(10px + 0.7vw);
+    }
+    .icon-close {
+      display: none;
+    }
+    &.active {
+      .icon-close {
+        display: block;
+      }
+      .icon-search {
+        display: none;
+      }
+    }
+  }
+  .search-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    box-shadow: 0px 6px 80px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+    .search-form {
+      width: 100%;
+      padding-left: 2rem;
+      outline: none;
+      border: none;
+      background: #042512;
+      font-weight: $regular;
+      color: #fff;
+      font-size: $d--regular;
+      font-family: 'Montserrat', sans-serif;
+      &::-webkit-input-placeholder {
+        color: $white;
+      }
+      &::-moz-placeholder {
+        color: $white;
+      }
+      &:-ms-input-placeholder {
+        color: $white;
+      }
+      &:-moz-placeholder {
+        color: $white;
+      }
+    }
+    &.show {
+      width: 100%;
+      opacity: 1;
     }
   }
 }
 
 .dropdown {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  cursor: pointer;
   .dropdown-container {
-    display: none;
-    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 2vw;
+    width: 130%;
+    perspective: 1000px;
+    z-index: -1;
+    transition: box-shadow 0.5s 0.5s ease-in-out;
+    a {
+      height: max-content;
+      min-height: unset !important;
+      max-height: none !important;
+      text-decoration: none;
+      padding: 1rem;
+      display: none;
+      color: $white !important;
+      font-size: $d--small;
+      font-weight: $regular;
+      background: $green;
+      opacity: 0;
+      transform-origin: top center;
+      transition: all 0.3s ease-in-out;
+      &:nth-child(0) {
+        animation: rotateX 300ms (1 * 60ms) ease-in-out forwards;
+      }
+      &:nth-child(1) {
+        animation: rotateX 300ms (2 * 60ms) ease-in-out forwards;
+      }
+      &:nth-child(2) {
+        animation: rotateX 300ms (3 * 60ms) ease-in-out forwards;
+      }
+      &:nth-child(3) {
+        animation: rotateX 300ms (4 * 60ms) ease-in-out forwards;
+      }
+      &:nth-child(4) {
+        animation: rotateX 300ms (5 * 60ms) ease-in-out forwards;
+      }
+      &:nth-child(5) {
+        animation: rotateX 300ms (6 * 60ms) ease-in-out forwards;
+      }
+      &:nth-child(6) {
+        animation: rotateX 300ms (7 * 60ms) ease-in-out forwards;
+      }
+      &:nth-child(7) {
+        animation: rotateX 300ms (8 * 60ms) ease-in-out forwards;
+      }
+    }
+    &.active {
+      a {
+        display: block;
+      }
+    }
+  }
+  &:hover {
+    .dropdown-container {
+      a {
+        display: block;
+        box-shadow: 0px 26px 60px -14px rgba(0, 0, 0, 0.2);
+        &:hover {
+          background: $dark-green;
+          padding-left: 1.2rem;
+        }
+      }
+    }
   }
 }
-
 .container {
   position: relative;
   max-width: 1920px;

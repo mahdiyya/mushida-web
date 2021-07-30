@@ -1,67 +1,107 @@
 <template>
-  <nav>
+  <nav :class="{ scrolled: isScrolled }">
     <div class="logo">
       <img
-        src="images/logo-mushida.png"
+        src="/images/logo-mushida.png"
         alt="logo muslimat hidayatullah"
         class="default"
       />
       <img
-        src="images/logo-mushida-full-white.png"
+        src="/images/logo-mushida-full-white.png"
         alt="logo mushida white"
         class="white"
       />
     </div>
     <div class="nav-container row">
-      <NuxtLink class="nav-link" to="/">Beranda</NuxtLink>
+      <NuxtLink class="nav-link animate" to="/">Beranda</NuxtLink>
       <div class="dropdown">
-        <span class="nav-link">Tentang Kami</span>
+        <span class="nav-link animate">Tentang Kami</span>
         <div class="dropdown-container">
-          <NuxtLink class="nav-link" to="tentang-kami/sejarah">
-            Sejarah
-          </NuxtLink>
-          <NuxtLink class="nav-link" to="tentang-kami/visi-misi">
+          <NuxtLink to="/tentang-kami/visi-misi">
             Visi Misi
           </NuxtLink>
-          <NuxtLink class="nav-link" to="tentang-kami/sejarah">
-            Sejarah
-          </NuxtLink>
-          <NuxtLink class="nav-link" to="tentang-kami/piagam-gunung-tembak">
+          <NuxtLink to="/tentang-kami/piagam-gunung-tembak">
             Piagam Gunung Tembak
+          </NuxtLink>
+          <NuxtLink to="/tentang-kami/sejarah">
+            Sejarah
           </NuxtLink>
         </div>
       </div>
       <div class="dropdown">
-        <span class="nav-link">Struktur Organisasi</span>
+        <span class="nav-link animate">Struktur Organisasi</span>
         <div class="dropdown-container">
-          <NuxtLink class="nav-link" to="struktur-organisasi/majelis-penasihat">
+          <NuxtLink to="/struktur-organisasi/majelis-penasihat">
             Majelis Penasihat
           </NuxtLink>
-          <NuxtLink
-            class="nav-link"
-            to="struktur-organisasi/majelis-murobbiya-pusat"
-          >
+          <NuxtLink to="/struktur-organisasi/majelis-murobbiya-pusat">
             Majelis Murobbiyah Pusat
           </NuxtLink>
-          <NuxtLink class="nav-link" to="struktur-organisasi/pengurus-pusat">
+          <NuxtLink to="/struktur-organisasi/pengurus-pusat">
             Pengurus Pusat
           </NuxtLink>
-          <NuxtLink class="nav-link" to="struktur-organisasi/pengurus-wilayah">
+          <NuxtLink to="/struktur-organisasi/pengurus-wilayah">
             Pengurus Wilayah
           </NuxtLink>
         </div>
       </div>
-      <NuxtLink class="nav-link" to="berita">Berita dan Artikel</NuxtLink>
-      <NuxtLink class="nav-link" to="kontak">Kontak Kami</NuxtLink>
-      <span id="search" class="nav-link">
-        <img src="images/search.svg" alt="search button" />
+      <NuxtLink class="nav-link animate" to="/berita"
+        >Berita dan Artikel</NuxtLink
+      >
+      <NuxtLink class="nav-link animate" to="/kontak">Kontak Kami</NuxtLink>
+      <span
+        id="search"
+        class="nav-link"
+        :class="{ active: isActive }"
+        @click="activeform"
+      >
+        <img src="/images/search.svg" alt="search button" class="icon-search" />
+        <img src="/images/close.svg" alt="close button" class="icon-close" />
       </span>
     </div>
+    <form class="search-bar" :class="{ show: isActive }">
+      <input
+        type="text"
+        class="search-form"
+        placeholder="Ketik kata pencarian"
+        required=""
+      />
+    </form>
   </nav>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      hover: false,
+      isScrolled: false,
+      isActive: false,
+    }
+  },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      if (scrollY > 10) {
+        this.isScrolled = true
+      } else {
+        this.isScrolled = false
+      }
+    },
+    activeform() {
+      if (this.isActive === true) {
+        this.isActive = false
+      } else {
+        this.isActive = true
+      }
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>

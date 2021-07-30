@@ -19,8 +19,5 @@
   },
   "RecommendedCard": {
     "description": "Auto imported from components/RecommendedCard.vue"
-  },
-  "SubNav": {
-    "description": "Auto imported from components/SubNav.vue"
   }
 }
