@@ -23,7 +23,7 @@ $m--bigger: 42px;
 
 $playfair: 'Playfair Display', serif;
 $montserrat: 'Montserrat', sans-serif;
-$regular: 300;
+$regular: 400;
 $medium: 500;
 $bold: 700;
 
@@ -36,6 +36,28 @@ $lineargradient: linear-gradient(180deg, #0c4524 0%, #3b7151 100%);
   $d--big: 40px;
   $d--bigger: 52px;
   $d--biggest: 72px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOutRight {
@@ -105,6 +127,17 @@ p {
   font-weight: $regular;
   font-size: $d--regular;
   margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+article,
+section {
+  p {
+    font-weight: $regular;
+    font-size: $d--regular;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
 }
 
 b {
@@ -173,7 +206,7 @@ nav {
     img {
       max-width: 15vw;
       object-fit: contain;
-      transition: all 0.3s ease-out;
+      transition: opacity width 0.3s ease-out;
     }
     .default {
       opacity: 1;
@@ -211,13 +244,11 @@ nav {
     .logo .default {
       opacity: 0;
       width: 0;
-      transition: all 0.3s ease-in-out;
     }
     .logo .white {
       opacity: 1;
       height: 100%;
       width: auto;
-      transition: all 0.3s ease-in-out;
     }
     .nav-container {
       background: $white;
@@ -626,4 +657,39 @@ section {
 
 .round {
   border-radius: 12px !important;
+}
+.content p,
+.article p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.text-center {
+  text-align: center !important;
+}
+blockquote {
+  position: relative;
+  padding: 1rem 2rem;
+  background: rgba(161, 230, 189, 0.39);
+  box-shadow: 0px 16px 60px -40px rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  width: max-content;
+  &::after {
+    content: '“';
+    position: absolute;
+    left: -10px;
+    top: -16px;
+    font-family: $playfair;
+    font-size: 56px;
+  }
+}
+
+ol {
+  margin: 2rem 0;
+  li {
+    padding-left: 1rem;
+    font-size: calc(11px + 0.35vw);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
 }

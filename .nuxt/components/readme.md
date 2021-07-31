@@ -13,3 +13,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Nav>` | `<nav>` (components/Nav.vue)
 - `<NewsCard>` | `<news-card>` (components/NewsCard.vue)
 - `<RecommendedCard>` | `<recommended-card>` (components/RecommendedCard.vue)
+- `<SejarahContent>` | `<sejarah-content>` (components/SejarahContent.vue)

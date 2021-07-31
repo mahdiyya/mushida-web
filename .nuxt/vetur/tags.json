@@ -19,5 +19,8 @@
   },
   "RecommendedCard": {
     "description": "Auto imported from components/RecommendedCard.vue"
+  },
+  "SejarahContent": {
+    "description": "Auto imported from components/SejarahContent.vue"
   }
 }

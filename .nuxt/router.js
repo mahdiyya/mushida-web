@@ -15,10 +15,9 @@ const _956bd89c = () => interopDefault(import('..\\pages\\struktur-organisasi\\p
 const _43af607d = () => interopDefault(import('..\\pages\\tentang-kami\\piagam-gunung-tembak.vue' /* webpackChunkName: "pages/tentang-kami/piagam-gunung-tembak" */))
 const _3b2bb310 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah.vue' /* webpackChunkName: "pages/tentang-kami/sejarah" */))
 const _3d8be11c = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\index.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/index" */))
-const _404d5fd3 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2005.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2005" */))
+const _405b7754 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2006.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2006" */))
 const _41bbc2ed = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2010.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2010" */))
-const _41d7f1ef = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2012.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2012" */))
-const _422c7ef5 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2018.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2018" */))
+const _42023872 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2015.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2015" */))
 const _43709b8c = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2020.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2020" */))
 const _799a4d96 = () => interopDefault(import('..\\pages\\tentang-kami\\visi-misi.vue' /* webpackChunkName: "pages/tentang-kami/visi-misi" */))
 const _19616224 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
@@ -79,21 +78,17 @@ export const routerOptions = {
       component: _3d8be11c,
       name: "tentang-kami-sejarah"
     }, {
-      path: "2005",
-      component: _404d5fd3,
-      name: "tentang-kami-sejarah-2005"
+      path: "2006",
+      component: _405b7754,
+      name: "tentang-kami-sejarah-2006"
     }, {
       path: "2010",
       component: _41bbc2ed,
       name: "tentang-kami-sejarah-2010"
     }, {
-      path: "2012",
-      component: _41d7f1ef,
-      name: "tentang-kami-sejarah-2012"
-    }, {
-      path: "2018",
-      component: _422c7ef5,
-      name: "tentang-kami-sejarah-2018"
+      path: "2015",
+      component: _42023872,
+      name: "tentang-kami-sejarah-2015"
     }, {
       path: "2020",
       component: _43709b8c,

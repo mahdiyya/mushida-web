@@ -8,7 +8,8 @@ const components = {
   HeroSub: () => import('../..\\components\\HeroSub.vue' /* webpackChunkName: "components/hero-sub" */).then(c => wrapFunctional(c.default || c)),
   Nav: () => import('../..\\components\\Nav.vue' /* webpackChunkName: "components/nav" */).then(c => wrapFunctional(c.default || c)),
   NewsCard: () => import('../..\\components\\NewsCard.vue' /* webpackChunkName: "components/news-card" */).then(c => wrapFunctional(c.default || c)),
-  RecommendedCard: () => import('../..\\components\\RecommendedCard.vue' /* webpackChunkName: "components/recommended-card" */).then(c => wrapFunctional(c.default || c))
+  RecommendedCard: () => import('../..\\components\\RecommendedCard.vue' /* webpackChunkName: "components/recommended-card" */).then(c => wrapFunctional(c.default || c)),
+  SejarahContent: () => import('../..\\components\\SejarahContent.vue' /* webpackChunkName: "components/sejarah-content" */).then(c => wrapFunctional(c.default || c))
 }
 
 for (const name in components) {
