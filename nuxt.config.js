@@ -98,7 +98,7 @@ export default {
     families: {
       'Playfair+Display': [700, 900],
       Montserrat: {
-        wght: [300, 500, 700],
+        wght: [400, 500, 700],
         ital: [300, 700],
       },
     },
