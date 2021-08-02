@@ -2,6 +2,9 @@
   "CardStructure": {
     "description": "Auto imported from components/CardStructure.vue"
   },
+  "Date": {
+    "description": "Auto imported from components/Date.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },

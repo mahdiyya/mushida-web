@@ -53,6 +53,7 @@ export default {
     left: 0;
     top: 0;
     object-fit: cover;
+    object-position: bottom;
     height: 444px;
     width: 100%;
   }

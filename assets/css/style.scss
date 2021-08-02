@@ -828,6 +828,32 @@ section {
   }
 }
 
+.artikel {
+  article {
+    div {
+      a {
+        margin-left: 0 !important;
+        img {
+          width: 80% !important;
+          height: auto;
+          max-height: 456px;
+          object-fit: cover;
+          object-position: left;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  article {
+    a {
+      display: flex;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+
 @media all and (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);

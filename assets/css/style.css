@@ -1062,6 +1062,31 @@ section {
   margin: 0;
 }
 
+.artikel article div a {
+  margin-left: 0 !important;
+}
+
+.artikel article div a img {
+  width: 80% !important;
+  height: auto;
+  max-height: 456px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  margin-bottom: 2rem;
+}
+
+.artikel article a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.artikel article p {
+  text-align: justify;
+}
+
 @media all and (min-width: 768px) {
   .grid {
     -ms-grid-columns: (1fr)[3];
