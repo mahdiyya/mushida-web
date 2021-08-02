@@ -3,6 +3,7 @@ import { wrapFunctional } from './utils'
 
 const components = {
   CardStructure: () => import('../..\\components\\CardStructure.vue' /* webpackChunkName: "components/card-structure" */).then(c => wrapFunctional(c.default || c)),
+  Date: () => import('../..\\components\\Date.vue' /* webpackChunkName: "components/date" */).then(c => wrapFunctional(c.default || c)),
   Footer: () => import('../..\\components\\Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c)),
   Hero: () => import('../..\\components\\Hero.vue' /* webpackChunkName: "components/hero" */).then(c => wrapFunctional(c.default || c)),
   HeroSub: () => import('../..\\components\\HeroSub.vue' /* webpackChunkName: "components/hero-sub" */).then(c => wrapFunctional(c.default || c)),

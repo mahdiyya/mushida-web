@@ -3,6 +3,7 @@ export const state = () => ({
   article: [],
   features: [],
   provincedata: [],
+  recoms: [],
 })
 
 export const mutations = {
@@ -20,5 +21,8 @@ export const mutations = {
   },
   provincestructure(state, provincedata) {
     state.provincedata = provincedata
+  },
+  recomsData(state, recoms) {
+    state.recoms = recoms
   },
 }
