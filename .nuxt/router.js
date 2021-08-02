@@ -5,6 +5,8 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _0ff488bb = () => interopDefault(import('..\\pages\\berita.vue' /* webpackChunkName: "pages/berita" */))
+const _59309367 = () => interopDefault(import('..\\pages\\berita\\index.vue' /* webpackChunkName: "pages/berita/index" */))
+const _5779f21f = () => interopDefault(import('..\\pages\\berita\\_slug.vue' /* webpackChunkName: "pages/berita/_slug" */))
 const _1092ef30 = () => interopDefault(import('..\\pages\\kontak.vue' /* webpackChunkName: "pages/kontak" */))
 const _1f465a2b = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
 const _c899e862 = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-murobbiya-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-murobbiya-pusat" */))
@@ -12,6 +14,7 @@ const _201aeccc = () => interopDefault(import('..\\pages\\struktur-organisasi\\m
 const _01b64118 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-pusat" */))
 const _5cbbf6d0 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah" */))
 const _956bd89c = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah\\index.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah/index" */))
+const _4ce3f132 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah\\_region\\_slug.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah/_region/_slug" */))
 const _43af607d = () => interopDefault(import('..\\pages\\tentang-kami\\piagam-gunung-tembak.vue' /* webpackChunkName: "pages/tentang-kami/piagam-gunung-tembak" */))
 const _3b2bb310 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah.vue' /* webpackChunkName: "pages/tentang-kami/sejarah" */))
 const _3d8be11c = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\index.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/index" */))
@@ -37,7 +40,15 @@ export const routerOptions = {
   routes: [{
     path: "/berita",
     component: _0ff488bb,
-    name: "berita"
+    children: [{
+      path: "",
+      component: _59309367,
+      name: "berita"
+    }, {
+      path: ":slug",
+      component: _5779f21f,
+      name: "berita-slug"
+    }]
   }, {
     path: "/kontak",
     component: _1092ef30,
@@ -65,6 +76,10 @@ export const routerOptions = {
       path: "",
       component: _956bd89c,
       name: "struktur-organisasi-pengurus-wilayah"
+    }, {
+      path: ":region/:slug?",
+      component: _4ce3f132,
+      name: "struktur-organisasi-pengurus-wilayah-region-slug"
     }]
   }, {
     path: "/tentang-kami/piagam-gunung-tembak",

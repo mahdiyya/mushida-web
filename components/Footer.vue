@@ -44,7 +44,7 @@
           <li>
             <a
               target="blank_"
-              href="www.sarhidayatullah.com"
+              href="https://www.sarhidayatullah.com"
               rel="noreferrer noopener"
               >SAR Hidayatullah</a
             >

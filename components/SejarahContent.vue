@@ -36,6 +36,8 @@ export default {
 .grid {
   img {
     box-shadow: 0px 16px 60px -40px rgba(0, 0, 0, 0.35);
+    max-width: 100%;
+    height: auto;
   }
   .date {
     position: relative;
@@ -45,7 +47,8 @@ export default {
     width: max-content;
     height: auto;
     line-height: 1;
-    padding: 10px 14px 10px 44px;
+
+    padding: 10px 12px 6px 27px;
     margin-bottom: 1rem;
     &::before {
       content: '';
@@ -61,18 +64,22 @@ export default {
     }
   }
   h3 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 1.5rem;
   }
 }
 @media all and(min-width: 768px) {
   .grid {
+    h3 {
+      font-size: 36px;
+    }
     article {
       padding-left: 1rem;
       grid-column: 2 / span 2;
       .date {
         font-size: calc(11px + 0.35vw);
         animation: fadeInUp 0.6s ease-out 0.02s;
+        padding: 10px 14px 10px 44px;
         &::before {
           background-image: url(/images/toggle-date.svg);
         }
