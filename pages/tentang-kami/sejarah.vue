@@ -40,11 +40,9 @@ export default {
 
 <style lang="scss" scoped>
 .sejarah {
-  @media (min-width: 768px) {
-    .milestone-nav.grid {
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10rem;
-    }
+  .milestone-nav.grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
   }
 
   background: linear-gradient(
@@ -56,15 +54,15 @@ export default {
     position: relative;
     width: max-content;
     margin: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     &::after {
       content: '';
       position: absolute;
       top: 8px;
       left: 2rem;
-      width: 92%;
+      width: 13rem;
       height: 2px;
-      border-top: 2px dashed #545454;
+      border-top: 1px dashed #545454;
     }
 
     a {
@@ -88,7 +86,8 @@ export default {
       span {
         position: relative;
         display: flex;
-        padding: 8px 12px 4px 12px;
+        padding: 5px 5px 1px 5px;
+        font-size: 12px;
         transition: all 0.3s ease-out;
         &::after {
           content: '';
@@ -124,6 +123,26 @@ export default {
         border-style: double;
       }
     }
+  }
+}
+@media (min-width: 768px) {
+  .sejarah .milestone-nav.grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10rem;
+  }
+  .sejarah .milestone-nav {
+    margin-bottom: 6rem;
+  }
+  .sejarah .milestone-nav a span {
+    padding: 8px 12px 4px 12px;
+    font-size: 16px;
+  }
+  .sejarah .milestone-nav[data-v-89906d54]::after {
+    top: 8px;
+    left: 2rem;
+    width: 92%;
+    height: 2px;
+    border-top: 2px dashed #545454;
   }
 }
 </style>
