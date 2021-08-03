@@ -47,8 +47,8 @@ export default {
 
   background: linear-gradient(
     180deg,
-    rgba(142, 190, 174, 0.3) 0%,
-    rgba(59, 113, 81, 0.3) 100%
+    rgba(142, 190, 174, 0.06) 0%,
+    rgba(59, 113, 81, 0.17) 100%
   );
   .milestone-nav {
     position: relative;

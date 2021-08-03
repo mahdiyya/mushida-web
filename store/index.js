@@ -4,6 +4,7 @@ export const state = () => ({
   features: [],
   provincedata: [],
   recoms: [],
+  searchres: [],
 })
 
 export const mutations = {
@@ -12,6 +13,9 @@ export const mutations = {
   },
   totalPage(state, totalpages) {
     state.totalpages = totalpages
+  },
+  totalPageSearch(state, totalpagesSearch) {
+    state.totalpagesSearch = totalpagesSearch
   },
   articleData(state, article) {
     state.article = article
@@ -24,5 +28,11 @@ export const mutations = {
   },
   recomsData(state, recoms) {
     state.recoms = recoms
+  },
+  searchPosts(state, searchres) {
+    state.searchres = searchres
+  },
+  searchValue(state, searchVal) {
+    state.searchVal = searchVal
   },
 }

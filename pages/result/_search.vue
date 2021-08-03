@@ -1,16 +1,18 @@
 <template>
   <main>
     <Nav />
-    <HeroSub :imgurl="imgurl" :title="title" :directory="directory" />
     <section>
-      <div class="section-container p-t-0">
+      <div class="section-container">
+        <h1 class="result-title">
+          Hasil Pencarian : <i>{{ searchVal }}</i>
+        </h1>
         <NuxtChild />
         <div class="row pagination">
           <NuxtLink
-            v-for="index in totalpages"
+            v-for="index in totalpagesSearch"
             :key="index"
             class="index"
-            :to="`/berita/${index}`"
+            :to="`/result/${searchVal}/${index}`"
             >{{ index }}</NuxtLink
           >
         </div>
@@ -23,31 +25,39 @@
 <script>
 import axios from 'axios'
 export default {
-  data() {
+  data(params) {
     return {
       imgurl: '/images/hero-berita.jpg',
       title: 'Berita & Artikel',
       directory: 'Home / Berita & Artikel',
       isActive: false,
+      slug: params.search,
     }
   },
-  async fetch({ store }) {
+  async fetch({ params, store }) {
     try {
       const res = await axios.get(
-        'https://admin.mushida.org/wp-json/wp/v2/posts?page=1',
+        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.search}`,
       )
-      store.commit('totalPage', parseInt(res.headers['x-wp-totalpages']))
+      store.commit('totalPageSearch', parseInt(res.headers['x-wp-totalpages']))
+      store.commit('searchValue', params.search)
     } catch (error) {}
   },
   computed: {
-    totalpages() {
-      return this.$store.state.totalpages
+    totalpagesSearch() {
+      return this.$store.state.totalpagesSearch
+    },
+    searchVal() {
+      return this.$store.state.searchVal
     },
   },
 }
 </script>
 
 <style lang="scss">
+.result-title {
+  font-size: 42px;
+}
 .grid {
   grid-gap: 2.5rem;
   gap: 2.5rem;

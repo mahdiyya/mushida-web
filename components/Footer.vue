@@ -241,4 +241,13 @@ footer {
     padding: 1rem;
   }
 }
+@media all and (max-width: 768px) {
+  footer .grid address,
+  footer .grid .contact {
+    justify-self: self-start;
+  }
+  footer .grid {
+    grid-gap: 1rem;
+  }
+}
 </style>
