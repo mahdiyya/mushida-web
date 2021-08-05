@@ -12,7 +12,15 @@
         class="white"
       />
     </div>
-    <div class="nav-container row">
+    <div class="ham-container" @click="menucontainer()">
+      <div id="nav-icon3" :class="{ open: isOpen }">
+        <span />
+        <span />
+        <span />
+        <span />
+      </div>
+    </div>
+    <div class="nav-container row" :class="{ open: isOpen }">
       <NuxtLink class="nav-link animate" to="/">Beranda</NuxtLink>
       <div class="dropdown">
         <span class="nav-link animate">Tentang Kami</span>
@@ -59,8 +67,13 @@
         <img src="/images/close.svg" alt="close button" class="icon-close" />
       </span>
     </div>
-    <form class="search-bar" :class="{ show: isActive }">
+    <form
+      :action="`/result/${searchvalue}`"
+      class="search-bar"
+      :class="{ show: isActive }"
+    >
       <input
+        v-model="searchvalue"
         type="text"
         class="search-form"
         placeholder="Ketik kata pencarian"
@@ -77,6 +90,8 @@ export default {
       hover: false,
       isScrolled: false,
       isActive: false,
+      searchvalue: '',
+      isOpen: false,
     }
   },
   beforeMount() {
@@ -98,6 +113,13 @@ export default {
         this.isActive = false
       } else {
         this.isActive = true
+      }
+    },
+    menucontainer() {
+      if (this.isOpen === true) {
+        this.isOpen = false
+      } else {
+        this.isOpen = true
       }
     },
   },

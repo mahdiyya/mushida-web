@@ -1,6 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   // target: 'static',
+  ssr: false,
   head: {
     title: 'Muslimat Hidayatullah - Organisasi Wanita Islam Indonesia',
     meta: [
@@ -82,6 +83,9 @@ export default {
 
   // PWA module configuration
   pwa: {
+    icon: {
+      source: '/static/favicon.ico',
+    },
     manifest: {
       lang: 'en',
       theme_color: '#0C4524',

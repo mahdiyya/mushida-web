@@ -136,6 +136,28 @@
     "_name": "_799a4d96"
   },
   {
+    "path": "/result/:search?",
+    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\result\\\\_search.vue",
+    "chunkName": "pages/result/_search",
+    "children": [
+      {
+        "name": "result-search",
+        "path": "",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\result\\\\_search\\\\index.vue",
+        "chunkName": "pages/result/_search/index",
+        "_name": "_7a43a0dc"
+      },
+      {
+        "name": "result-search-nextpage",
+        "path": ":nextpage",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\result\\\\_search\\\\_nextpage.vue",
+        "chunkName": "pages/result/_search/_nextpage",
+        "_name": "_2dd5062a"
+      }
+    ],
+    "_name": "_f0fef634"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\index.vue",

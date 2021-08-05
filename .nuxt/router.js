@@ -23,6 +23,9 @@ const _41bbc2ed = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\
 const _42023872 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2015.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2015" */))
 const _43709b8c = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2020.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2020" */))
 const _799a4d96 = () => interopDefault(import('..\\pages\\tentang-kami\\visi-misi.vue' /* webpackChunkName: "pages/tentang-kami/visi-misi" */))
+const _f0fef634 = () => interopDefault(import('..\\pages\\result\\_search.vue' /* webpackChunkName: "pages/result/_search" */))
+const _7a43a0dc = () => interopDefault(import('..\\pages\\result\\_search\\index.vue' /* webpackChunkName: "pages/result/_search/index" */))
+const _2dd5062a = () => interopDefault(import('..\\pages\\result\\_search\\_nextpage.vue' /* webpackChunkName: "pages/result/_search/_nextpage" */))
 const _19616224 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _07a6b7d8 = () => interopDefault(import('..\\pages\\_year\\_month\\_blog.vue' /* webpackChunkName: "pages/_year/_month/_blog" */))
 
@@ -113,6 +116,18 @@ export const routerOptions = {
     path: "/tentang-kami/visi-misi",
     component: _799a4d96,
     name: "tentang-kami-visi-misi"
+  }, {
+    path: "/result/:search?",
+    component: _f0fef634,
+    children: [{
+      path: "",
+      component: _7a43a0dc,
+      name: "result-search"
+    }, {
+      path: ":nextpage",
+      component: _2dd5062a,
+      name: "result-search-nextpage"
+    }]
   }, {
     path: "/",
     component: _19616224,

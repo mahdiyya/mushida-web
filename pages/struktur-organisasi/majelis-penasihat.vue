@@ -2,8 +2,8 @@
   <main class="sejarah">
     <Nav />
     <HeroSub :imgurl="imgurl" :title="title" :directory="directory" />
-    <section>
-      <div class="section-container chart-org">
+    <section class="chart-org">
+      <div class="section-container chart-container">
         <div class="head  middle bottom">
           <p class="label">Hj. Aida Chered <span>Ketua</span></p>
         </div>
@@ -11,27 +11,27 @@
           <p class="label small">Anggota</p>
           <ul class="members">
             <li class="ceiling middle top">
-              <p class="label no-cap">Irawati Istadi, M.Pd.I</p>
+              <p class="label no-cap">Hj. Bilqis Mubarokatin</p>
             </li>
             <li class="ceiling middle top">
-              <p class="label no-cap">Reni Susilowati, M.Pd.I</p>
-            </li>
-            <li class="ceiling middle top">
-              <p class="label no-cap">
-                Ir. Amalia Husnah Bahar, M.M
-              </p>
+              <p class="label no-cap">Hj. Nanik Zuraidah</p>
             </li>
             <li class="ceiling middle top top">
               <p class="label no-cap">Hj. Husniah</p>
             </li>
             <li class="ceiling middle top">
-              <p class="label no-cap">Hj. Nanik Zuraidah</p>
-            </li>
-            <li class="ceiling middle top">
-              <p class="label no-cap">Hj. Bilqis Mubarokatin</p>
-            </li>
-            <li class="ceiling middle top">
               <p class="label no-cap">Dr. Sabriati Aziz, M.Pd.I</p>
+            </li>
+            <li class="ceiling middle top">
+              <p class="label no-cap">Reni Susilowati, M.Pd.I</p>
+            </li>
+            <li class="ceiling middle top">
+              <p class="label no-cap">Irawati Istadi, M.Pd.I</p>
+            </li>
+            <li class="ceiling middle top">
+              <p class="label no-cap">
+                Ir. Amalia Husnah Bahar, M.M
+              </p>
             </li>
           </ul>
         </div>

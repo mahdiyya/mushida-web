@@ -103,11 +103,17 @@
         width="396"
         height="486"
       />
+      <img
+        src="images/acc-white.svg"
+        alt="masjid svg"
+        class="accessories rounded"
+        width="396"
+        height="486"
+      />
       <article class="section-container row">
         <img
           src="images/tentang-kami.jpg"
           alt="masjid gunung tembak"
-          class="round"
           width="400"
           height="450"
         />
@@ -224,6 +230,9 @@ export default {
 
 .jati-diri {
   background: #f4f8f6;
+  .grid {
+    grid-gap: 0.5rem;
+  }
   .accessories {
     position: absolute;
     top: -7vw;
@@ -236,6 +245,9 @@ export default {
 }
 
 .about {
+  .section-container {
+    padding: 8rem 6vw;
+  }
   .accessories {
     position: absolute;
     left: auto;
@@ -244,6 +256,13 @@ export default {
     right: 0;
     width: 396px;
     height: auto;
+    &.rounded {
+      right: auto;
+      bottom: 4rem;
+      width: 240px;
+      height: auto;
+      z-index: 0;
+    }
   }
   background: radial-gradient(
     101.18% 101.18% at 50% -1.18%,
@@ -257,6 +276,7 @@ export default {
       width: 390px;
       height: 464px;
       object-fit: cover;
+      z-index: 2;
     }
   }
   .text {
@@ -356,5 +376,52 @@ export default {
       margin: 6rem 0;
     }
   }
+}
+@media all and (max-width: 768px) {
+  .section-container {
+    z-index: 5;
+  }
+  .about article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  .about {
+    .accessories {
+      width: 70%;
+    }
+    .accessories.rounded {
+      right: auto;
+      bottom: auto;
+      top: 0%;
+      width: 30%;
+      height: auto;
+      z-index: 0;
+    }
+    .text {
+      width: 100%;
+      z-index: 5;
+      h2 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.pengurus .accessories.top {
+  top: -2px;
+  right: 0;
+  width: 40%;
+  z-index: -1;
+}
+.pengurus h2 {
+  font-size: 28px;
+}
+.pengurus .card-organitation h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.pengurus h2 span {
+  font-size: 32px;
 }
 </style>

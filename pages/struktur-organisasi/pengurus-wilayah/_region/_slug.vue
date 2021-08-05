@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <div class="section-container chart-org">
+  <section class="chart-org wilayah">
+    <div class="section-container chart-container">
       <h2>{{ data[idRegion].provinces[slug].name }}</h2>
       <div class="head  middle bottom">
         <p class="label">
@@ -31,7 +31,7 @@
           >
             <p class="label cap">
               {{ data[idRegion].provinces[slug].dakwah }}
-              <span>Departemen Dakwah</span>
+              <span>Dep. Dakwah</span>
             </p>
           </li>
           <li
@@ -40,7 +40,7 @@
           >
             <p class="label cap">
               {{ data[idRegion].provinces[slug].pembinaan }}
-              <span>Departemen Pembinaan</span>
+              <span>Dep. Pembinaan</span>
             </p>
           </li>
           <li
@@ -49,7 +49,7 @@
           >
             <p class="label cap">
               {{ data[idRegion].provinces[slug].sosial }}
-              <span>Departemen Sosial</span>
+              <span>Dep. Sosial</span>
             </p>
           </li>
           <li
@@ -58,7 +58,7 @@
           >
             <p class="label cap">
               {{ data[idRegion].provinces[slug].ekonomi }}
-              <span>Departemen Ekonomi</span>
+              <span>Dep. Ekonomi</span>
             </p>
           </li>
           <li
@@ -67,7 +67,7 @@
           >
             <p class="label cap">
               {{ data[idRegion].provinces[slug].organisasi }}
-              <span>Departemen Organisasi</span>
+              <span>Dep. Organisasi</span>
             </p>
           </li>
           <li
@@ -76,7 +76,7 @@
           >
             <p class="label cap">
               {{ data[idRegion].provinces[slug].keputrian }}
-              <span>Departemen Keputrian</span>
+              <span>Dep. Keputrian</span>
             </p>
           </li>
           <li
@@ -85,7 +85,7 @@
           >
             <p class="label cap">
               {{ data[idRegion].provinces[slug].pengkaderan }}
-              <span>Departemen Pengkaderan</span>
+              <span>Dep. Pengkaderan</span>
             </p>
           </li>
         </ul>
