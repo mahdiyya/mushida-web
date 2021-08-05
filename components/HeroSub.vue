@@ -77,4 +77,10 @@ export default {
     height: auto;
   }
 }
+
+@media all and (max-width: 768px) {
+  .hero.sejarah .img-bg {
+    object-position: bottom right !important;
+  }
+}
 </style>

@@ -1,7 +1,12 @@
 <template>
   <main class="sejarah">
     <Nav />
-    <HeroSub :imgurl="imgurl" :title="title" :directory="directory" />
+    <HeroSub
+      :imgurl="imgurl"
+      :title="title"
+      :directory="directory"
+      class="sejarah"
+    />
     <section class="section-container">
       <div class="grid milestone-nav">
         <NuxtLink to="/tentang-kami/sejarah"> <span>2000</span></NuxtLink>
@@ -137,7 +142,7 @@ export default {
     padding: 8px 12px 4px 12px;
     font-size: 16px;
   }
-  .sejarah .milestone-nav[data-v-89906d54]::after {
+  .sejarah .milestone-nav::after {
     top: 8px;
     left: 2rem;
     width: 92%;

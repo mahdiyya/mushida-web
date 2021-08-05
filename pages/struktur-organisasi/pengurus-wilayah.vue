@@ -208,4 +208,30 @@ select {
     background-repeat: no-repeat;
   }
 }
+
+@media all and (max-width: 768px) {
+  .selector span,
+  select {
+    font-size: 14px;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    width: 216px;
+  }
+  .selector,
+  .select-container {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .selector span::after,
+  .select-container::after {
+    right: 0.5rem;
+  }
+  .row {
+    flex-direction: column;
+    p {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+}
 </style>

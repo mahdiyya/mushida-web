@@ -2,8 +2,8 @@
   <main class="sejarah">
     <Nav />
     <HeroSub :imgurl="imgurl" :title="title" :directory="directory" />
-    <section>
-      <div class="section-container chart-org">
+    <section class=" chart-org">
+      <div class="section-container chart-container">
         <div class="head  middle bottom">
           <p class="label">Ir. Emi Pitoyanti <span>Ketua</span></p>
         </div>

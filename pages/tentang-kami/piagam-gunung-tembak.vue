@@ -121,4 +121,11 @@ export default {}
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .piagam section .card {
+    padding: 1.2rem;
+    padding-top: 1.5rem;
+  }
+}
 </style>

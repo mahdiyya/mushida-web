@@ -198,7 +198,7 @@ export default {}
       figure {
         position: relative;
         width: calc(100% + 3rem);
-        height: 312px;
+        height: 224px;
         overflow: hidden;
         margin-left: -1.5rem;
         margin-top: -2rem;
@@ -238,6 +238,9 @@ export default {}
     }
   }
 
+  .hero .header .card figure {
+    height: 312px;
+  }
   .recommedation {
     width: 15%;
     flex: 0 0 15%;

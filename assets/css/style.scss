@@ -241,6 +241,11 @@ nav {
   &.homepage {
     background: transparent;
     transition: all 0.3s ease-in-out;
+    #nav-icon1 span,
+    #nav-icon3 span,
+    #nav-icon4 span {
+      background: #fff;
+    }
     .logo .default {
       opacity: 0;
       width: 0;
@@ -261,6 +266,11 @@ nav {
   &.scrolled {
     background: $white;
     box-shadow: -1px -1px 14px rgba(0, 0, 0, 0.25);
+    #nav-icon1 span,
+    #nav-icon3 span,
+    #nav-icon4 span {
+      background: #404040;
+    }
     .logo {
       height: 36px;
     }
@@ -626,6 +636,11 @@ section {
 }
 
 .chart-org {
+  overflow-x: scroll;
+  .chart-container {
+    width: 1200px;
+    padding: 4rem 0;
+  }
   position: relative;
   padding-top: 3rem;
   ul,
@@ -641,8 +656,6 @@ section {
     li {
       display: flex;
       list-style: none;
-      min-width: 22%;
-      max-width: 25%;
       justify-content: center;
       &.bidang {
         justify-content: flex-start;
@@ -660,7 +673,8 @@ section {
     position: relative;
     text-align: center;
     border-radius: 5rem;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 0.5rem;
+    font-size: 11px;
     width: max-content;
     background-color: #e5e5e5;
     font-weight: $bold;
@@ -698,11 +712,11 @@ section {
       width: max-content;
       bottom: -1.2rem;
       left: 50%;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 300;
       color: $white;
       background: #3b7151;
-      padding: 0.3rem 1rem;
+      padding: 0.2rem 0.5rem;
       border-radius: 3rem;
       transform: translateX(-50%);
     }
@@ -721,7 +735,7 @@ section {
     .label {
       padding: 1rem 2.5rem 1rem 2.5rem;
       font-family: $playfair;
-      font-size: 32px;
+      font-size: 28px;
       background: linear-gradient(180deg, #0c4524 0%, #3b7151 100%);
       box-shadow: 0px 9px 29px -16px #000000;
       color: $white;
@@ -738,7 +752,7 @@ section {
     .label {
       padding: 1rem 2.5rem 1rem 2.5rem;
       font-family: $playfair;
-      font-size: 32px;
+      font-size: 28px;
       background: linear-gradient(180deg, #0c4524 0%, #3b7151 100%);
       box-shadow: 0px 16px 60px -40px #000000;
       color: $white;
@@ -758,8 +772,22 @@ section {
     ul.members {
       padding-top: 3rem;
       li {
-        padding: 2.5rem 1.5rem;
+        padding: 2.5rem 4px;
       }
+    }
+  }
+  .member .label.green {
+    padding: 1rem 1.5rem;
+    font-size: 14px !important;
+  }
+  .member ul.members li.bidang {
+    padding: 2.5rem 2rem;
+  }
+  .member ul.members li.bidang .label {
+    padding: 1rem 1.5rem;
+    font-size: 12px !important;
+    &.small {
+      padding: 0.5rem;
     }
   }
   .bidang {
@@ -810,28 +838,54 @@ section {
       border-top: 1px solid #a7a7a7;
       z-index: 0;
     }
-    &:first-child,
-    &:nth-child(5n) {
+    &:first-child {
       &::before {
         left: 50%;
         width: 50%;
       }
     }
-    &:last-child,
-    &:nth-child(4n) {
+    &:last-child {
       &::before {
         left: 0;
         width: 50%;
       }
     }
-    &:last-child:nth-child(5) {
-      &::before {
-        width: 0;
-      }
-    }
+    // &:last-child {
+    //   &::before {
+    //     width: 0;
+    //   }
+    // }
+    // &:first-child,
+    // &:nth-child(5n) {
+    //   &::before {
+    //     left: 50%;
+    //     width: 50%;
+    //   }
+    // }
+    // &:last-child,
+    // &:nth-child(4n) {
+    //   &::before {
+    //     left: 0;
+    //     width: 50%;
+    //   }
+    // }
+    // &:last-child:nth-child(5) {
+    //   &::before {
+    //     width: 0;
+    //   }
+    // }
   }
   .grid {
     margin: 0;
+  }
+  &.wilayah {
+    .member ul.members li {
+      padding: 2.5rem 0.7rem;
+    }
+    .label.cap {
+      font-size: 13px !important;
+      padding: 0.7rem 1rem;
+    }
   }
 }
 
@@ -861,10 +915,104 @@ section {
   }
 }
 
+.ham-container {
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-right: 0;
+  z-index: 100;
+}
+
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  margin: auto;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: poRoboto;
+}
+
+#nav-icon1 span,
+#nav-icon3 span,
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 2.5px;
+  width: 100%;
+  background: #404040;
+  border-radius: 0px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon1.open span,
+#nav-icon3.open span,
+#nav-icon4.open span {
+  background: #404040;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 9px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
 @media all and (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+  .ham-container {
+    display: none;
+  }
+}
+@media all and (min-width: 1360px) {
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    top: 9rem;
+  }
+  .chart-org .chart-container {
+    width: 1300px;
+  }
+  .chart-org .member .label {
+    font-size: 13px !important;
   }
 }
 @media all and (min-width: 1920px) {
@@ -873,9 +1021,69 @@ section {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     top: 15rem;
   }
+  .chart-org .chart-container {
+    width: 1700px;
+  }
+  .chart-org .member .label {
+    font-size: 16px !important;
+    padding: 0.5rem 1rem;
+  }
+  .chart-org .member ul.members li {
+    padding: 2.5rem 0.5rem;
+  }
 }
 
 @media all and (max-width: 768px) {
+  .hero .img-bg {
+    object-position: bottom left;
+  }
+  nav .animate::after {
+    top: 56%;
+  }
+  nav .nav-container,
+  nav.scrolled .nav-container {
+    position: fixed;
+    right: -64px;
+    top: 0;
+    padding: 1rem;
+    flex-direction: column;
+    width: 0 !important;
+    height: 100% !important;
+    max-width: unset;
+    background: #fff;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    .nav-link,
+    .dropdown {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .dropdown-container {
+      z-index: 10;
+      top: 4rem;
+      left: 8px;
+    }
+    .dropdown:hover .dropdown-container a {
+      width: calc(100% - 7rem);
+      font-size: 14px;
+    }
+    #search img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  nav.scrolled .nav-container .nav-link {
+    height: 80px !important;
+  }
+  nav .nav-container.open,
+  nav.scrolled .nav-container.open {
+    right: 0;
+    width: 100% !important;
+    opacity: 1;
+  }
   .swiper-button-next,
   .swiper-container-rtl .swiper-button-prev {
     right: calc(10vw - 24px);
@@ -897,6 +1105,15 @@ section {
   }
   .section-container {
     padding: 2rem 1rem !important;
+  }
+
+  .chart-org .chart-container::after {
+    content: 'Silahkan swipe layar ke kiri atau kanan untuk melihat chart';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    font-size: 12px;
+    font-style: italic;
   }
 }
 
