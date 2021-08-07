@@ -19,15 +19,16 @@
         class="img-bg"
       />
       <div class="header">
-        <p class="directory">
-          Beranda / Berita / <strong>{{ article[0].title.rendered }}</strong>
-        </p>
         <h1>{{ article[0].title.rendered }}</h1>
         <Date
           :date="article[0].date.substr(8, 2)"
           :month="article[0].date.substr(5, 2)"
           :year="article[0].date.substr(0, 4)"
+          class="article-details"
         />
+        <p class="date">
+          <span>Oleh : </span><span>{{ author.name }}</span>
+        </p>
       </div>
       <img
         src="/images/acc-pink.svg"
@@ -81,8 +82,10 @@ export default {
       const rec = await axios.get(
         'https://admin.mushida.org/wp-json/wp/v2/posts?page=1',
       )
+      const author = await axios.get(`${res.data[0]._links.author[0].href}`)
       store.commit('articleData', res.data)
       store.commit('recomsData', rec.data)
+      store.commit('authorData', author.data)
     } catch (error) {}
   },
   computed: {
@@ -91,6 +94,9 @@ export default {
     },
     recoms() {
       return this.$store.state.recoms
+    },
+    author() {
+      return this.$store.state.author
     },
   },
 }
@@ -197,6 +203,9 @@ export default {
     justify-content: space-between;
   }
 }
+blockquote {
+  margin-bottom: 1.5rem;
+}
 
 @media all and(min-width: 768px) {
   .grid {
@@ -225,7 +234,21 @@ article.blog p {
   line-height: 1.5 !important;
   margin-bottom: 1.5rem !important;
 }
+.hero .header p.date {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
 @media all and(max-width: 768px) {
+  .hero {
+    padding: 0 1rem;
+    .header {
+      padding: 1.2rem;
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
   .artikel .hero .img-bg {
     object-position: center;
   }
@@ -236,6 +259,14 @@ article.blog p {
   p {
     font-size: 15px !important;
     line-height: 1.5 !important;
+  }
+  .hero .header p.date {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    font-size: 12px;
+    span {
+      font-size: 12px;
+    }
   }
 }
 </style>

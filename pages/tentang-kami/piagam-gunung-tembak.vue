@@ -11,7 +11,7 @@
       />
       <div class="section-container">
         <article class="card simple">
-          <h1 class="text-center">PIAGAM GUNUNG TEMBAK</h1>
+          <h1 class="text-center">Piagam Gunung Tembak</h1>
           <p class="text-center">
             <i><b>Bismillaahirrahmanirrahiim</b></i>
           </p>

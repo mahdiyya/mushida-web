@@ -87,7 +87,6 @@ export default {
 }
 select {
   appearance: none;
-  text-transform: uppercase;
   font-size: 18px;
 
   option {
@@ -97,7 +96,6 @@ select {
     min-height: 1.2em;
     padding: 4px 2px 1px;
     font-size: 18px;
-    text-transform: uppercase;
     color: #404040;
   }
 }
@@ -111,7 +109,6 @@ select > option {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  text-transform: uppercase;
   margin: 0 2rem;
   span {
     font-size: 18px;
@@ -120,7 +117,7 @@ select > option {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 140%;
     perspective: 1000px;
     z-index: 400;
     border: 1px solid #404040;
@@ -136,7 +133,7 @@ select > option {
       padding: 4px 24px 4px;
       display: none;
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400;
       background: #184e2f;
       background-color: #fff;
@@ -155,8 +152,9 @@ select > option {
     .dropdown-container {
       opacity: 1;
       a {
-        display: block;
+        display: flex;
         box-shadow: 0px 26px 60px -14px rgba(0, 0, 0, 0.2);
+        flex-wrap: wrap;
         &:hover {
           background: #8be2ba;
           padding-left: 1.2rem;

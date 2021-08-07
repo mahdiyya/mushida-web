@@ -5,32 +5,11 @@
         <p><strong>Links</strong></p>
         <ul>
           <li>
-            <a target="blank_" href="" rel="noreferrer noopener">Annisa</a>
-          </li>
-          <li>
             <a
               target="blank_"
               href="https://hidayatullah.or.id/"
               rel="noreferrer noopener"
               >DPP Hidayatullah</a
-            >
-          </li>
-          <li>
-            <a
-              target="blank_"
-              href="https://hidayatullah.or.id/"
-              rel="noreferrer noopener"
-              >Grand MBA</a
-            >
-          </li>
-          <li>
-            <a target="blank_" href="" rel="noreferrer noopener"
-              >Kolom Pengurus</a
-            >
-          </li>
-          <li>
-            <a target="blank_" href="" rel="noreferrer noopener"
-              >Majelis Quran</a
             >
           </li>
           <li>
@@ -44,18 +23,47 @@
           <li>
             <a
               target="blank_"
-              href="https://www.sarhidayatullah.com"
+              href="https://dapada.mushida.org/"
               rel="noreferrer noopener"
-              >SAR Hidayatullah</a
+              >Pendataan TK dan Paud</a
             >
           </li>
           <li>
-            <a target="blank_" href="" rel="noreferrer noopener"
-              >Sirah Community</a
-            >
+            <NuxtLink to="/struktur-organisasi/majelis-penasihat">
+              Majelis Penasihat
+            </NuxtLink>
           </li>
           <li>
-            <a target="blank_" href="" rel="noreferrer noopener">TKA-PAUD</a>
+            <NuxtLink to="/struktur-organisasi/majelis-murobbiya-pusat">
+              Majelis Murobbiyah Pusat
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/struktur-organisasi/pengurus-pusat">
+              Pengurus Pusat
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/struktur-organisasi/pengurus-wilayah">
+              Pengurus Wilayah
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/berita">
+              Berita dan Artikel
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/tentang-kami/sejarah">
+              Sejarah Mushida
+            </NuxtLink>
+          </li>
+          <li>
+            <a
+              href="https://photos.google.com/share/AF1QipMCmh5fJmyJIV4pOTi159FOlYxOQk2eBZuFo__ZHwlEyCOaTL_IX0GjSv6GhA_T-w?key=WG90VE9Oc2h5bnVPZFFUZGFSUlUyOXlBUGJZbXZR"
+              rel="noreferrer noopener"
+              >Galeri Foto Mushida</a
+            >
           </li>
         </ul>
       </div>
@@ -143,7 +151,11 @@
               height="28"
             />
           </a>
-          <a target="blank_" href="" rel="noreferrer noopener">
+          <a
+            target="blank_"
+            href="https://wa.me/6289648942171"
+            rel="noreferrer noopener"
+          >
             <img
               src="/images/whatsapp.svg"
               alt="whatsapp mushida"

@@ -115,13 +115,12 @@ export default {
 @media all and (max-width: 768px) {
   .swiper--slide {
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     figure {
       width: 100vw;
       padding-left: 0vw;
-      padding-bottom: 5vh;
       padding-top: 0rem;
-      height: 62vh;
+      height: 55vh;
       order: -1;
     }
     article {

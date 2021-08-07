@@ -1,6 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  // target: 'static',
+  target: 'static',
   ssr: false,
   production: {
     host: '0.0.0.0',
@@ -112,18 +112,7 @@ export default {
     },
   },
 
-  // Build Configuration
-  build: {
-    // extend(config, ctx) {
-    //   config.module.rules.push({
-    //     enforce: 'pre',
-    //     test: /\.(js|vue)$/,
-    //     loader: 'eslint-loader',
-    //     exclude: /(node_modules)/,
-    //     options: {
-    //       fix: true,
-    //     },
-    //   })
-    // },
+  generate: {
+    fallback: true,
   },
 }

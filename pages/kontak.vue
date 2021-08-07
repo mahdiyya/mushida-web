@@ -239,7 +239,7 @@ export default {}
   }
 
   .hero .header .card figure {
-    height: 312px;
+    height: 34vh;
   }
   .recommedation {
     width: 15%;
