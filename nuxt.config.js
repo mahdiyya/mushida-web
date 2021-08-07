@@ -2,6 +2,10 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   // target: 'static',
   ssr: false,
+  production: {
+    host: '0.0.0.0',
+    port: 49000,
+  },
   head: {
     title: 'Muslimat Hidayatullah - Organisasi Wanita Islam Indonesia',
     meta: [
@@ -103,7 +107,7 @@ export default {
       'Playfair+Display': [700, 900],
       Montserrat: {
         wght: [400, 500, 700],
-        ital: [300, 700],
+        ital: [400, 700],
       },
     },
   },

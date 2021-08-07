@@ -11,7 +11,7 @@
           <ul class="members two p-t-0">
             <li class="ceiling middle top">
               <p class="label green cap">
-                Dra. Leny Syahnidar Djamil <span>Sekretaris Jendral</span>
+                Sarah Zakiyah, S.Pd.I. <span>Sekretaris Jendral</span>
               </p>
             </li>
             <li class="ceiling middle top">
@@ -25,7 +25,7 @@
           <ul class="members p-t-0">
             <li class="ceiling middle top bidang">
               <p class="label green cap">
-                Siti Sarah Zakiyah, S.Pd.I. <span>Ketua Bidang Tarbiyah</span>
+                Sarah Zakiyah, S.Pd.I. <span>Ketua Bidang Tarbiyah</span>
               </p>
               <p class="label small middle top">Departemen</p>
               <ul class="members p-t-0 bidang">

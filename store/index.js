@@ -5,6 +5,8 @@ export const state = () => ({
   provincedata: [],
   recoms: [],
   searchres: [],
+  totalpagesearchs: [],
+  values: [],
 })
 
 export const mutations = {
@@ -14,8 +16,8 @@ export const mutations = {
   totalPage(state, totalpages) {
     state.totalpages = totalpages
   },
-  totalPageSearch(state, totalpagesSearch) {
-    state.totalpagesSearch = totalpagesSearch
+  totalPageSearch(state, totalpagesearchs) {
+    state.totalpagesearchs = totalpagesearchs
   },
   articleData(state, article) {
     state.article = article
@@ -34,5 +36,8 @@ export const mutations = {
   },
   searchValue(state, searchVal) {
     state.searchVal = searchVal
+  },
+  addItem(state, value) {
+    state.values.push(value)
   },
 }

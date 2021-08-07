@@ -158,7 +158,7 @@
             <p class="position"><b>KETUA UMUM</b></p>
           </div>
           <div class="card-organitation arrow-org">
-            <h3>Dra. Leni Syahnidar Djamil</h3>
+            <h3>Sarah Zakiyah, S.Pd.I.</h3>
             <p class="position"><b>SEKJEND PP</b></p>
           </div>
           <div class="card-organitation green arrow-org">
@@ -231,7 +231,7 @@ export default {
 .jati-diri {
   background: #f4f8f6;
   .grid {
-    grid-gap: 0.5rem;
+    grid-gap: 1.5rem;
   }
   .accessories {
     position: absolute;
@@ -406,22 +406,28 @@ export default {
       }
     }
   }
+  .jati-diri .accessories {
+    width: 24vw;
+  }
+  .jati-diri h2 {
+    margin-bottom: 2rem;
+  }
+  .pengurus .accessories.top {
+    top: -2px;
+    right: 0;
+    width: 40%;
+    z-index: -1;
+  }
+  .pengurus h2 {
+    font-size: 28px;
+  }
+  .pengurus h2 span {
+    font-size: 32px;
+  }
 }
 
-.pengurus .accessories.top {
-  top: -2px;
-  right: 0;
-  width: 40%;
-  z-index: -1;
-}
-.pengurus h2 {
-  font-size: 28px;
-}
 .pengurus .card-organitation h3 {
   font-size: 32px;
   font-weight: 700;
-}
-.pengurus h2 span {
-  font-size: 32px;
 }
 </style>

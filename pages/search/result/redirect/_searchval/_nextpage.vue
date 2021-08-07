@@ -30,15 +30,19 @@
 <script>
 import axios from 'axios'
 export default {
+  async asyncData({ params }) {
+    const slug = await params.searchval
+    return { slug }
+  },
   async fetch({ params, store }) {
     try {
       const res = await axios.get(
-        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.search}&page=${params.nextpage}`,
+        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.searchval}&page=${params.nextpage}`,
       )
       store.commit('searchPosts', res.data)
-      const searchval = params.search
+      const search = params.searchval
       const slug = params.nextpage
-      return { searchval, slug }
+      return { search, slug }
     } catch (error) {}
   },
   computed: {

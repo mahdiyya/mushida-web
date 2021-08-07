@@ -1,6 +1,6 @@
 <template>
   <nav :class="{ scrolled: isScrolled }">
-    <div class="logo">
+    <NuxtLink to="/" class="logo">
       <img
         src="/images/logo-mushida.png"
         alt="logo muslimat hidayatullah"
@@ -11,7 +11,7 @@
         alt="logo mushida white"
         class="white"
       />
-    </div>
+    </NuxtLink>
     <div class="ham-container" @click="menucontainer()">
       <div id="nav-icon3" :class="{ open: isOpen }">
         <span />
@@ -68,9 +68,14 @@
       </span>
     </div>
     <form
-      :action="`/result/${searchvalue}`"
+      :action="`/search/result/redirect/${searchvalue}`"
       class="search-bar"
       :class="{ show: isActive }"
+      @submit="
+        () => {
+          addItem(searchvalue)
+        }
+      "
     >
       <input
         v-model="searchvalue"
@@ -84,15 +89,21 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
       hover: false,
       isScrolled: false,
       isActive: false,
-      searchvalue: '',
       isOpen: false,
+      searchvalue: '',
     }
+  },
+  computed: {
+    value() {
+      return this.$store.state.searchvals.value
+    },
   },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
@@ -100,6 +111,7 @@ export default {
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
   },
+
   methods: {
     handleScroll() {
       if (scrollY > 10) {
@@ -122,6 +134,7 @@ export default {
         this.isOpen = true
       }
     },
+    ...mapMutations(['addItem']),
   },
 }
 </script>
