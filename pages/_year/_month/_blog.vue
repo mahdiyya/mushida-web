@@ -219,4 +219,23 @@ export default {
     flex: 0 0 15%;
   }
 }
+article.blog div,
+article.blog p {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 1.5rem !important;
+}
+@media all and(max-width: 768px) {
+  .artikel .hero .img-bg {
+    object-position: center;
+  }
+  .artikel .card.news {
+    width: 70%;
+  }
+  div,
+  p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+}
 </style>

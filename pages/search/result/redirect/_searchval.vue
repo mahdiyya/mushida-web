@@ -4,15 +4,19 @@
     <section>
       <div class="section-container">
         <h1 class="result-title">
-          Hasil Pencarian : <i>{{ searchVal }}</i>
+          Hasil Pencarian : <i>{{ slug }}</i>
         </h1>
+        <p v-if="totalpages == 0" class="text-center" style="margin-top: 4rem">
+          Maaf, pencarian tentang
+          <strong>{{ searchvalue }}</strong> tidak ditemukan.
+        </p>
         <NuxtChild />
-        <div class="row pagination">
+        <div v-if="totalpages > 0" class="row pagination">
           <NuxtLink
-            v-for="index in totalpagesSearch"
+            v-for="index in totalpages"
             :key="index"
             class="index"
-            :to="`/result/${searchVal}/${index}`"
+            :to="`/search/result/redirect/${slug}/${index}`"
             >{{ index }}</NuxtLink
           >
         </div>
@@ -24,32 +28,38 @@
 
 <script>
 import axios from 'axios'
+import { mapState } from 'vuex'
 export default {
+  async asyncData({ params }) {
+    const slug = await params.searchval
+    return { slug }
+  },
   data(params) {
     return {
       imgurl: '/images/hero-berita.jpg',
       title: 'Berita & Artikel',
       directory: 'Home / Berita & Artikel',
       isActive: false,
-      slug: params.search,
     }
   },
+
   async fetch({ params, store }) {
+    // const value = this.$store.state.searchvals.value
     try {
       const res = await axios.get(
-        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.search}`,
+        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.searchval}`,
       )
       store.commit('totalPageSearch', parseInt(res.headers['x-wp-totalpages']))
-      store.commit('searchValue', params.search)
+      const searchvalue = params.searchval
+      return { searchvalue }
     } catch (error) {}
   },
+
   computed: {
-    totalpagesSearch() {
-      return this.$store.state.totalpagesSearch
+    totalpages() {
+      return this.$store.state.totalpagesearchs
     },
-    searchVal() {
-      return this.$store.state.searchVal
-    },
+    ...mapState(['values']),
   },
 }
 </script>

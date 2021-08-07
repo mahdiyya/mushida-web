@@ -33,20 +33,20 @@ export default {
   async fetch({ params, store }) {
     try {
       const res = await axios.get(
-        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.search}`,
+        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.searchval}`,
       )
       store.commit('searchPosts', res.data)
-      const searchval = params.search
-      const slug = params.slug
-      return { searchval, slug }
+      // const searchval = params.search
+      // const slug = params.slug
+      // return { searchval, slug }
     } catch (error) {}
   },
   computed: {
     searchres() {
       return this.$store.state.searchres
     },
-    searchVal() {
-      return this.$store.state.searchVal
+    searchvals() {
+      return this.$store.state.searchvals.value
     },
   },
 }

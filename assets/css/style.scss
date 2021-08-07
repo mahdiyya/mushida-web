@@ -138,6 +138,9 @@ section {
     margin-bottom: 1.5rem;
     line-height: 1.5;
   }
+  &.blog {
+    font-size: 16px;
+  }
 }
 
 b {
@@ -202,6 +205,7 @@ nav {
   .logo {
     padding-left: 5vw;
     height: 48px;
+    text-decoration: none;
     transition: all 0.3s ease-out;
     img {
       max-width: 15vw;
@@ -246,6 +250,9 @@ nav {
     #nav-icon4 span {
       background: #fff;
     }
+    #nav-icon3.open span {
+      background: $dark-green !important;
+    }
     .logo .default {
       opacity: 0;
       width: 0;
@@ -269,7 +276,7 @@ nav {
     #nav-icon1 span,
     #nav-icon3 span,
     #nav-icon4 span {
-      background: #404040;
+      background: $dark-green !important;
     }
     .logo {
       height: 36px;
@@ -505,14 +512,14 @@ section {
       margin-bottom: 2vw;
       img {
         position: absolute;
-        width: 40%;
+        width: 25%;
         height: auto;
         object-fit: contain;
         opacity: 0.2;
         margin-right: 5%;
         z-index: -1;
-        right: -12%;
-        top: -9%;
+        right: -6%;
+        top: -1%;
       }
     }
     h3 {
@@ -895,10 +902,11 @@ section {
       a {
         margin-left: 0 !important;
         img {
-          width: 80% !important;
+          max-width: 100% !important;
           height: auto;
+          min-width: 70%;
           max-height: 456px;
-          object-fit: cover;
+          object-fit: contain;
           object-position: left;
           margin-bottom: 2rem;
         }
@@ -911,6 +919,12 @@ section {
     }
     p {
       text-align: justify;
+      font-size: 16px;
+    }
+    div {
+      font-size: 16px;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
     }
   }
 }
@@ -957,7 +971,7 @@ section {
 #nav-icon1.open span,
 #nav-icon3.open span,
 #nav-icon4.open span {
-  background: #404040;
+  background: $dark-green !important;
 }
 
 #nav-icon3 span:nth-child(1) {
@@ -1104,7 +1118,7 @@ section {
     font-size: 14px;
   }
   .section-container {
-    padding: 2rem 1rem !important;
+    padding: 4rem 1rem !important;
   }
 
   .chart-org .chart-container::after {
@@ -1114,6 +1128,13 @@ section {
     top: 0;
     font-size: 12px;
     font-style: italic;
+  }
+  .artikel article div a img,
+  .artikel article a img,
+  .artikel article img {
+    width: 100% !important;
+    max-height: unset;
+    object-fit: contain;
   }
 }
 
@@ -1138,7 +1159,7 @@ section {
 }
 blockquote {
   position: relative;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem !important;
   background: rgba(161, 230, 189, 0.39);
   box-shadow: 0px 16px 60px -40px rgba(0, 0, 0, 0.35);
   border-radius: 16px;
