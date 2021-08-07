@@ -103,8 +103,8 @@
                 </li>
                 <li class="middle top bidang">
                   <p class="label cap">
-                    Muthiah Najwati, S.H.I.
-                    <span>Ketua Dep. Antar Lembaga</span>
+                    Wulansari A.Md
+                    <span>Ketua Dep. Hub. Antar Lembaga</span>
                   </p>
                 </li>
               </ul>

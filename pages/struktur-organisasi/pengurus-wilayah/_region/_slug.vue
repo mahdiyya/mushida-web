@@ -125,5 +125,7 @@ export default {
 h2 {
   color: #093019;
   font-weight: 900;
+  text-transform: capitalize !important;
+  text-align: center;
 }
 </style>

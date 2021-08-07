@@ -166,7 +166,7 @@
             <p class="position"><b>MAJELIS MURABBIYAH PUSAT</b></p>
           </div>
           <div class="card-organitation">
-            <h3>Hj Aida Chered</h3>
+            <h3>Hj. Aida Chered</h3>
             <p class="position"><b>MAJELIS PENASIHAT</b></p>
           </div>
         </div>
@@ -204,7 +204,7 @@ export default {
   async fetch({ store }) {
     try {
       const res = await axios.get(
-        'https://admin.mushida.org/wp-json/wp/v2/posts?categories=52&order=asc',
+        'https://admin.mushida.org/wp-json/wp/v2/posts?categories=52',
       )
       store.commit('featuredPosts', res.data)
     } catch (error) {}

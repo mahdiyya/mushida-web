@@ -53,6 +53,12 @@
           </NuxtLink>
         </div>
       </div>
+      <a
+        class="nav-link animate"
+        href="https://dapada.mushida.org/"
+        rel="noreferrer noopener"
+        >Data Paud/TK</a
+      >
       <NuxtLink class="nav-link animate" to="/berita"
         >Berita dan Artikel</NuxtLink
       >

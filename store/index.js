@@ -7,6 +7,7 @@ export const state = () => ({
   searchres: [],
   totalpagesearchs: [],
   values: [],
+  author: [],
 })
 
 export const mutations = {
@@ -39,5 +40,8 @@ export const mutations = {
   },
   addItem(state, value) {
     state.values.push(value)
+  },
+  authorData(state, author) {
+    state.author = author
   },
 }
