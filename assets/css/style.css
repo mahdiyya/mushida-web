@@ -1125,13 +1125,52 @@ section {
   max-width: 100% !important;
   height: auto;
   min-width: 70%;
-  max-height: 456px;
+  max-height: 572px;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: left;
      object-position: left;
   margin: auto;
   margin-bottom: 2rem;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.artikel article img {
+  max-width: 100% !important;
+  height: auto;
+  min-width: 70%;
+  max-height: 572px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+  margin: auto;
+  margin-bottom: 2rem;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.artikel article figure {
+  max-width: 100% !important;
+  height: auto;
+  min-width: 80%;
+  max-height: 572px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.artikel article figure img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  margin: auto;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .artikel article a {
@@ -1149,6 +1188,30 @@ section {
   font-size: 16px;
   margin-bottom: 1.5rem;
   line-height: 1.5;
+}
+
+.artikel ol {
+  margin: 1.5rem 0;
+}
+
+.artikel ol li {
+  padding-left: 1rem;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+  text-align: justify;
+}
+
+.artikel ul {
+  margin: 1.5rem 0;
+}
+
+.artikel ul li {
+  padding-left: 1rem;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+  text-align: justify;
 }
 
 .ham-container {
@@ -1441,6 +1504,7 @@ blockquote {
   width: -moz-max-content;
   width: max-content;
   max-width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 blockquote::after {
@@ -1450,6 +1514,10 @@ blockquote::after {
   top: -16px;
   font-family: "Playfair Display", serif;
   font-size: 56px;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 @media all and (width: 1024px) {

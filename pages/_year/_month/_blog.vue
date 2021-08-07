@@ -203,6 +203,9 @@ export default {
     justify-content: space-between;
   }
 }
+blockquote {
+  margin-bottom: 1.5rem;
+}
 
 @media all and(min-width: 768px) {
   .grid {
