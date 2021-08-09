@@ -34,7 +34,7 @@ export default {
   async fetch({ store }) {
     try {
       const res = await axios.get(
-        'https://admin.mushida.org/wp-json/wp/v2/posts?per_page=9&page=1',
+        'https://admin.mushida.org/wp-json/wp/v2/posts?per_page=9',
       )
       store.commit('totalPage', parseInt(res.headers['x-wp-totalpages']))
     } catch (error) {}

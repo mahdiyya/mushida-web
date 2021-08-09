@@ -78,6 +78,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration
@@ -110,6 +112,11 @@ export default {
         ital: [400, 700],
       },
     },
+  },
+  sitemap: {
+    hostname: 'https://mushida.org',
+    gzip: true,
+    cacheTime: 1000 * 60 * 15,
   },
 
   generate: {

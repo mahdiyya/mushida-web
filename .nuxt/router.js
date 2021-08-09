@@ -5,8 +5,8 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _0ff488bb = () => interopDefault(import('..\\pages\\berita.vue' /* webpackChunkName: "pages/berita" */))
-const _59309367 = () => interopDefault(import('..\\pages\\berita\\index.vue' /* webpackChunkName: "pages/berita/index" */))
-const _5779f21f = () => interopDefault(import('..\\pages\\berita\\_slug.vue' /* webpackChunkName: "pages/berita/_slug" */))
+const _e0336240 = () => interopDefault(import('..\\pages\\berita\\berita\\index.vue' /* webpackChunkName: "pages/berita/berita/index" */))
+const _e3a0a4d0 = () => interopDefault(import('..\\pages\\berita\\berita\\_slug.vue' /* webpackChunkName: "pages/berita/berita/_slug" */))
 const _1092ef30 = () => interopDefault(import('..\\pages\\kontak.vue' /* webpackChunkName: "pages/kontak" */))
 const _1f465a2b = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
 const _c899e862 = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-murobbiya-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-murobbiya-pusat" */))
@@ -43,14 +43,15 @@ export const routerOptions = {
   routes: [{
     path: "/berita",
     component: _0ff488bb,
+    name: "berita",
     children: [{
-      path: "",
-      component: _59309367,
-      name: "berita"
+      path: "berita",
+      component: _e0336240,
+      name: "berita-berita"
     }, {
-      path: ":slug",
-      component: _5779f21f,
-      name: "berita-slug"
+      path: "berita/:slug",
+      component: _e3a0a4d0,
+      name: "berita-berita-slug"
     }]
   }, {
     path: "/kontak",
