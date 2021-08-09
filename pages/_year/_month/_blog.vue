@@ -80,7 +80,7 @@ export default {
         `https://admin.mushida.org/wp-json/wp/v2/posts/?slug=${params.blog}`,
       )
       const rec = await axios.get(
-        'https://admin.mushida.org/wp-json/wp/v2/posts?page=1',
+        'https://admin.mushida.org/wp-json/wp/v2/posts?page=1&per_page=5',
       )
       const author = await axios.get(`${res.data[0]._links.author[0].href}`)
       store.commit('articleData', res.data)
@@ -240,6 +240,9 @@ article.blog p {
 }
 
 @media all and(max-width: 768px) {
+  .artikel nav .nav-container.row {
+    justify-content: center;
+  }
   .hero {
     padding: 0 1rem;
     .header {
@@ -253,7 +256,65 @@ article.blog p {
     object-position: center;
   }
   .artikel .card.news {
+    border-radius: 0;
+    height: 40%;
+    padding: 0;
     width: 70%;
+    caption {
+      display: flex;
+      flex-direction: column;
+      padding: 8px;
+      width: max-content;
+      max-width: 100%;
+      color: #000;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      z-index: 4;
+      h3 {
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        display: block;
+        display: -webkit-box;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        text-align: left;
+        -webkit-line-clamp: 2;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    figure {
+      position: relative;
+      overflow: hidden;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-radius: 2rem 0 0 0;
+      background-image: url('/images/arrow-white-right.svg');
+      width: 2rem;
+      height: 2rem;
+      background-size: 1rem 1rem;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 2rem 0 0 0;
+      background: #0c4524;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
   }
   div,
   p {

@@ -1096,6 +1096,89 @@ section {
   }
 }
 
+blockquote {
+  position: relative;
+  padding: 1rem 2rem !important;
+  background: rgba(161, 230, 189, 0.39);
+  box-shadow: 0px 16px 60px -40px rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+
+  &::after {
+    content: '“';
+    position: absolute;
+    left: -10px;
+    top: -16px;
+    font-family: $playfair;
+    font-size: 56px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+.artikel {
+  article {
+    div {
+      a {
+        margin-left: 0 !important;
+        img {
+          width: 100% !important;
+          height: auto;
+          object-fit: cover;
+          object-position: left;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  article p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+  .section-container {
+    margin-top: 0;
+  }
+
+  .card.news {
+    width: 100%;
+    position: relative !important;
+    height: 196px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-bottom: 2rem !important;
+    figure {
+      height: 60%;
+    }
+    &::after {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+    &::before {
+      width: 2rem;
+      height: 2rem;
+      background-size: 1rem 1rem;
+    }
+    caption {
+      height: 40%;
+      padding: 8px;
+      h3 {
+        font-size: 16px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+    &:nth-child(2n) {
+      display: none;
+    }
+  }
+  .row {
+    justify-content: space-between;
+  }
+}
+
 @media all and (max-width: 768px) {
   nav .logo img {
     max-width: 10rem;
@@ -1172,6 +1255,7 @@ section {
   }
   blockquote {
     padding: 1rem 8px !important;
+    max-width: calc(100vw - 2rem);
   }
   ol {
     padding-left: 1rem;
@@ -1195,7 +1279,8 @@ section {
   .artikel article div a img,
   .artikel article a img,
   .artikel article img {
-    width: 100% !important;
+    width: calc(100vw - 2rem) !important;
+    max-width: calc(100vw - 2rem);
     max-height: unset;
     object-fit: contain;
   }
@@ -1219,28 +1304,6 @@ section {
 }
 .text-center {
   text-align: center !important;
-}
-blockquote {
-  position: relative;
-  padding: 1rem 2rem !important;
-  background: rgba(161, 230, 189, 0.39);
-  box-shadow: 0px 16px 60px -40px rgba(0, 0, 0, 0.35);
-  border-radius: 16px;
-  width: max-content;
-  max-width: 100%;
-  margin-bottom: 1.5rem;
-
-  &::after {
-    content: '“';
-    position: absolute;
-    left: -10px;
-    top: -16px;
-    font-family: $playfair;
-    font-size: 56px;
-  }
-  p:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media all and(width: 1024px) {

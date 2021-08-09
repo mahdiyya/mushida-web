@@ -37,7 +37,7 @@ export default {
   async fetch({ params, store }) {
     try {
       const res = await axios.get(
-        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.searchval}&page=${params.nextpage}`,
+        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.searchval}&per_page=9&page=${params.nextpage}`,
       )
       store.commit('searchPosts', res.data)
       const search = params.searchval

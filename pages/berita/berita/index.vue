@@ -30,10 +30,10 @@
 <script>
 import axios from 'axios'
 export default {
-  async fetch({ params, store }) {
+  async fetch({ store }) {
     try {
       const res = await axios.get(
-        `https://admin.mushida.org/wp-json/wp/v2/posts?page=${params.slug}`,
+        'https://admin.mushida.org/wp-json/wp/v2/posts?per_page=9',
       )
       store.commit('frontPagePosts', res.data)
     } catch (error) {}
@@ -46,4 +46,4 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>

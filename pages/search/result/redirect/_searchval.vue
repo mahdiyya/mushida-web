@@ -47,7 +47,7 @@ export default {
     // const value = this.$store.state.searchvals.value
     try {
       const res = await axios.get(
-        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.searchval}`,
+        `https://admin.mushida.org/wp-json/wp/v2/posts?search=${params.searchval}&per_page=9`,
       )
       store.commit('totalPageSearch', parseInt(res.headers['x-wp-totalpages']))
       const searchvalue = params.searchval

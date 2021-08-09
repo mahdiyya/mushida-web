@@ -16,7 +16,7 @@
             </li>
             <li class="ceiling middle top">
               <p class="label green cap">
-                Rahma Elhalimiyah, S.Sos.I. <span>Bendahara</span>
+                Rahmah El-Halimiyah, S.Sos.I. <span>Bendahara</span>
               </p>
             </li>
           </ul>
