@@ -199,6 +199,7 @@ footer {
     li {
       list-style: none;
       margin-bottom: 1rem;
+      padding-left: 0 !important;
     }
   }
   .grid {

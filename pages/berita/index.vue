@@ -33,7 +33,7 @@ export default {
   async fetch({ store }) {
     try {
       const res = await axios.get(
-        'https://admin.mushida.org/wp-json/wp/v2/posts?page=1',
+        'https://admin.mushida.org/wp-json/wp/v2/posts?per_page=9&page=1',
       )
       store.commit('frontPagePosts', res.data)
     } catch (error) {}
