@@ -2,22 +2,6 @@
   <main class="artikel">
     <Nav />
     <div class="hero">
-      <img
-        v-if="article[0].fimg_url !== false"
-        :src="article[0].fimg_url"
-        :alt="article[0].title.rendered"
-        width="512"
-        height="456"
-        class="img-bg"
-      />
-      <img
-        v-else
-        src="/images/majelis.jpg"
-        :alt="article[0].title.rendered"
-        width="512"
-        height="456"
-        class="img-bg"
-      />
       <div class="header">
         <h1>{{ article[0].title.rendered }}</h1>
         <Date
@@ -88,6 +72,18 @@ export default {
       store.commit('authorData', author.data)
     } catch (error) {}
   },
+  head() {
+    return {
+      title: this.article[0].title.rendered + ' - Muslimat Hidayatullah',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article[0].excerpt.rendered,
+        },
+      ],
+    }
+  },
   computed: {
     article() {
       return this.$store.state.article
@@ -105,23 +101,14 @@ export default {
 <style lang="scss" scoped>
 .hero {
   position: relative;
-  min-height: 512px;
   width: 100%;
   display: flex;
   align-items: flex-end;
   background: transparent;
   padding: 0 6vw;
-  padding-top: 22rem;
+  padding-top: 6rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  .img-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    object-fit: cover;
-    height: 444px;
-    width: 100%;
-  }
   .header {
     color: #fff;
     background-color: #184e2f;
@@ -245,11 +232,17 @@ article.blog p {
   }
   .hero {
     padding: 0 1rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
     .header {
       padding: 1.2rem;
       h1 {
         font-size: 24px;
       }
+    }
+    .accessories {
+      width: 126px;
+      left: 1vw;
     }
   }
   .artikel .hero .img-bg {

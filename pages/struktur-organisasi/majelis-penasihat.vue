@@ -61,6 +61,11 @@ export default {
       isActive: false,
     }
   },
+  head() {
+    return {
+      title: this.title + ' - Muslimat Hidayatullah',
+    }
+  },
   methods: {
     isActiveNav() {
       if (this.isActive === true) {

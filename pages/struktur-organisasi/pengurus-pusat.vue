@@ -11,7 +11,7 @@
           <ul class="members two p-t-0">
             <li class="ceiling middle top">
               <p class="label green cap">
-                Sarah Zakiyah, S.Pd.I. <span>Sekretaris Jendral</span>
+                Sarah Zakiyah, S.Pd.I. <span>Sekretaris Jendral (Plt.)</span>
               </p>
             </li>
             <li class="ceiling middle top">
@@ -116,7 +116,7 @@
           <ul class="members">
             <li class="ceiling middle top">
               <p class="label cap">
-                Arsyis Musyahadah, S.H.I., M.Pd.I. <span>Biro Humas</span>
+                Arsyis Musyahadah, S.H.I., M.Pd. <span>Biro Humas</span>
               </p>
             </li>
             <li class="ceiling middle top">
@@ -150,6 +150,11 @@ export default {
       title: 'Pengurus Pusat',
       directory: 'Home / Struktur Organisasi',
       isActive: false,
+    }
+  },
+  head() {
+    return {
+      title: this.title + ' - Muslimat Hidayatullah',
     }
   },
   methods: {

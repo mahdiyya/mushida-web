@@ -312,7 +312,7 @@ export default {
 
   .card-organitation {
     position: relative;
-    padding: 2.5rem 2rem;
+    padding: 2rem 1.5rem;
     padding-bottom: 8rem;
     background: #fff;
     border-radius: 16px;
@@ -320,7 +320,7 @@ export default {
 
     z-index: 2;
     h3 {
-      font-size: 34px;
+      font-size: 28px;
       font-weight: 900;
       line-height: 1.4;
       color: #404040;
@@ -329,7 +329,7 @@ export default {
       position: absolute;
       bottom: -1.5rem;
       left: 1rem;
-      font-size: 18px;
+      font-size: 16px;
       padding: 1rem 1.5rem;
       border-radius: 4rem;
       background: #0c4524;
@@ -424,10 +424,23 @@ export default {
   .pengurus h2 span {
     font-size: 32px;
   }
+  .pengurus {
+    .grid {
+      padding-right: 0.5rem;
+      gap: 3.5rem;
+      margin-top: 0;
+    }
+    .arrow-org:after {
+      display: none;
+    }
+    .card-organitation:before {
+      display: none;
+    }
+  }
 }
 
 .pengurus .card-organitation h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
 }
 </style>

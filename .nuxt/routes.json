@@ -1,24 +1,246 @@
 [
   {
-    "name": "berita",
     "path": "/berita",
     "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita.vue",
     "chunkName": "pages/berita",
     "children": [
       {
-        "name": "berita-berita",
-        "path": "berita",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\berita\\\\index.vue",
-        "chunkName": "pages/berita/berita/index",
-        "url": "/berita/berita",
-        "_name": "_e0336240"
+        "name": "berita",
+        "path": "",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\index.vue",
+        "chunkName": "pages/berita/index",
+        "url": "/berita",
+        "_name": "_59309367"
       },
       {
-        "name": "berita-berita-slug",
-        "path": "berita/:slug",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\berita\\\\_slug.vue",
-        "chunkName": "pages/berita/berita/_slug",
-        "_name": "_e3a0a4d0"
+        "path": "agenda",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\agenda.vue",
+        "chunkName": "pages/berita/agenda",
+        "children": [
+          {
+            "name": "berita-agenda",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\agenda\\\\index.vue",
+            "chunkName": "pages/berita/agenda/index",
+            "url": "/berita/agenda",
+            "_name": "_193f614a"
+          },
+          {
+            "name": "berita-agenda-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\agenda\\\\_slug.vue",
+            "chunkName": "pages/berita/agenda/_slug",
+            "_name": "_1caca3da"
+          }
+        ],
+        "_name": "_413d9747"
+      },
+      {
+        "path": "all",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\all.vue",
+        "chunkName": "pages/berita/all",
+        "children": [
+          {
+            "name": "berita-all",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\all\\\\index.vue",
+            "chunkName": "pages/berita/all/index",
+            "url": "/berita/all",
+            "_name": "_3aa093cc"
+          },
+          {
+            "name": "berita-all-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\all\\\\_slug.vue",
+            "chunkName": "pages/berita/all/_slug",
+            "_name": "_38e9f284"
+          }
+        ],
+        "_name": "_2225fff6"
+      },
+      {
+        "path": "annisa",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\annisa.vue",
+        "chunkName": "pages/berita/annisa",
+        "children": [
+          {
+            "name": "berita-annisa",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\annisa\\\\index.vue",
+            "chunkName": "pages/berita/annisa/index",
+            "url": "/berita/annisa",
+            "_name": "_5126e39e"
+          },
+          {
+            "name": "berita-annisa-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\annisa\\\\_slug.vue",
+            "chunkName": "pages/berita/annisa/_slug",
+            "_name": "_5494262e"
+          }
+        ],
+        "_name": "_0720bd31"
+      },
+      {
+        "path": "artikel",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\artikel.vue",
+        "chunkName": "pages/berita/artikel",
+        "children": [
+          {
+            "name": "berita-artikel",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\artikel\\\\index.vue",
+            "chunkName": "pages/berita/artikel/index",
+            "url": "/berita/artikel",
+            "_name": "_38caa4e1"
+          },
+          {
+            "name": "berita-artikel-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\artikel\\\\_slug.vue",
+            "chunkName": "pages/berita/artikel/_slug",
+            "_name": "_37140399"
+          }
+        ],
+        "_name": "_eabc66fe"
+      },
+      {
+        "path": "dakwah",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\dakwah.vue",
+        "chunkName": "pages/berita/dakwah",
+        "children": [
+          {
+            "name": "berita-dakwah",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\dakwah\\\\index.vue",
+            "chunkName": "pages/berita/dakwah/index",
+            "url": "/berita/dakwah",
+            "_name": "_1235bc57"
+          },
+          {
+            "name": "berita-dakwah-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\dakwah\\\\_slug.vue",
+            "chunkName": "pages/berita/dakwah/_slug",
+            "_name": "_107f1b0f"
+          }
+        ],
+        "_name": "_29bae46a"
+      },
+      {
+        "path": "internasional",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\internasional.vue",
+        "chunkName": "pages/berita/internasional",
+        "children": [
+          {
+            "name": "berita-internasional",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\internasional\\\\index.vue",
+            "chunkName": "pages/berita/internasional/index",
+            "url": "/berita/internasional",
+            "_name": "_e514ea04"
+          },
+          {
+            "name": "berita-internasional-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\internasional\\\\_slug.vue",
+            "chunkName": "pages/berita/internasional/_slug",
+            "_name": "_e8822c94"
+          }
+        ],
+        "_name": "_9b4245f8"
+      },
+      {
+        "path": "news",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\news.vue",
+        "chunkName": "pages/berita/news",
+        "children": [
+          {
+            "name": "berita-news",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\news\\\\index.vue",
+            "chunkName": "pages/berita/news/index",
+            "url": "/berita/news",
+            "_name": "_4510ed18"
+          },
+          {
+            "name": "berita-news-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\news\\\\_slug.vue",
+            "chunkName": "pages/berita/news/_slug",
+            "_name": "_487e2fa8"
+          }
+        ],
+        "_name": "_0d2e974e"
+      },
+      {
+        "path": "parenting",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\parenting.vue",
+        "chunkName": "pages/berita/parenting",
+        "children": [
+          {
+            "name": "berita-parenting",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\parenting\\\\index.vue",
+            "chunkName": "pages/berita/parenting/index",
+            "url": "/berita/parenting",
+            "_name": "_918eb856"
+          },
+          {
+            "name": "berita-parenting-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\parenting\\\\_slug.vue",
+            "chunkName": "pages/berita/parenting/_slug",
+            "_name": "_94fbfae6"
+          }
+        ],
+        "_name": "_f43c0fe6"
+      },
+      {
+        "path": "siaranpers",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\siaranpers.vue",
+        "chunkName": "pages/berita/siaranpers",
+        "children": [
+          {
+            "name": "berita-siaranpers",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\siaranpers\\\\index.vue",
+            "chunkName": "pages/berita/siaranpers/index",
+            "url": "/berita/siaranpers",
+            "_name": "_68e781bd"
+          },
+          {
+            "name": "berita-siaranpers-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\siaranpers\\\\_slug.vue",
+            "chunkName": "pages/berita/siaranpers/_slug",
+            "_name": "_6730e075"
+          }
+        ],
+        "_name": "_e5e921b6"
+      },
+      {
+        "path": "wilayah",
+        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\wilayah.vue",
+        "chunkName": "pages/berita/wilayah",
+        "children": [
+          {
+            "name": "berita-wilayah",
+            "path": "",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\wilayah\\\\index.vue",
+            "chunkName": "pages/berita/wilayah/index",
+            "url": "/berita/wilayah",
+            "_name": "_25814898"
+          },
+          {
+            "name": "berita-wilayah-slug",
+            "path": ":slug",
+            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\wilayah\\\\_slug.vue",
+            "chunkName": "pages/berita/wilayah/_slug",
+            "_name": "_28ee8b28"
+          }
+        ],
+        "_name": "_87da65e4"
       }
     ],
     "_name": "_0ff488bb"

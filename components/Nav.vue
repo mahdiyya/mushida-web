@@ -59,7 +59,7 @@
         rel="noreferrer noopener"
         >Data Paud/TK</a
       >
-      <NuxtLink class="nav-link animate" to="/berita"
+      <NuxtLink class="nav-link animate" to="/berita/all"
         >Berita dan Artikel</NuxtLink
       >
       <NuxtLink class="nav-link animate" to="/kontak">Kontak Kami</NuxtLink>
