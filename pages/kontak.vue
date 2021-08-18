@@ -138,7 +138,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Kontak - Muslimat Hidayatullah',
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

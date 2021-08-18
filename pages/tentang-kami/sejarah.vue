@@ -31,6 +31,19 @@ export default {
       isActive: false,
     }
   },
+  head() {
+    return {
+      title: this.title + ' - Muslimat Hidayatullah',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Sejarah berdirinya Muslimat Hidayatullah serta sepak terjang yang telah dicapai Mushida selama ini.',
+        },
+      ],
+    }
+  },
   methods: {
     isActiveNav() {
       if (this.isActive === true) {

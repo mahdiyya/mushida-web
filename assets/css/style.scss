@@ -1195,6 +1195,12 @@ blockquote {
   nav.scrolled .logo .default {
     padding: 0;
   }
+  nav .animate::after {
+    display: none;
+  }
+  .swiper--slide figure img {
+    opacity: 0.4 !important;
+  }
   .hero .img-bg {
     object-position: bottom left;
   }

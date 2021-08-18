@@ -3,25 +3,34 @@
     <Nav />
     <HeroSub :imgurl="imgurl" :title="title" :directory="directory" />
     <section>
-      <div class="section-container p-t-0">
-        <NuxtChild />
-        <div class="row pagination">
+      <div class="section-container p-t-0 p-b-2">
+        <div class="row categories">
+          <NuxtLink to="/berita/all" class="cat-btn">Semua</NuxtLink>
+          <NuxtLink to="/berita/news" class="cat-btn">Berita</NuxtLink>
+          <NuxtLink to="/berita/artikel" class="cat-btn">Artikel</NuxtLink>
+          <NuxtLink to="/berita/annisa" class="cat-btn">Annisa</NuxtLink>
           <NuxtLink
-            v-for="index in totalpages"
-            :key="index"
-            class="index"
-            :to="`/berita/${index}`"
-            >{{ index }}</NuxtLink
+            to="/berita/siaranpers"
+            class="cat-btn"
+            style="min-width: 106px;"
+            >Siaran Pers</NuxtLink
           >
+          <NuxtLink to="/berita/agenda" class="cat-btn">Agenda</NuxtLink>
+          <NuxtLink to="/berita/dakwah" class="cat-btn">Dakwah</NuxtLink>
+          <NuxtLink to="/berita/internasional" class="cat-btn"
+            >Internasional</NuxtLink
+          >
+          <NuxtLink to="/berita/wilayah" class="cat-btn">Wilayah</NuxtLink>
+          <NuxtLink to="/berita/parenting" class="cat-btn">Parenting</NuxtLink>
         </div>
       </div>
     </section>
+    <NuxtChild />
     <Footer />
   </main>
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   data() {
     return {
@@ -31,18 +40,18 @@ export default {
       isActive: false,
     }
   },
-  async fetch({ store }) {
-    try {
-      const res = await axios.get(
-        'https://admin.mushida.org/wp-json/wp/v2/posts?per_page=9',
-      )
-      store.commit('totalPage', parseInt(res.headers['x-wp-totalpages']))
-    } catch (error) {}
-  },
-  computed: {
-    totalpages() {
-      return this.$store.state.totalpages
-    },
+  head() {
+    return {
+      title: this.title + ' - Muslimat Hidayatullah',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Berita dan Artikel Seputar Muslimat Hidayatullah Pusat, Wilayah, dan Internasional',
+        },
+      ],
+    }
   },
 }
 </script>
@@ -191,5 +200,52 @@ export default {
   span {
     font-size: 14px;
   }
+}
+.categories {
+  position: relative;
+  max-width: 100%;
+  height: max-content;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 1rem 0;
+  a.cat-btn {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    max-width: none;
+    padding: 8px 1rem;
+    margin: 0 0.7rem;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    border-radius: 16px;
+    // background: #ffff;
+    border: 1px solid #0c4524;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: #d3f3e0;
+    }
+    &.nuxt-link-exact-active,
+    &.nuxt-link-active {
+      background: #b2e2c5;
+      font-weight: 500;
+      color: #000;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .categories {
+    justify-content: flex-start;
+    a.cat-btn {
+      padding: 4px 0.7rem;
+      margin: 0 0.25rem;
+      font-size: 14px;
+    }
+  }
+}
+.p-b-2 {
+  padding-bottom: 2rem !important;
 }
 </style>

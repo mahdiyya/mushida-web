@@ -69,7 +69,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Piagam Gunung Tembak Hidayatullah - Muslimat Hidayatullah',
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

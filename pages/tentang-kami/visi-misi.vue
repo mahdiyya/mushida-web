@@ -45,6 +45,19 @@ export default {
       directory: 'Home / Tentang Kami',
     }
   },
+  head() {
+    return {
+      title: this.title + ' - Muslimat Hidayatullah',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Visi dan Misi Muslimat Hidayatullah yang dipegang oleh Mushida untuk sekarang dan masa depan.',
+        },
+      ],
+    }
+  },
 }
 </script>
 

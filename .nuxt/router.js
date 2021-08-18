@@ -5,8 +5,37 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _0ff488bb = () => interopDefault(import('..\\pages\\berita.vue' /* webpackChunkName: "pages/berita" */))
-const _e0336240 = () => interopDefault(import('..\\pages\\berita\\berita\\index.vue' /* webpackChunkName: "pages/berita/berita/index" */))
-const _e3a0a4d0 = () => interopDefault(import('..\\pages\\berita\\berita\\_slug.vue' /* webpackChunkName: "pages/berita/berita/_slug" */))
+const _59309367 = () => interopDefault(import('..\\pages\\berita\\index.vue' /* webpackChunkName: "pages/berita/index" */))
+const _413d9747 = () => interopDefault(import('..\\pages\\berita\\agenda.vue' /* webpackChunkName: "pages/berita/agenda" */))
+const _193f614a = () => interopDefault(import('..\\pages\\berita\\agenda\\index.vue' /* webpackChunkName: "pages/berita/agenda/index" */))
+const _1caca3da = () => interopDefault(import('..\\pages\\berita\\agenda\\_slug.vue' /* webpackChunkName: "pages/berita/agenda/_slug" */))
+const _2225fff6 = () => interopDefault(import('..\\pages\\berita\\all.vue' /* webpackChunkName: "pages/berita/all" */))
+const _3aa093cc = () => interopDefault(import('..\\pages\\berita\\all\\index.vue' /* webpackChunkName: "pages/berita/all/index" */))
+const _38e9f284 = () => interopDefault(import('..\\pages\\berita\\all\\_slug.vue' /* webpackChunkName: "pages/berita/all/_slug" */))
+const _0720bd31 = () => interopDefault(import('..\\pages\\berita\\annisa.vue' /* webpackChunkName: "pages/berita/annisa" */))
+const _5126e39e = () => interopDefault(import('..\\pages\\berita\\annisa\\index.vue' /* webpackChunkName: "pages/berita/annisa/index" */))
+const _5494262e = () => interopDefault(import('..\\pages\\berita\\annisa\\_slug.vue' /* webpackChunkName: "pages/berita/annisa/_slug" */))
+const _eabc66fe = () => interopDefault(import('..\\pages\\berita\\artikel.vue' /* webpackChunkName: "pages/berita/artikel" */))
+const _38caa4e1 = () => interopDefault(import('..\\pages\\berita\\artikel\\index.vue' /* webpackChunkName: "pages/berita/artikel/index" */))
+const _37140399 = () => interopDefault(import('..\\pages\\berita\\artikel\\_slug.vue' /* webpackChunkName: "pages/berita/artikel/_slug" */))
+const _29bae46a = () => interopDefault(import('..\\pages\\berita\\dakwah.vue' /* webpackChunkName: "pages/berita/dakwah" */))
+const _1235bc57 = () => interopDefault(import('..\\pages\\berita\\dakwah\\index.vue' /* webpackChunkName: "pages/berita/dakwah/index" */))
+const _107f1b0f = () => interopDefault(import('..\\pages\\berita\\dakwah\\_slug.vue' /* webpackChunkName: "pages/berita/dakwah/_slug" */))
+const _9b4245f8 = () => interopDefault(import('..\\pages\\berita\\internasional.vue' /* webpackChunkName: "pages/berita/internasional" */))
+const _e514ea04 = () => interopDefault(import('..\\pages\\berita\\internasional\\index.vue' /* webpackChunkName: "pages/berita/internasional/index" */))
+const _e8822c94 = () => interopDefault(import('..\\pages\\berita\\internasional\\_slug.vue' /* webpackChunkName: "pages/berita/internasional/_slug" */))
+const _0d2e974e = () => interopDefault(import('..\\pages\\berita\\news.vue' /* webpackChunkName: "pages/berita/news" */))
+const _4510ed18 = () => interopDefault(import('..\\pages\\berita\\news\\index.vue' /* webpackChunkName: "pages/berita/news/index" */))
+const _487e2fa8 = () => interopDefault(import('..\\pages\\berita\\news\\_slug.vue' /* webpackChunkName: "pages/berita/news/_slug" */))
+const _f43c0fe6 = () => interopDefault(import('..\\pages\\berita\\parenting.vue' /* webpackChunkName: "pages/berita/parenting" */))
+const _918eb856 = () => interopDefault(import('..\\pages\\berita\\parenting\\index.vue' /* webpackChunkName: "pages/berita/parenting/index" */))
+const _94fbfae6 = () => interopDefault(import('..\\pages\\berita\\parenting\\_slug.vue' /* webpackChunkName: "pages/berita/parenting/_slug" */))
+const _e5e921b6 = () => interopDefault(import('..\\pages\\berita\\siaranpers.vue' /* webpackChunkName: "pages/berita/siaranpers" */))
+const _68e781bd = () => interopDefault(import('..\\pages\\berita\\siaranpers\\index.vue' /* webpackChunkName: "pages/berita/siaranpers/index" */))
+const _6730e075 = () => interopDefault(import('..\\pages\\berita\\siaranpers\\_slug.vue' /* webpackChunkName: "pages/berita/siaranpers/_slug" */))
+const _87da65e4 = () => interopDefault(import('..\\pages\\berita\\wilayah.vue' /* webpackChunkName: "pages/berita/wilayah" */))
+const _25814898 = () => interopDefault(import('..\\pages\\berita\\wilayah\\index.vue' /* webpackChunkName: "pages/berita/wilayah/index" */))
+const _28ee8b28 = () => interopDefault(import('..\\pages\\berita\\wilayah\\_slug.vue' /* webpackChunkName: "pages/berita/wilayah/_slug" */))
 const _1092ef30 = () => interopDefault(import('..\\pages\\kontak.vue' /* webpackChunkName: "pages/kontak" */))
 const _1f465a2b = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
 const _c899e862 = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-murobbiya-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-murobbiya-pusat" */))
@@ -43,15 +72,130 @@ export const routerOptions = {
   routes: [{
     path: "/berita",
     component: _0ff488bb,
-    name: "berita",
     children: [{
-      path: "berita",
-      component: _e0336240,
-      name: "berita-berita"
+      path: "",
+      component: _59309367,
+      name: "berita"
     }, {
-      path: "berita/:slug",
-      component: _e3a0a4d0,
-      name: "berita-berita-slug"
+      path: "agenda",
+      component: _413d9747,
+      children: [{
+        path: "",
+        component: _193f614a,
+        name: "berita-agenda"
+      }, {
+        path: ":slug",
+        component: _1caca3da,
+        name: "berita-agenda-slug"
+      }]
+    }, {
+      path: "all",
+      component: _2225fff6,
+      children: [{
+        path: "",
+        component: _3aa093cc,
+        name: "berita-all"
+      }, {
+        path: ":slug",
+        component: _38e9f284,
+        name: "berita-all-slug"
+      }]
+    }, {
+      path: "annisa",
+      component: _0720bd31,
+      children: [{
+        path: "",
+        component: _5126e39e,
+        name: "berita-annisa"
+      }, {
+        path: ":slug",
+        component: _5494262e,
+        name: "berita-annisa-slug"
+      }]
+    }, {
+      path: "artikel",
+      component: _eabc66fe,
+      children: [{
+        path: "",
+        component: _38caa4e1,
+        name: "berita-artikel"
+      }, {
+        path: ":slug",
+        component: _37140399,
+        name: "berita-artikel-slug"
+      }]
+    }, {
+      path: "dakwah",
+      component: _29bae46a,
+      children: [{
+        path: "",
+        component: _1235bc57,
+        name: "berita-dakwah"
+      }, {
+        path: ":slug",
+        component: _107f1b0f,
+        name: "berita-dakwah-slug"
+      }]
+    }, {
+      path: "internasional",
+      component: _9b4245f8,
+      children: [{
+        path: "",
+        component: _e514ea04,
+        name: "berita-internasional"
+      }, {
+        path: ":slug",
+        component: _e8822c94,
+        name: "berita-internasional-slug"
+      }]
+    }, {
+      path: "news",
+      component: _0d2e974e,
+      children: [{
+        path: "",
+        component: _4510ed18,
+        name: "berita-news"
+      }, {
+        path: ":slug",
+        component: _487e2fa8,
+        name: "berita-news-slug"
+      }]
+    }, {
+      path: "parenting",
+      component: _f43c0fe6,
+      children: [{
+        path: "",
+        component: _918eb856,
+        name: "berita-parenting"
+      }, {
+        path: ":slug",
+        component: _94fbfae6,
+        name: "berita-parenting-slug"
+      }]
+    }, {
+      path: "siaranpers",
+      component: _e5e921b6,
+      children: [{
+        path: "",
+        component: _68e781bd,
+        name: "berita-siaranpers"
+      }, {
+        path: ":slug",
+        component: _6730e075,
+        name: "berita-siaranpers-slug"
+      }]
+    }, {
+      path: "wilayah",
+      component: _87da65e4,
+      children: [{
+        path: "",
+        component: _25814898,
+        name: "berita-wilayah"
+      }, {
+        path: ":slug",
+        component: _28ee8b28,
+        name: "berita-wilayah-slug"
+      }]
     }]
   }, {
     path: "/kontak",
