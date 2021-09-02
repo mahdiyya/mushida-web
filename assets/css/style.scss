@@ -1260,8 +1260,16 @@ blockquote {
     height: 48px;
   }
   blockquote {
-    padding: 1rem 8px !important;
+    padding: 1rem !important;
     max-width: calc(100vw - 2rem);
+    &::after {
+      left: -6px;
+      top: -18px;
+      font-size: 48px;
+    }
+  }
+  .artikel article p {
+    font-size: 14px;
   }
   ol {
     padding-left: 1rem;
