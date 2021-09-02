@@ -252,7 +252,7 @@ article.blog p {
     border-radius: 0;
     height: 40%;
     padding: 0;
-    width: 70%;
+    width: 256px;
     caption {
       display: flex;
       flex-direction: column;
@@ -307,6 +307,10 @@ article.blog p {
       background: #0c4524;
       z-index: -1;
       transition: all 0.3s ease-in-out;
+    }
+
+    .artikel article p {
+      font-size: 14px;
     }
   }
   div,
