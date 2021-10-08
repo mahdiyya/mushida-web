@@ -2,6 +2,7 @@ import Vue from 'vue'
 import { wrapFunctional } from './utils'
 
 const components = {
+  AdsPopup: () => import('../..\\components\\AdsPopup.vue' /* webpackChunkName: "components/ads-popup" */).then(c => wrapFunctional(c.default || c)),
   CardStructure: () => import('../..\\components\\CardStructure.vue' /* webpackChunkName: "components/card-structure" */).then(c => wrapFunctional(c.default || c)),
   Date: () => import('../..\\components\\Date.vue' /* webpackChunkName: "components/date" */).then(c => wrapFunctional(c.default || c)),
   Footer: () => import('../..\\components\\Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c)),

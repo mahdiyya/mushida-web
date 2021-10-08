@@ -1,4 +1,7 @@
 {
+  "AdsPopup": {
+    "description": "Auto imported from components/AdsPopup.vue"
+  },
   "CardStructure": {
     "description": "Auto imported from components/CardStructure.vue"
   },

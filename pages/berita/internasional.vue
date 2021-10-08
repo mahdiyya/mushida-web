@@ -3,13 +3,17 @@
     <div class="section-container p-t-0">
       <NuxtChild />
       <div class="row pagination">
-        <NuxtLink
-          v-for="index in totalpages"
-          :key="index"
-          class="index"
-          :to="`/berita/internasional/${index}`"
-          >{{ index }}</NuxtLink
-        >
+        <div v-for="index in totalpages" :key="index">
+          <NuxtLink
+            v-if="index === 1"
+            to="/berita/internasional/"
+            class="index"
+            >{{ index }}</NuxtLink
+          >
+          <NuxtLink v-else :to="`/berita/internasional/${index}`" class="index">
+            {{ index }}
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </section>
