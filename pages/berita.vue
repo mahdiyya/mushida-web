@@ -164,29 +164,39 @@ export default {
 }
 .pagination {
   justify-content: center;
-  padding: 1rem;
+  border-radius: 5rem;
   width: max-content;
   max-width: 100%;
   margin: 0 auto;
-  background: #fff;
   .index {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
-    width: 1.8rem;
-    height: 1.8rem;
+    padding: 0.6rem;
+    width: 2rem;
+    height: 2rem;
     text-align: center;
     text-decoration: none;
     border-radius: 1rem;
     font-size: 14px;
-    margin: 2px;
+    margin: 4px;
     color: #000;
+    background: #fff;
     transition: all 0.3s ease-in-out;
-    &.nuxt-link-active {
+    svg {
+      margin-left: 2px;
+    }
+    svg.prev {
+      margin-left: 0;
+      margin-right: 1px;
+    }
+    &.nuxt-link-exact-active {
       background: #1c5032;
       color: #fff;
       font-weight: 900;
+      svg path {
+        stroke: #fff;
+      }
     }
     &:hover {
       background: #86caa1;
@@ -226,8 +236,8 @@ export default {
     &:hover {
       background: #d3f3e0;
     }
-    &.nuxt-link-exact-active,
-    &.nuxt-link-active {
+    &.nuxt-link-active,
+    &.nuxt-link-exact-active {
       background: #b2e2c5;
       font-weight: 500;
       color: #000;

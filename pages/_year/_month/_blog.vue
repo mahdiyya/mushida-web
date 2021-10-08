@@ -81,6 +81,11 @@ export default {
           name: 'description',
           content: this.article[0].excerpt.rendered,
         },
+        {
+          hid: 'author',
+          name: 'author',
+          content: this.author.name,
+        },
       ],
     }
   },

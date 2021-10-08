@@ -17,6 +17,9 @@ export const mutations = {
   totalPage(state, totalpages) {
     state.totalpages = totalpages
   },
+  nextPage(state, thenextpage) {
+    state.thenextpage = thenextpage
+  },
   totalPageSearch(state, totalpagesearchs) {
     state.totalpagesearchs = totalpagesearchs
   },

@@ -1497,9 +1497,9 @@ blockquote p:last-child {
     height: 100% !important;
     max-width: unset;
     background: #fff;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
     opacity: 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -1519,7 +1519,7 @@ blockquote p:last-child {
   nav.scrolled .nav-container .dropdown-container {
     z-index: 10;
     top: 4rem;
-    left: 8px;
+    left: 0px;
   }
   nav .nav-container .dropdown:hover .dropdown-container a,
   nav.scrolled .nav-container .dropdown:hover .dropdown-container a {

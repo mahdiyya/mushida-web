@@ -1218,7 +1218,7 @@ blockquote {
     height: 100% !important;
     max-width: unset;
     background: #fff;
-    justify-content: center;
+    justify-content: center !important;
     opacity: 0;
     transition: all 0.3s ease-in-out;
     .nav-link,
@@ -1229,9 +1229,10 @@ blockquote {
       justify-content: center;
     }
     .dropdown-container {
+      // position: relative;
       z-index: 10;
       top: 4rem;
-      left: 8px;
+      left: 0px;
     }
     .dropdown:hover .dropdown-container a {
       width: calc(100% - 7rem);
