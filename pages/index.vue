@@ -166,7 +166,7 @@
             <p class="position"><b>MAJELIS MURABBIYAH PUSAT</b></p>
           </div>
           <div class="card-organitation">
-            <h3>Hj. Aida Chered</h3>
+            <h3>Dr. Sabriati Aziz, M.Pd.I</h3>
             <p class="position"><b>MAJELIS PENASIHAT</b></p>
           </div>
         </div>

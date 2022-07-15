@@ -5,7 +5,7 @@
     <section class="chart-org">
       <div class="section-container chart-container">
         <div class="head  middle bottom">
-          <p class="label">Hj. Aida Chered <span>Ketua</span></p>
+          <p class="label">Dr. Sabriati Aziz, M.Pd.I <span>Ketua</span></p>
         </div>
         <div class="member">
           <p class="label small">Anggota</p>
@@ -18,9 +18,6 @@
             </li>
             <li class="ceiling middle top top">
               <p class="label no-cap">Hj. Husniah</p>
-            </li>
-            <li class="ceiling middle top">
-              <p class="label no-cap">Dr. Sabriati Aziz, M.Pd.I</p>
             </li>
             <li class="ceiling middle top">
               <p class="label no-cap">Reni Susilowati, M.Pd.I</p>

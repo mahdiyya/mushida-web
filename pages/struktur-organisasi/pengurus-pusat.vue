@@ -25,7 +25,7 @@
           <ul class="members p-t-0">
             <li class="ceiling middle top bidang">
               <p class="label green cap">
-                Sarah Zakiyah, S.Pd.I. <span>Ketua Bidang Tarbiyah</span>
+                Marsiti, S.Pd.I. <span>Ketua Bidang Tarbiyah</span>
               </p>
               <p class="label small middle top">Departemen</p>
               <ul class="members p-t-0 bidang">
@@ -33,12 +33,6 @@
                   <p class="label cap">
                     Zahratun Nahdhah, S.H.I.
                     <span>Ketua Dep. Pengkaderan</span>
-                  </p>
-                </li>
-                <li class="middle top bidang">
-                  <p class="label cap">
-                    Marsiti, S.Pd.I.
-                    <span>Ketua Dep. Pembinaan Anggota</span>
                   </p>
                 </li>
                 <li class="middle top bidang">

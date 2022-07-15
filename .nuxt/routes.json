@@ -1,359 +1,412 @@
 [
   {
     "path": "/berita",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita.vue",
     "chunkName": "pages/berita",
     "children": [
       {
         "name": "berita",
         "path": "",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\index.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/index.vue",
         "chunkName": "pages/berita/index",
-        "url": "/berita"
+        "url": "/berita",
+        "_name": "_6f391618"
       },
       {
         "path": "agenda",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\agenda.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/agenda.vue",
         "chunkName": "pages/berita/agenda",
         "children": [
           {
             "name": "berita-agenda",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\agenda\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/agenda/index.vue",
             "chunkName": "pages/berita/agenda/index",
-            "url": "/berita/agenda"
+            "url": "/berita/agenda",
+            "_name": "_2eeede8e"
           },
           {
             "name": "berita-agenda-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\agenda\\\\_slug.vue",
-            "chunkName": "pages/berita/agenda/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/agenda/_slug.vue",
+            "chunkName": "pages/berita/agenda/_slug",
+            "_name": "_325c211e"
           }
-        ]
+        ],
+        "_name": "_27752a94"
       },
       {
         "path": "all",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\all.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/all.vue",
         "chunkName": "pages/berita/all",
         "children": [
           {
             "name": "berita-all",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\all\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/all/index.vue",
             "chunkName": "pages/berita/all/index",
-            "url": "/berita/all"
+            "url": "/berita/all",
+            "_name": "_7429f82a"
           },
           {
             "name": "berita-all-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\all\\\\_slug.vue",
-            "chunkName": "pages/berita/all/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/all/_slug.vue",
+            "chunkName": "pages/berita/all/_slug",
+            "_name": "_727356e2"
           }
-        ]
+        ],
+        "_name": "_09217ae7"
       },
       {
         "path": "annisa",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\annisa.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/annisa.vue",
         "chunkName": "pages/berita/annisa",
         "children": [
           {
             "name": "berita-annisa",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\annisa\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/annisa/index.vue",
             "chunkName": "pages/berita/annisa/index",
-            "url": "/berita/annisa"
+            "url": "/berita/annisa",
+            "_name": "_192e1f23"
           },
           {
             "name": "berita-annisa-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\annisa\\\\_slug.vue",
-            "chunkName": "pages/berita/annisa/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/annisa/_slug.vue",
+            "chunkName": "pages/berita/annisa/_slug",
+            "_name": "_17777ddb"
           }
-        ]
+        ],
+        "_name": "_9baedec0"
       },
       {
         "path": "artikel",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\artikel.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/artikel.vue",
         "chunkName": "pages/berita/artikel",
         "children": [
           {
             "name": "berita-artikel",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\artikel\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/artikel/index.vue",
             "chunkName": "pages/berita/artikel/index",
-            "url": "/berita/artikel"
+            "url": "/berita/artikel",
+            "_name": "_52a06ff5"
           },
           {
             "name": "berita-artikel-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\artikel\\\\_slug.vue",
-            "chunkName": "pages/berita/artikel/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/artikel/_slug.vue",
+            "chunkName": "pages/berita/artikel/_slug",
+            "_name": "_50e9cead"
           }
-        ]
+        ],
+        "_name": "_409466f2"
       },
       {
         "path": "dakwah",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\dakwah.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/dakwah.vue",
         "chunkName": "pages/berita/dakwah",
         "children": [
           {
             "name": "berita-dakwah",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\dakwah\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/dakwah/index.vue",
             "chunkName": "pages/berita/dakwah/index",
-            "url": "/berita/dakwah"
+            "url": "/berita/dakwah",
+            "_name": "_1b13943d"
           },
           {
             "name": "berita-dakwah-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\dakwah\\\\_slug.vue",
-            "chunkName": "pages/berita/dakwah/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/dakwah/_slug.vue",
+            "chunkName": "pages/berita/dakwah/_slug",
+            "_name": "_195cf2f5"
           }
-        ]
+        ],
+        "_name": "_d3ab3d8c"
       },
       {
         "path": "internasional",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\internasional.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/internasional.vue",
         "chunkName": "pages/berita/internasional",
         "children": [
           {
             "name": "berita-internasional",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\internasional\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/internasional/index.vue",
             "chunkName": "pages/berita/internasional/index",
-            "url": "/berita/internasional"
+            "url": "/berita/internasional",
+            "_name": "_111c0978"
           },
           {
             "name": "berita-internasional-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\internasional\\\\_slug.vue",
-            "chunkName": "pages/berita/internasional/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/internasional/_slug.vue",
+            "chunkName": "pages/berita/internasional/_slug",
+            "_name": "_0f656830"
           }
-        ]
+        ],
+        "_name": "_f7d3c296"
       },
       {
         "path": "news",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\news.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/news.vue",
         "chunkName": "pages/berita/news",
         "children": [
           {
             "name": "berita-news",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\news\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/news/index.vue",
             "chunkName": "pages/berita/news/index",
-            "url": "/berita/news"
+            "url": "/berita/news",
+            "_name": "_64966f40"
           },
           {
             "name": "berita-news-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\news\\\\_slug.vue",
-            "chunkName": "pages/berita/news/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/news/_slug.vue",
+            "chunkName": "pages/berita/news/_slug",
+            "_name": "_62dfcdf8"
           }
-        ]
+        ],
+        "_name": "_05a27a7d"
       },
       {
         "path": "parenting",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\parenting.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/parenting.vue",
         "chunkName": "pages/berita/parenting",
         "children": [
           {
             "name": "berita-parenting",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\parenting\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/parenting/index.vue",
             "chunkName": "pages/berita/parenting/index",
-            "url": "/berita/parenting"
+            "url": "/berita/parenting",
+            "_name": "_3219cb7e"
           },
           {
             "name": "berita-parenting-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\parenting\\\\_slug.vue",
-            "chunkName": "pages/berita/parenting/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/parenting/_slug.vue",
+            "chunkName": "pages/berita/parenting/_slug",
+            "_name": "_35870e0e"
           }
-        ]
+        ],
+        "_name": "_ecd08b84"
       },
       {
         "path": "siaranpers",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\siaranpers.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/siaranpers.vue",
         "chunkName": "pages/berita/siaranpers",
         "children": [
           {
             "name": "berita-siaranpers",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\siaranpers\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/siaranpers/index.vue",
             "chunkName": "pages/berita/siaranpers/index",
-            "url": "/berita/siaranpers"
+            "url": "/berita/siaranpers",
+            "_name": "_7b564ad2"
           },
           {
             "name": "berita-siaranpers-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\siaranpers\\\\_slug.vue",
-            "chunkName": "pages/berita/siaranpers/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/siaranpers/_slug.vue",
+            "chunkName": "pages/berita/siaranpers/_slug",
+            "_name": "_7ec38d62"
           }
-        ]
+        ],
+        "_name": "_000df314"
       },
       {
         "path": "wilayah",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\wilayah.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/wilayah.vue",
         "chunkName": "pages/berita/wilayah",
         "children": [
           {
             "name": "berita-wilayah",
             "path": "",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\wilayah\\\\index.vue",
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/wilayah/index.vue",
             "chunkName": "pages/berita/wilayah/index",
-            "url": "/berita/wilayah"
+            "url": "/berita/wilayah",
+            "_name": "_0e2012c2"
           },
           {
             "name": "berita-wilayah-slug",
             "path": ":slug",
-            "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\berita\\\\wilayah\\\\_slug.vue",
-            "chunkName": "pages/berita/wilayah/_slug"
+            "component": "/Users/diyah.raspect/diyah/mushida-web/pages/berita/wilayah/_slug.vue",
+            "chunkName": "pages/berita/wilayah/_slug",
+            "_name": "_0c69717a"
           }
-        ]
+        ],
+        "_name": "_7205677f"
       }
-    ]
+    ],
+    "_name": "_64bdb956"
   },
   {
     "name": "kontak",
     "path": "/kontak",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\kontak.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/kontak.vue",
     "chunkName": "pages/kontak",
-    "url": "/kontak"
+    "url": "/kontak",
+    "_name": "_9539b9fc"
   },
   {
     "name": "privacy-policy",
     "path": "/privacy-policy",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\privacy-policy.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/privacy-policy.vue",
     "chunkName": "pages/privacy-policy",
-    "url": "/privacy-policy"
+    "url": "/privacy-policy",
+    "_name": "_66388a76"
   },
   {
     "name": "struktur-organisasi-majelis-murobbiya-pusat",
     "path": "/struktur-organisasi/majelis-murobbiya-pusat",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\majelis-murobbiya-pusat.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/struktur-organisasi/majelis-murobbiya-pusat.vue",
     "chunkName": "pages/struktur-organisasi/majelis-murobbiya-pusat",
-    "url": "/struktur-organisasi/majelis-murobbiya-pusat"
+    "url": "/struktur-organisasi/majelis-murobbiya-pusat",
+    "_name": "_4824734c"
   },
   {
     "name": "struktur-organisasi-majelis-penasihat",
     "path": "/struktur-organisasi/majelis-penasihat",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\majelis-penasihat.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/struktur-organisasi/majelis-penasihat.vue",
     "chunkName": "pages/struktur-organisasi/majelis-penasihat",
-    "url": "/struktur-organisasi/majelis-penasihat"
+    "url": "/struktur-organisasi/majelis-penasihat",
+    "_name": "_399af609"
   },
   {
     "name": "struktur-organisasi-pengurus-pusat",
     "path": "/struktur-organisasi/pengurus-pusat",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\pengurus-pusat.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/struktur-organisasi/pengurus-pusat.vue",
     "chunkName": "pages/struktur-organisasi/pengurus-pusat",
-    "url": "/struktur-organisasi/pengurus-pusat"
+    "url": "/struktur-organisasi/pengurus-pusat",
+    "_name": "_7df408fb"
   },
   {
     "path": "/struktur-organisasi/pengurus-wilayah",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\pengurus-wilayah.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/struktur-organisasi/pengurus-wilayah.vue",
     "chunkName": "pages/struktur-organisasi/pengurus-wilayah",
     "children": [
       {
         "name": "struktur-organisasi-pengurus-wilayah",
         "path": "",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\pengurus-wilayah\\\\index.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/struktur-organisasi/pengurus-wilayah/index.vue",
         "chunkName": "pages/struktur-organisasi/pengurus-wilayah/index",
-        "url": "/struktur-organisasi/pengurus-wilayah"
+        "url": "/struktur-organisasi/pengurus-wilayah",
+        "_name": "_eb055394"
       },
       {
         "name": "struktur-organisasi-pengurus-wilayah-region-slug",
         "path": ":region/:slug?",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\struktur-organisasi\\\\pengurus-wilayah\\\\_region\\\\_slug.vue",
-        "chunkName": "pages/struktur-organisasi/pengurus-wilayah/_region/_slug"
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/struktur-organisasi/pengurus-wilayah/_region/_slug.vue",
+        "chunkName": "pages/struktur-organisasi/pengurus-wilayah/_region/_slug",
+        "_name": "_54bc55f2"
       }
-    ]
+    ],
+    "_name": "_7eb15c1a"
   },
   {
     "name": "tentang-kami-piagam-gunung-tembak",
     "path": "/tentang-kami/piagam-gunung-tembak",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\piagam-gunung-tembak.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/tentang-kami/piagam-gunung-tembak.vue",
     "chunkName": "pages/tentang-kami/piagam-gunung-tembak",
-    "url": "/tentang-kami/piagam-gunung-tembak"
+    "url": "/tentang-kami/piagam-gunung-tembak",
+    "_name": "_5575a93c"
   },
   {
     "path": "/tentang-kami/sejarah",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/tentang-kami/sejarah.vue",
     "chunkName": "pages/tentang-kami/sejarah",
     "children": [
       {
         "name": "tentang-kami-sejarah",
         "path": "",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\index.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/tentang-kami/sejarah/index.vue",
         "chunkName": "pages/tentang-kami/sejarah/index",
-        "url": "/tentang-kami/sejarah"
+        "url": "/tentang-kami/sejarah",
+        "_name": "_0827ab64"
       },
       {
         "name": "tentang-kami-sejarah-2006",
         "path": "2006",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2006.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/tentang-kami/sejarah/2006.vue",
         "chunkName": "pages/tentang-kami/sejarah/2006",
-        "url": "/tentang-kami/sejarah/2006"
+        "url": "/tentang-kami/sejarah/2006",
+        "_name": "_d866de10"
       },
       {
         "name": "tentang-kami-sejarah-2010",
         "path": "2010",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2010.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/tentang-kami/sejarah/2010.vue",
         "chunkName": "pages/tentang-kami/sejarah/2010",
-        "url": "/tentang-kami/sejarah/2010"
+        "url": "/tentang-kami/sejarah/2010",
+        "_name": "_d5a646de"
       },
       {
         "name": "tentang-kami-sejarah-2015",
         "path": "2015",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2015.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/tentang-kami/sejarah/2015.vue",
         "chunkName": "pages/tentang-kami/sejarah/2015",
-        "url": "/tentang-kami/sejarah/2015"
+        "url": "/tentang-kami/sejarah/2015",
+        "_name": "_d5195bd4"
       },
       {
         "name": "tentang-kami-sejarah-2020",
         "path": "2020",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\sejarah\\\\2020.vue",
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/tentang-kami/sejarah/2020.vue",
         "chunkName": "pages/tentang-kami/sejarah/2020",
-        "url": "/tentang-kami/sejarah/2020"
+        "url": "/tentang-kami/sejarah/2020",
+        "_name": "_d23c95a0"
       }
-    ]
+    ],
+    "_name": "_526d180b"
   },
   {
     "name": "tentang-kami-visi-misi",
     "path": "/tentang-kami/visi-misi",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\tentang-kami\\\\visi-misi.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/tentang-kami/visi-misi.vue",
     "chunkName": "pages/tentang-kami/visi-misi",
-    "url": "/tentang-kami/visi-misi"
+    "url": "/tentang-kami/visi-misi",
+    "_name": "_73d3405e"
   },
   {
     "path": "/search/result/redirect/:searchval?",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\search\\\\result\\\\redirect\\\\_searchval.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/search/result/redirect/_searchval.vue",
     "chunkName": "pages/search/result/redirect/_searchval",
     "children": [
       {
         "name": "search-result-redirect-searchval",
         "path": "",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\search\\\\result\\\\redirect\\\\_searchval\\\\index.vue",
-        "chunkName": "pages/search/result/redirect/_searchval/index"
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/search/result/redirect/_searchval/index.vue",
+        "chunkName": "pages/search/result/redirect/_searchval/index",
+        "_name": "_5c886ba7"
       },
       {
         "name": "search-result-redirect-searchval-nextpage",
         "path": ":nextpage",
-        "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\search\\\\result\\\\redirect\\\\_searchval\\\\_nextpage.vue",
-        "chunkName": "pages/search/result/redirect/_searchval/_nextpage"
+        "component": "/Users/diyah.raspect/diyah/mushida-web/pages/search/result/redirect/_searchval/_nextpage.vue",
+        "chunkName": "pages/search/result/redirect/_searchval/_nextpage",
+        "_name": "_3311ea36"
       }
-    ]
+    ],
+    "_name": "_2f70dfb8"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\index.vue",
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/index.vue",
     "chunkName": "pages/index",
-    "url": "/"
+    "url": "/",
+    "_name": "_22b7f914"
   },
   {
     "name": "year-month-blog",
     "path": "/:year/:month?/:blog?",
-    "component": "F:\\\\XAMPP\\\\htdocs\\\\mushida\\\\pages\\\\_year\\\\_month\\\\_blog.vue",
-    "chunkName": "pages/_year/_month/_blog"
+    "component": "/Users/diyah.raspect/diyah/mushida-web/pages/_year/_month/_blog.vue",
+    "chunkName": "pages/_year/_month/_blog",
+    "_name": "_3971b9b4"
   }
 ]

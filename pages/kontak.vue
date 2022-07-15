@@ -77,10 +77,10 @@
               Mobile :
               <a
                 target="blank_"
-                href="tel:+62-81-34-6609-254"
+                href="tel:+62-81298803246"
                 rel="noreferrer noopener"
               >
-                +62-81-34-6609-254</a
+                +62-81298803246</a
               >
             </p>
             <p>
@@ -113,10 +113,10 @@
               Mobile :
               <a
                 target="blank_"
-                href="tel:+62-81-34-6609-254"
+                href="tel:+62-81298803246"
                 rel="noreferrer noopener"
               >
-                +62-81-34-6609-254</a
+                +62-81298803246</a
               >
             </p>
           </div>
