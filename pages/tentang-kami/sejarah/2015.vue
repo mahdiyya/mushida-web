@@ -15,7 +15,7 @@ export default {
       imagesejarah: '/images/sejarah-2015.jpg',
       tanggal: '2015',
       content:
-        '<p>Musyawarah Nasional IV Muslimah Hidayatullah (Mushida) digelar di Kampus Pesantren Ar-Rohmah Putri Malang, Jawa Timur. Pada Munas tersebut, <b>Reni Susilowati</b> kembali diamanahi sebagai Ketua Umum dan <b>Leny Syahnidar Djamil</b> sebagai Sekretaris Jenderal untuk periode 2015-2020',
+        '<p>Musyawarah Nasional IV Muslimat Hidayatullah (Mushida) digelar di Kampus Pesantren Ar-Rohmah Putri Malang, Jawa Timur. Pada Munas tersebut, <b>Reni Susilowati</b> kembali diamanahi sebagai Ketua Umum dan <b>Leny Syahnidar Djamil</b> sebagai Sekretaris Jenderal untuk periode 2015-2020',
     }
   },
 }

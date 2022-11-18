@@ -4,59 +4,59 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _0ff488bb = () => interopDefault(import('..\\pages\\berita.vue' /* webpackChunkName: "pages/berita" */))
-const _59309367 = () => interopDefault(import('..\\pages\\berita\\index.vue' /* webpackChunkName: "pages/berita/index" */))
-const _413d9747 = () => interopDefault(import('..\\pages\\berita\\agenda.vue' /* webpackChunkName: "pages/berita/agenda" */))
-const _193f614a = () => interopDefault(import('..\\pages\\berita\\agenda\\index.vue' /* webpackChunkName: "pages/berita/agenda/index" */))
-const _1caca3da = () => interopDefault(import('..\\pages\\berita\\agenda\\_slug.vue' /* webpackChunkName: "pages/berita/agenda/_slug" */))
-const _2225fff6 = () => interopDefault(import('..\\pages\\berita\\all.vue' /* webpackChunkName: "pages/berita/all" */))
-const _3aa093cc = () => interopDefault(import('..\\pages\\berita\\all\\index.vue' /* webpackChunkName: "pages/berita/all/index" */))
-const _38e9f284 = () => interopDefault(import('..\\pages\\berita\\all\\_slug.vue' /* webpackChunkName: "pages/berita/all/_slug" */))
-const _0720bd31 = () => interopDefault(import('..\\pages\\berita\\annisa.vue' /* webpackChunkName: "pages/berita/annisa" */))
-const _5126e39e = () => interopDefault(import('..\\pages\\berita\\annisa\\index.vue' /* webpackChunkName: "pages/berita/annisa/index" */))
-const _5494262e = () => interopDefault(import('..\\pages\\berita\\annisa\\_slug.vue' /* webpackChunkName: "pages/berita/annisa/_slug" */))
-const _eabc66fe = () => interopDefault(import('..\\pages\\berita\\artikel.vue' /* webpackChunkName: "pages/berita/artikel" */))
-const _38caa4e1 = () => interopDefault(import('..\\pages\\berita\\artikel\\index.vue' /* webpackChunkName: "pages/berita/artikel/index" */))
-const _37140399 = () => interopDefault(import('..\\pages\\berita\\artikel\\_slug.vue' /* webpackChunkName: "pages/berita/artikel/_slug" */))
-const _29bae46a = () => interopDefault(import('..\\pages\\berita\\dakwah.vue' /* webpackChunkName: "pages/berita/dakwah" */))
-const _1235bc57 = () => interopDefault(import('..\\pages\\berita\\dakwah\\index.vue' /* webpackChunkName: "pages/berita/dakwah/index" */))
-const _107f1b0f = () => interopDefault(import('..\\pages\\berita\\dakwah\\_slug.vue' /* webpackChunkName: "pages/berita/dakwah/_slug" */))
-const _9b4245f8 = () => interopDefault(import('..\\pages\\berita\\internasional.vue' /* webpackChunkName: "pages/berita/internasional" */))
-const _e514ea04 = () => interopDefault(import('..\\pages\\berita\\internasional\\index.vue' /* webpackChunkName: "pages/berita/internasional/index" */))
-const _e8822c94 = () => interopDefault(import('..\\pages\\berita\\internasional\\_slug.vue' /* webpackChunkName: "pages/berita/internasional/_slug" */))
-const _0d2e974e = () => interopDefault(import('..\\pages\\berita\\news.vue' /* webpackChunkName: "pages/berita/news" */))
-const _4510ed18 = () => interopDefault(import('..\\pages\\berita\\news\\index.vue' /* webpackChunkName: "pages/berita/news/index" */))
-const _487e2fa8 = () => interopDefault(import('..\\pages\\berita\\news\\_slug.vue' /* webpackChunkName: "pages/berita/news/_slug" */))
-const _f43c0fe6 = () => interopDefault(import('..\\pages\\berita\\parenting.vue' /* webpackChunkName: "pages/berita/parenting" */))
-const _918eb856 = () => interopDefault(import('..\\pages\\berita\\parenting\\index.vue' /* webpackChunkName: "pages/berita/parenting/index" */))
-const _94fbfae6 = () => interopDefault(import('..\\pages\\berita\\parenting\\_slug.vue' /* webpackChunkName: "pages/berita/parenting/_slug" */))
-const _e5e921b6 = () => interopDefault(import('..\\pages\\berita\\siaranpers.vue' /* webpackChunkName: "pages/berita/siaranpers" */))
-const _68e781bd = () => interopDefault(import('..\\pages\\berita\\siaranpers\\index.vue' /* webpackChunkName: "pages/berita/siaranpers/index" */))
-const _6730e075 = () => interopDefault(import('..\\pages\\berita\\siaranpers\\_slug.vue' /* webpackChunkName: "pages/berita/siaranpers/_slug" */))
-const _87da65e4 = () => interopDefault(import('..\\pages\\berita\\wilayah.vue' /* webpackChunkName: "pages/berita/wilayah" */))
-const _25814898 = () => interopDefault(import('..\\pages\\berita\\wilayah\\index.vue' /* webpackChunkName: "pages/berita/wilayah/index" */))
-const _28ee8b28 = () => interopDefault(import('..\\pages\\berita\\wilayah\\_slug.vue' /* webpackChunkName: "pages/berita/wilayah/_slug" */))
-const _1092ef30 = () => interopDefault(import('..\\pages\\kontak.vue' /* webpackChunkName: "pages/kontak" */))
-const _1f465a2b = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
-const _c899e862 = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-murobbiya-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-murobbiya-pusat" */))
-const _201aeccc = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-penasihat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-penasihat" */))
-const _01b64118 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-pusat" */))
-const _5cbbf6d0 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah" */))
-const _956bd89c = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah\\index.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah/index" */))
-const _4ce3f132 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah\\_region\\_slug.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah/_region/_slug" */))
-const _43af607d = () => interopDefault(import('..\\pages\\tentang-kami\\piagam-gunung-tembak.vue' /* webpackChunkName: "pages/tentang-kami/piagam-gunung-tembak" */))
-const _3b2bb310 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah.vue' /* webpackChunkName: "pages/tentang-kami/sejarah" */))
-const _3d8be11c = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\index.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/index" */))
-const _405b7754 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2006.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2006" */))
-const _41bbc2ed = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2010.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2010" */))
-const _42023872 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2015.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2015" */))
-const _43709b8c = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2020.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2020" */))
-const _799a4d96 = () => interopDefault(import('..\\pages\\tentang-kami\\visi-misi.vue' /* webpackChunkName: "pages/tentang-kami/visi-misi" */))
-const _759d6f6f = () => interopDefault(import('..\\pages\\search\\result\\redirect\\_searchval.vue' /* webpackChunkName: "pages/search/result/redirect/_searchval" */))
-const _1f2c7a33 = () => interopDefault(import('..\\pages\\search\\result\\redirect\\_searchval\\index.vue' /* webpackChunkName: "pages/search/result/redirect/_searchval/index" */))
-const _5e985a7c = () => interopDefault(import('..\\pages\\search\\result\\redirect\\_searchval\\_nextpage.vue' /* webpackChunkName: "pages/search/result/redirect/_searchval/_nextpage" */))
-const _19616224 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _07a6b7d8 = () => interopDefault(import('..\\pages\\_year\\_month\\_blog.vue' /* webpackChunkName: "pages/_year/_month/_blog" */))
+const _ff46084c = () => interopDefault(import('..\\pages\\berita.vue' /* webpackChunkName: "pages/berita" */))
+const _4195a130 = () => interopDefault(import('..\\pages\\berita\\index.vue' /* webpackChunkName: "pages/berita/index" */))
+const _7bcc7b66 = () => interopDefault(import('..\\pages\\berita\\agenda.vue' /* webpackChunkName: "pages/berita/agenda" */))
+const _7d4d5a5c = () => interopDefault(import('..\\pages\\berita\\agenda\\index.vue' /* webpackChunkName: "pages/berita/agenda/index" */))
+const _7b96b914 = () => interopDefault(import('..\\pages\\berita\\agenda\\_slug.vue' /* webpackChunkName: "pages/berita/agenda/_slug" */))
+const _24f3a837 = () => interopDefault(import('..\\pages\\berita\\all.vue' /* webpackChunkName: "pages/berita/all" */))
+const _0cd2506b = () => interopDefault(import('..\\pages\\berita\\all\\index.vue' /* webpackChunkName: "pages/berita/all/index" */))
+const _0b1baf23 = () => interopDefault(import('..\\pages\\berita\\all\\_slug.vue' /* webpackChunkName: "pages/berita/all/_slug" */))
+const _41afa150 = () => interopDefault(import('..\\pages\\berita\\annisa.vue' /* webpackChunkName: "pages/berita/annisa" */))
+const _61599932 = () => interopDefault(import('..\\pages\\berita\\annisa\\index.vue' /* webpackChunkName: "pages/berita/annisa/index" */))
+const _5fa2f7ea = () => interopDefault(import('..\\pages\\berita\\annisa\\_slug.vue' /* webpackChunkName: "pages/berita/annisa/_slug" */))
+const _bc21277c = () => interopDefault(import('..\\pages\\berita\\artikel.vue' /* webpackChunkName: "pages/berita/artikel" */))
+const _27020c00 = () => interopDefault(import('..\\pages\\berita\\artikel\\index.vue' /* webpackChunkName: "pages/berita/artikel/index" */))
+const _2a6f4e90 = () => interopDefault(import('..\\pages\\berita\\artikel\\_slug.vue' /* webpackChunkName: "pages/berita/artikel/_slug" */))
+const _25b171ea = () => interopDefault(import('..\\pages\\berita\\dakwah.vue' /* webpackChunkName: "pages/berita/dakwah" */))
+const _c7ba7150 = () => interopDefault(import('..\\pages\\berita\\dakwah\\index.vue' /* webpackChunkName: "pages/berita/dakwah/index" */))
+const _cb27b3e0 = () => interopDefault(import('..\\pages\\berita\\dakwah\\_slug.vue' /* webpackChunkName: "pages/berita/dakwah/_slug" */))
+const _3c4be805 = () => interopDefault(import('..\\pages\\berita\\internasional.vue' /* webpackChunkName: "pages/berita/internasional" */))
+const _f8916646 = () => interopDefault(import('..\\pages\\berita\\internasional\\index.vue' /* webpackChunkName: "pages/berita/internasional/index" */))
+const _fbfea8d6 = () => interopDefault(import('..\\pages\\berita\\internasional\\_slug.vue' /* webpackChunkName: "pages/berita/internasional/_slug" */))
+const _6415f72d = () => interopDefault(import('..\\pages\\berita\\news.vue' /* webpackChunkName: "pages/berita/news" */))
+const _517d60b5 = () => interopDefault(import('..\\pages\\berita\\news\\index.vue' /* webpackChunkName: "pages/berita/news/index" */))
+const _4fc6bf6d = () => interopDefault(import('..\\pages\\berita\\news\\_slug.vue' /* webpackChunkName: "pages/berita/news/_slug" */))
+const _0046ab8e = () => interopDefault(import('..\\pages\\berita\\parenting.vue' /* webpackChunkName: "pages/berita/parenting" */))
+const _4f2c2d34 = () => interopDefault(import('..\\pages\\berita\\parenting\\index.vue' /* webpackChunkName: "pages/berita/parenting/index" */))
+const _4d758bec = () => interopDefault(import('..\\pages\\berita\\parenting\\_slug.vue' /* webpackChunkName: "pages/berita/parenting/_slug" */))
+const _5f3d2bc4 = () => interopDefault(import('..\\pages\\berita\\siaranpers.vue' /* webpackChunkName: "pages/berita/siaranpers" */))
+const _6135b784 = () => interopDefault(import('..\\pages\\berita\\siaranpers\\index.vue' /* webpackChunkName: "pages/berita/siaranpers/index" */))
+const _64a2fa14 = () => interopDefault(import('..\\pages\\berita\\siaranpers\\_slug.vue' /* webpackChunkName: "pages/berita/siaranpers/_slug" */))
+const _593f2662 = () => interopDefault(import('..\\pages\\berita\\wilayah.vue' /* webpackChunkName: "pages/berita/wilayah" */))
+const _be189e5a = () => interopDefault(import('..\\pages\\berita\\wilayah\\index.vue' /* webpackChunkName: "pages/berita/wilayah/index" */))
+const _c185e0ea = () => interopDefault(import('..\\pages\\berita\\wilayah\\_slug.vue' /* webpackChunkName: "pages/berita/wilayah/_slug" */))
+const _681efb87 = () => interopDefault(import('..\\pages\\kontak.vue' /* webpackChunkName: "pages/kontak" */))
+const _59d53e4a = () => interopDefault(import('..\\pages\\privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
+const _444b2fae = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-murobbiya-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-murobbiya-pusat" */))
+const _171723eb = () => interopDefault(import('..\\pages\\struktur-organisasi\\majelis-penasihat.vue' /* webpackChunkName: "pages/struktur-organisasi/majelis-penasihat" */))
+const _1f61134e = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-pusat.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-pusat" */))
+const _09dcdfd1 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah" */))
+const _5de23791 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah\\index.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah/index" */))
+const _3266ce68 = () => interopDefault(import('..\\pages\\struktur-organisasi\\pengurus-wilayah\\_region\\_slug.vue' /* webpackChunkName: "pages/struktur-organisasi/pengurus-wilayah/_region/_slug" */))
+const _6c69ff1c = () => interopDefault(import('..\\pages\\tentang-kami\\piagam-gunung-tembak.vue' /* webpackChunkName: "pages/tentang-kami/piagam-gunung-tembak" */))
+const _75ce83de = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah.vue' /* webpackChunkName: "pages/tentang-kami/sejarah" */))
+const _51085d5e = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\index.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/index" */))
+const _040b04d6 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2006.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2006" */))
+const _014a6da4 = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2010.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2010" */))
+const _00bd829a = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2015.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2015" */))
+const _010fa1cd = () => interopDefault(import('..\\pages\\tentang-kami\\sejarah\\2020.vue' /* webpackChunkName: "pages/tentang-kami/sejarah/2020" */))
+const _3c709c57 = () => interopDefault(import('..\\pages\\tentang-kami\\visi-misi.vue' /* webpackChunkName: "pages/tentang-kami/visi-misi" */))
+const _5a2ae24e = () => interopDefault(import('..\\pages\\search\\result\\redirect\\_searchval.vue' /* webpackChunkName: "pages/search/result/redirect/_searchval" */))
+const _3520de74 = () => interopDefault(import('..\\pages\\search\\result\\redirect\\_searchval\\index.vue' /* webpackChunkName: "pages/search/result/redirect/_searchval/index" */))
+const _516a2e83 = () => interopDefault(import('..\\pages\\search\\result\\redirect\\_searchval\\_nextpage.vue' /* webpackChunkName: "pages/search/result/redirect/_searchval/_nextpage" */))
+const _6a8c7bef = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _145bc8b7 = () => interopDefault(import('..\\pages\\_year\\_month\\_blog.vue' /* webpackChunkName: "pages/_year/_month/_blog" */))
 
 const emptyFn = () => {}
 
@@ -71,215 +71,215 @@ export const routerOptions = {
 
   routes: [{
     path: "/berita",
-    component: _0ff488bb,
+    component: _ff46084c,
     children: [{
       path: "",
-      component: _59309367,
+      component: _4195a130,
       name: "berita"
     }, {
       path: "agenda",
-      component: _413d9747,
+      component: _7bcc7b66,
       children: [{
         path: "",
-        component: _193f614a,
+        component: _7d4d5a5c,
         name: "berita-agenda"
       }, {
         path: ":slug",
-        component: _1caca3da,
+        component: _7b96b914,
         name: "berita-agenda-slug"
       }]
     }, {
       path: "all",
-      component: _2225fff6,
+      component: _24f3a837,
       children: [{
         path: "",
-        component: _3aa093cc,
+        component: _0cd2506b,
         name: "berita-all"
       }, {
         path: ":slug",
-        component: _38e9f284,
+        component: _0b1baf23,
         name: "berita-all-slug"
       }]
     }, {
       path: "annisa",
-      component: _0720bd31,
+      component: _41afa150,
       children: [{
         path: "",
-        component: _5126e39e,
+        component: _61599932,
         name: "berita-annisa"
       }, {
         path: ":slug",
-        component: _5494262e,
+        component: _5fa2f7ea,
         name: "berita-annisa-slug"
       }]
     }, {
       path: "artikel",
-      component: _eabc66fe,
+      component: _bc21277c,
       children: [{
         path: "",
-        component: _38caa4e1,
+        component: _27020c00,
         name: "berita-artikel"
       }, {
         path: ":slug",
-        component: _37140399,
+        component: _2a6f4e90,
         name: "berita-artikel-slug"
       }]
     }, {
       path: "dakwah",
-      component: _29bae46a,
+      component: _25b171ea,
       children: [{
         path: "",
-        component: _1235bc57,
+        component: _c7ba7150,
         name: "berita-dakwah"
       }, {
         path: ":slug",
-        component: _107f1b0f,
+        component: _cb27b3e0,
         name: "berita-dakwah-slug"
       }]
     }, {
       path: "internasional",
-      component: _9b4245f8,
+      component: _3c4be805,
       children: [{
         path: "",
-        component: _e514ea04,
+        component: _f8916646,
         name: "berita-internasional"
       }, {
         path: ":slug",
-        component: _e8822c94,
+        component: _fbfea8d6,
         name: "berita-internasional-slug"
       }]
     }, {
       path: "news",
-      component: _0d2e974e,
+      component: _6415f72d,
       children: [{
         path: "",
-        component: _4510ed18,
+        component: _517d60b5,
         name: "berita-news"
       }, {
         path: ":slug",
-        component: _487e2fa8,
+        component: _4fc6bf6d,
         name: "berita-news-slug"
       }]
     }, {
       path: "parenting",
-      component: _f43c0fe6,
+      component: _0046ab8e,
       children: [{
         path: "",
-        component: _918eb856,
+        component: _4f2c2d34,
         name: "berita-parenting"
       }, {
         path: ":slug",
-        component: _94fbfae6,
+        component: _4d758bec,
         name: "berita-parenting-slug"
       }]
     }, {
       path: "siaranpers",
-      component: _e5e921b6,
+      component: _5f3d2bc4,
       children: [{
         path: "",
-        component: _68e781bd,
+        component: _6135b784,
         name: "berita-siaranpers"
       }, {
         path: ":slug",
-        component: _6730e075,
+        component: _64a2fa14,
         name: "berita-siaranpers-slug"
       }]
     }, {
       path: "wilayah",
-      component: _87da65e4,
+      component: _593f2662,
       children: [{
         path: "",
-        component: _25814898,
+        component: _be189e5a,
         name: "berita-wilayah"
       }, {
         path: ":slug",
-        component: _28ee8b28,
+        component: _c185e0ea,
         name: "berita-wilayah-slug"
       }]
     }]
   }, {
     path: "/kontak",
-    component: _1092ef30,
+    component: _681efb87,
     name: "kontak"
   }, {
     path: "/privacy-policy",
-    component: _1f465a2b,
+    component: _59d53e4a,
     name: "privacy-policy"
   }, {
     path: "/struktur-organisasi/majelis-murobbiya-pusat",
-    component: _c899e862,
+    component: _444b2fae,
     name: "struktur-organisasi-majelis-murobbiya-pusat"
   }, {
     path: "/struktur-organisasi/majelis-penasihat",
-    component: _201aeccc,
+    component: _171723eb,
     name: "struktur-organisasi-majelis-penasihat"
   }, {
     path: "/struktur-organisasi/pengurus-pusat",
-    component: _01b64118,
+    component: _1f61134e,
     name: "struktur-organisasi-pengurus-pusat"
   }, {
     path: "/struktur-organisasi/pengurus-wilayah",
-    component: _5cbbf6d0,
+    component: _09dcdfd1,
     children: [{
       path: "",
-      component: _956bd89c,
+      component: _5de23791,
       name: "struktur-organisasi-pengurus-wilayah"
     }, {
       path: ":region/:slug?",
-      component: _4ce3f132,
+      component: _3266ce68,
       name: "struktur-organisasi-pengurus-wilayah-region-slug"
     }]
   }, {
     path: "/tentang-kami/piagam-gunung-tembak",
-    component: _43af607d,
+    component: _6c69ff1c,
     name: "tentang-kami-piagam-gunung-tembak"
   }, {
     path: "/tentang-kami/sejarah",
-    component: _3b2bb310,
+    component: _75ce83de,
     children: [{
       path: "",
-      component: _3d8be11c,
+      component: _51085d5e,
       name: "tentang-kami-sejarah"
     }, {
       path: "2006",
-      component: _405b7754,
+      component: _040b04d6,
       name: "tentang-kami-sejarah-2006"
     }, {
       path: "2010",
-      component: _41bbc2ed,
+      component: _014a6da4,
       name: "tentang-kami-sejarah-2010"
     }, {
       path: "2015",
-      component: _42023872,
+      component: _00bd829a,
       name: "tentang-kami-sejarah-2015"
     }, {
       path: "2020",
-      component: _43709b8c,
+      component: _010fa1cd,
       name: "tentang-kami-sejarah-2020"
     }]
   }, {
     path: "/tentang-kami/visi-misi",
-    component: _799a4d96,
+    component: _3c709c57,
     name: "tentang-kami-visi-misi"
   }, {
     path: "/search/result/redirect/:searchval?",
-    component: _759d6f6f,
+    component: _5a2ae24e,
     children: [{
       path: "",
-      component: _1f2c7a33,
+      component: _3520de74,
       name: "search-result-redirect-searchval"
     }, {
       path: ":nextpage",
-      component: _5e985a7c,
+      component: _516a2e83,
       name: "search-result-redirect-searchval-nextpage"
     }]
   }, {
     path: "/",
-    component: _19616224,
+    component: _6a8c7bef,
     name: "index"
   }, {
     path: "/:year/:month?/:blog?",
-    component: _07a6b7d8,
+    component: _145bc8b7,
     name: "year-month-blog"
   }],
 

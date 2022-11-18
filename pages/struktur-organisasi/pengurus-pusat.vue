@@ -11,7 +11,7 @@
           <ul class="members two p-t-0">
             <li class="ceiling middle top">
               <p class="label green cap">
-                Sarah Zakiyah, S.Pd.I. <span>Sekretaris Jendral (Plt.)</span>
+                Sarah Zakiyah, S.Pd.I. <span>Sekretaris Jendral</span>
               </p>
             </li>
             <li class="ceiling middle top">
@@ -87,12 +87,6 @@
                   <p class="label cap">
                     Hapseni Dirwan, S.H.I.
                     <span>Ketua Dep. Organisasi</span>
-                  </p>
-                </li>
-                <li class="middle top bidang">
-                  <p class="label cap">
-                    Halimatusa Adia, S.H.I., M.H.
-                    <span>Ketua Dep. Sumber Daya Insani</span>
                   </p>
                 </li>
                 <li class="middle top bidang">

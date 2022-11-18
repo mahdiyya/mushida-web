@@ -26,7 +26,7 @@
               <p class="label no-cap">Reni Susilowati, M.Pd.I</p>
             </li>
             <li class="ceiling middle top">
-              <p class="label no-cap">Irawati Istadi, M.Pd.I</p>
+              <p class="label no-cap">Irawati Istadi, S.Ag.</p>
             </li>
             <li class="ceiling middle top">
               <p class="label no-cap">

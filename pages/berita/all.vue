@@ -3,8 +3,8 @@
     <div class="section-container p-t-0">
       <NuxtChild />
       <div class="row pagination">
-        <!-- <NuxtLink
-          v-if="theprevpage > 0"
+        <NuxtLink
+          v-if="prevpage > 0"
           :to="`/berita/all/${theprevpage}`"
           class="index"
           @click="clicktonextpage(7)"
@@ -24,18 +24,20 @@
               stroke-linecap="round"
             />
           </svg>
-        </NuxtLink> -->
+        </NuxtLink>
         <div v-for="index in totalpages" :key="index">
-          <NuxtLink v-if="index === 1" to="/berita/all/" class="index">{{
-            index
-          }}</NuxtLink>
-          <NuxtLink v-else :to="`/berita/all/${index}`" class="index">
-            {{ index }}
-          </NuxtLink>
+          <template v-if="index >= startpage && index <= parsepage">
+            <NuxtLink v-if="index === 1" to="/berita/all/" class="index">{{
+              index
+            }}</NuxtLink>
+            <NuxtLink v-else :to="`/berita/all/${index}`" class="index">
+              {{ index }}
+            </NuxtLink>
+          </template>
         </div>
-        <!-- <NuxtLink
-          v-if="totalpages > 5"
-          :to="`/berita/all/${thenextpage}`"
+        <NuxtLink
+          v-if="nextpage <= totalpages"
+          :to="`/berita/all/${nextpage}`"
           class="index"
           @click="clicktonextpage()"
         >
@@ -53,7 +55,7 @@
               stroke-linecap="round"
             />
           </svg>
-        </NuxtLink> -->
+        </NuxtLink>
       </div>
     </div>
   </section>
@@ -74,18 +76,40 @@ export default {
         'https://admin.mushida.org/wp-json/wp/v2/posts?per_page=9',
       )
       store.commit('totalPage', parseInt(res.headers['x-wp-totalpages']))
-      // if (parseInt(res.headers['x-wp-totalpages']) > 5) {
-      //   store.commit('nextPage', 6)
-      // }
     } catch (error) {}
   },
   computed: {
     totalpages() {
       return this.$store.state.totalpages
     },
-    // thenextpage() {
-    //   return this.$store.state.thenextpage
-    // },
+    currPage() {
+      const slug = this.$route.params.slug
+      let page = 1
+      if (slug !== null && slug !== undefined) {
+        page = parseInt(slug)
+      }
+      return parseInt(page)
+    },
+    nextpage() {
+      return this.currPage + 1
+    },
+    prevpage() {
+      return this.currPage - 1
+    },
+    startpage() {
+      let start = 1
+      if (this.currPage > 2) {
+        start = this.currPage - 2
+      }
+      return start
+    },
+    parsepage() {
+      let total = this.currPage + (5 - this.currPage)
+      if (this.currPage > 2) {
+        total = this.currPage + 2
+      }
+      return total
+    },
   },
   methos: {
     clicktonextpage(a) {
