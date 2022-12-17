@@ -1565,6 +1565,10 @@ blockquote p:last-child {
   }
   nav .logo {
     padding-left: 0.8rem;
+    height: 24px;
+  }
+  .swiper-button-next:hover {
+    bottom: calc(45vh - 22px);
   }
   nav.scrolled .logo {
     height: 28px;
@@ -1578,8 +1582,23 @@ blockquote p:last-child {
   nav .animate::after {
     display: none;
   }
-  .swiper--slide figure img {
-    opacity: 0.4 !important;
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    left: 0;
+    padding: 10px 16px 10px 6vw;
+    background: #0c4524;
+  }
+
+  .swiper--slide.text-white::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 2;
+    background-image: linear-gradient(180deg, #00000063, transparent);
   }
   .hero .img-bg {
     -o-object-position: bottom left;
