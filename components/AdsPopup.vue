@@ -183,22 +183,21 @@ export default {
 }
 .modal-ads {
   position: fixed;
-  top: 0;
-  left: 0;
+  bottom: 24px;
+  right: 0;
   z-index: 1000;
-  width: 100vw;
-  height: 100vh;
+  width: 400px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.3);
   animation-delay: 0s;
   animation-name: bounceInUp;
   animation-duration: 0.3s;
   .modal-container {
     display: flex;
     width: auto;
-    max-width: 90vw;
+    max-width: 312px;
     height: auto;
     position: relative;
     box-shadow: 0px 36px 56px rgb(0 0 0 / 70%);

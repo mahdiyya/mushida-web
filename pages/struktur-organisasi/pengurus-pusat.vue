@@ -7,25 +7,42 @@
         <div class="head  middle bottom">
           <p class="label">Hani Akbar, S.Sos.I. <span>Ketua</span></p>
         </div>
-        <div class="member">
+        <div class="member main">
           <ul class="members two p-t-0">
-            <li class="ceiling middle top">
+            <li class="member members detach">
+              <p class="label small">Kesekretariatan</p>
+              <ul class="members">
+                <li class="ceiling middle top">
+                  <p class="label cap">
+                    Arsyis Musyahadah, S.H.I., M.Pd. <span>Biro Humas</span>
+                  </p>
+                </li>
+                <li class="ceiling middle top">
+                  <p class="label cap">
+                    Fiqih Ulyana, S.H.I. <span>Kepala Kantor</span>
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="ceiling middle top sekjen">
               <p class="label green cap">
-                Sarah Zakiyah, S.Pd.I. <span>Sekretaris Jendral</span>
+                Sarah Zakiyah, S.Pd.I.
+                <span class="with-bottom">Sekretaris Jendral</span>
               </p>
             </li>
             <li class="ceiling middle top">
               <p class="label green cap">
-                Rahmah El-Halimiyah, S.Sos.I. <span>Bendahara</span>
+                Rahmah El-Halimiyah, S.Sos.I.
+                <span class="with-bottom">Bendahara</span>
               </p>
             </li>
           </ul>
         </div>
-        <div class="member">
+        <div class="member bidang-main">
           <ul class="members p-t-0">
             <li class="ceiling middle top bidang">
               <p class="label green cap">
-                Sarah Zakiyah, S.Pd.I. <span>Ketua Bidang Tarbiyah</span>
+                Marsiti, S.Pd.I. <span>Ketua Bidang Tarbiyah</span>
               </p>
               <p class="label small middle top">Departemen</p>
               <ul class="members p-t-0 bidang">
@@ -33,12 +50,6 @@
                   <p class="label cap">
                     Zahratun Nahdhah, S.H.I.
                     <span>Ketua Dep. Pengkaderan</span>
-                  </p>
-                </li>
-                <li class="middle top bidang">
-                  <p class="label cap">
-                    Marsiti, S.Pd.I.
-                    <span>Ketua Dep. Pembinaan Anggota</span>
                   </p>
                 </li>
                 <li class="middle top bidang">
@@ -105,21 +116,7 @@
             </li>
           </ul>
         </div>
-        <div class="member">
-          <p class="label small">Kesekretariatan</p>
-          <ul class="members">
-            <li class="ceiling middle top">
-              <p class="label cap">
-                Arsyis Musyahadah, S.H.I., M.Pd. <span>Biro Humas</span>
-              </p>
-            </li>
-            <li class="ceiling middle top">
-              <p class="label cap">
-                Fiqih Ulyana, S.H.I. <span>Kepala Kantor</span>
-              </p>
-            </li>
-          </ul>
-        </div>
+
         <p
           style="font-size: 12px;
     margin: 5rem 0; width:20rem; text-align: right; float:right;"

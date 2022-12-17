@@ -24,30 +24,38 @@
     </div>
     <section>
       <div class="section-container p-t-0 row">
+        <img
+          v-if="article[0].fimg_url != false"
+          :src="article[0].fimg_url"
+          :alt="article[0].title.rendered"
+          class="img-article"
+        />
         <article class="blog" v-html="article[0].content.rendered" />
         <div class="recommedation">
-          <NuxtLink
-            v-for="post in recoms"
-            :key="post.id"
-            class="card news"
-            :to="
-              `/${post.date.substr(0, 4)}/${post.date.substr(5, 2)}/${
-                post.slug
-              }`
-            "
+          <template v-for="post in recoms">
+            <NuxtLink
+              v-if="post.id !== article[0].id"
+              :key="post.id"
+              class="card news"
+              :to="
+                `/${post.date.substr(0, 4)}/${post.date.substr(5, 2)}/${
+                  post.slug
+                }`
+              "
+            >
+              <figure>
+                <img
+                  v-if="post.fimg_url == false"
+                  src="/images/no-image400.jpg"
+                  :alt="post.title.rendered"
+                />
+                <img v-else :src="post.fimg_url" :alt="post.title.rendered" />
+              </figure>
+              <caption>
+                <h3>{{ post.title.rendered }}</h3>
+              </caption>
+            </NuxtLink></template
           >
-            <figure>
-              <img
-                v-if="post.fimg_url == false"
-                src="/images/no-image400.jpg"
-                :alt="post.title.rendered"
-              />
-              <img v-else :src="post.fimg_url" :alt="post.title.rendered" />
-            </figure>
-            <caption>
-              <h3>{{ post.title.rendered }}</h3>
-            </caption>
-          </NuxtLink>
         </div>
       </div>
     </section>
@@ -85,6 +93,47 @@ export default {
           hid: 'author',
           name: 'author',
           content: this.author.name,
+        },
+        { hid: 'og-type', property: 'og:type', content: 'article' },
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: this.article[0].title.rendered,
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: this.article[0].excerpt.rendered,
+        },
+        {
+          hid: 'og-image',
+          property: 'og:image',
+          content: this.article[0].fimg_url,
+        },
+        {
+          hid: 'og-image:width',
+          property: 'og:image:width',
+          content: '1280',
+        },
+        {
+          hid: 'og-image:height',
+          property: 'og:image:height',
+          content: '720',
+        },
+        {
+          hid: 'og-image:alt',
+          property: 'og:image:alt',
+          content: this.article[0].title.rendered,
+        },
+        {
+          hid: 'og-site_name',
+          property: 'og:site_name',
+          content: 'mushida',
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: this.article[0].slug,
         },
       ],
     }
@@ -165,6 +214,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    text-decoration: none;
     figure {
       height: 60%;
     }
