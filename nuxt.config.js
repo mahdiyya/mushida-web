@@ -1,7 +1,5 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  target: 'static',
-  ssr: false,
   production: {
     host: '0.0.0.0',
     port: 49000,
@@ -48,6 +46,12 @@ export default {
         href: 'https://www.mushida.org/',
       },
     ],
+  },
+
+  meta: {
+    ogTitle: false,
+    ogDescription: false,
+    ogType: false,
   },
 
   // Global CSS
