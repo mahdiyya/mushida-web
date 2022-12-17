@@ -59,6 +59,28 @@ export default {
   head() {
     return {
       title: this.title + ' - Muslimat Hidayatullah',
+      meta: [
+        {
+          hid: 'og-title',
+          property: 'og:title',
+          content: this.title + ' - Muslimat Hidayatullah',
+        },
+        {
+          hid: 'og-description',
+          property: 'og:description',
+          content: this.title + ' - Muslimat Hidayatullah',
+        },
+        {
+          hid: 'og-site_name',
+          property: 'og:site_name',
+          content: 'mushida',
+        },
+        {
+          hid: 'og-url',
+          property: 'og:url',
+          content: '/struktur-organisasi/pengurus-wilayah',
+        },
+      ],
     }
   },
   methods: {
