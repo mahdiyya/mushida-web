@@ -154,19 +154,19 @@
         <h2><span>Pengurus Tingkat Pusat</span> <br />Muslimat Hidayatullah</h2>
         <div class="grid">
           <div class="card-organitation green arrow-org">
-            <h3>Hani Akbar, S.Sos.I</h3>
+            <h3>Hani Akbar, S.Sos.I., M.Pd</h3>
             <p class="position"><b>KETUA UMUM</b></p>
           </div>
           <div class="card-organitation arrow-org">
-            <h3>Sarah Zakiyah, S.Pd.I.</h3>
+            <h3>Zahratun Nahdhah, S.H.I., M.Pd.</h3>
             <p class="position"><b>SEKJEND PP</b></p>
           </div>
           <div class="card-organitation green arrow-org">
-            <h3>Ir. Emi Pitoyanti</h3>
+            <h3>Dr. Reni Susilowati, M.Pd.I</h3>
             <p class="position"><b>MAJELIS MURABBIYAH PUSAT</b></p>
           </div>
           <div class="card-organitation">
-            <h3>Hj. Aida Chered</h3>
+            <h3>Dr. Sabriati Aziz, M.Pd.I</h3>
             <p class="position"><b>MAJELIS PENASIHAT</b></p>
           </div>
         </div>

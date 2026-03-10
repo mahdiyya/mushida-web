@@ -5,7 +5,10 @@
     <section class="chart-org">
       <div class="section-container chart-container">
         <div class="head  middle bottom">
-          <p class="label">Hani Akbar, S.Sos.I. <span>Ketua</span></p>
+          <p class="label">
+            Ketua PP Mushida: Hani Akbar, S.Sos.I., M.Pd
+            <span>Ketua</span>
+          </p>
         </div>
         <div class="member main">
           <ul class="members two p-t-0">
@@ -14,102 +17,137 @@
               <ul class="members">
                 <li class="ceiling middle top">
                   <p class="label cap">
-                    Arsyis Musyahadah, S.H.I., M.Pd. <span>Biro Humas</span>
+                    Arsyis Musyahadah, S.H.I., M.Pd.
+                    <span>Wakil Sekretaris Jenderal</span>
                   </p>
                 </li>
                 <li class="ceiling middle top">
                   <p class="label cap">
-                    Fiqih Ulyana, S.H.I. <span>Kepala Kantor</span>
+                    Fiqhi Ulyana, S.H.I.
+                    <span>Wakil Bendahara Umum</span>
                   </p>
                 </li>
               </ul>
             </li>
             <li class="ceiling middle top sekjen">
               <p class="label green cap">
-                Sarah Zakiyah, S.Pd.I.
-                <span class="with-bottom">Sekretaris Jendral</span>
+                Zahratun Nahdhah, S.H.I., M.Pd.
+                <span class="with-bottom">Sekretaris Jenderal</span>
               </p>
             </li>
             <li class="ceiling middle top">
               <p class="label green cap">
-                Rahmah El-Halimiyah, S.Sos.I.
-                <span class="with-bottom">Bendahara</span>
+                Rahmah El Halimiyah, S.Sos.I., M.Pd.
+                <span class="with-bottom">Bendahara Umum</span>
               </p>
             </li>
           </ul>
         </div>
         <div class="member bidang-main">
-          <ul class="members p-t-0">
+          <ul class="members p-t-0" style="flex-wrap: nowrap;">
             <li class="ceiling middle top bidang">
               <p class="label green cap">
-                Marsiti, S.Pd.I. <span>Ketua Bidang Tarbiyah</span>
-              </p>
-              <p class="label small middle top">Departemen</p>
-              <ul class="members p-t-0 bidang">
-                <li class="middle top bidang">
-                  <p class="label cap">
-                    Zahratun Nahdhah, S.H.I.
-                    <span>Ketua Dep. Pengkaderan</span>
-                  </p>
-                </li>
-                <li class="middle top bidang">
-                  <p class="label cap">
-                    Ruspayanti, S.Pd.I.
-                    <span>Ketua Dep. Pendidikan</span>
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li class="ceiling middle top bidang">
-              <p class="label green cap">
-                Neny Setiawaty, S.S., M.Pd
-                <span>Ketua Bidang Pelayanan Ummat</span>
-              </p>
-              <p class="label small middle top">Departemen</p>
-              <ul class="members p-t-0 bidang">
-                <li class="middle top bidang">
-                  <p class="label cap">
-                    Sudaryani, S.Ag.
-                    <span>Ketua Dep. Dakwah</span>
-                  </p>
-                </li>
-                <li class="middle top bidang">
-                  <p class="label cap">
-                    Saidah AS.
-                    <span>Ketua Dep. Sosial</span>
-                  </p>
-                </li>
-                <li class="middle top bidang">
-                  <p class="label cap">
-                    Ina Sriwahyuni, S.Pd.
-                    <span>Ketua Dep. Ekonomi</span>
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li class="ceiling middle top bidang">
-              <p class="label green cap">
-                Dede Agustina, A.Md.
-                <span>Ketua Bidang Organisasi</span>
+                Hapseni Dirwan, S.H.I. <span>Kabid. Pendidikan</span>
               </p>
               <p class="label small middle top">Departemen</p>
               <ul class="members p-t-0 bidang">
                 <li class="middle top bidang">
                   <p class="label cap">
                     Hapseni Dirwan, S.H.I.
-                    <span>Ketua Dep. Organisasi</span>
+                    <span>Kadept. PAUD (KB-TK), Day Care</span>
                   </p>
                 </li>
                 <li class="middle top bidang">
                   <p class="label cap">
-                    Muthiah Najwati, S.H.I.
-                    <span>Ketua Dep. Keputrian</span>
+                    Andi Muliani, S.Pd.I.
+                    <span>Kadept. Keluarga</span>
                   </p>
                 </li>
                 <li class="middle top bidang">
                   <p class="label cap">
-                    Wulansari A.Md
-                    <span>Ketua Dep. Hub. Antar Lembaga</span>
+                    Santi Nurhasanah, M.Pd.
+                    <span>Kadept. Pendidikan Kepengasuhan Putri</span>
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="ceiling middle top bidang">
+              <p class="label green cap">
+                Saryati, S.H.I.
+                <span>Kabid. Perkaderan dan Pembinaan Anggota</span>
+              </p>
+              <p class="label small middle top">Departemen</p>
+              <ul class="members p-t-0 bidang">
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Tuti Darawati, S.Th.I.
+                    <span>Kadept. Rekrutmen</span>
+                  </p>
+                </li>
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Saryati, S.H.I.
+                    <span>Kadept. Perkaderan dan Pembinaan Anggota</span>
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="ceiling middle top bidang">
+              <p class="label green cap">
+                Sudaryani, S.Ag., S.E.
+                <span>Kabid. Dakwah &amp; Pelayanan Umat</span>
+              </p>
+              <p class="label small middle top">Departemen</p>
+              <ul class="members p-t-0 bidang">
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Sudaryani
+                    <span>Kadept. Dakwah</span>
+                  </p>
+                </li>
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Saidah
+                    <span>Kadept. Sosial &amp; Kesehatan</span>
+                  </p>
+                </li>
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Ina Sriwahyuni, S.Pd.
+                    <span>Kadept. Ekonomi</span>
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="ceiling middle top bidang">
+              <p class="label green cap">
+                Wulan Sari, A.Md.
+                <span>Kabid. Organisasi</span>
+              </p>
+              <p class="label small middle top">Departemen</p>
+              <ul class="members p-t-0 bidang">
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Asri Wulantini, S.Pd.
+                    <span>Kadept. PPO dan SDI</span>
+                  </p>
+                </li>
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Mutiah Najwati, S.H.I., M.Pd.
+                    <span>Kabid. Keputrian</span>
+                  </p>
+                </li>
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Nurul Qalbi, Lc., M.Pd.
+                    <span>Kadept. Dakwah, Rekrutmen Putri</span>
+                  </p>
+                </li>
+                <li class="middle top bidang">
+                  <p class="label cap">
+                    Mutiah Najwati, S.H.I., M.Pd.
+                    <span>Kadept. Pembinaan dan Perkaderan</span>
                   </p>
                 </li>
               </ul>

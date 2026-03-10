@@ -42,14 +42,14 @@
           <NuxtLink to="/struktur-organisasi/majelis-penasihat">
             Majelis Penasihat
           </NuxtLink>
+          <NuxtLink to="/struktur-organisasi/majelis-mudzakarah">
+            Majelis Mudzakarah
+          </NuxtLink>
           <NuxtLink to="/struktur-organisasi/majelis-murobbiya-pusat">
             Majelis Murobbiyah Pusat
           </NuxtLink>
           <NuxtLink to="/struktur-organisasi/pengurus-pusat">
             Pengurus Pusat
-          </NuxtLink>
-          <NuxtLink to="/struktur-organisasi/pengurus-wilayah">
-            Pengurus Wilayah
           </NuxtLink>
         </div>
       </div>

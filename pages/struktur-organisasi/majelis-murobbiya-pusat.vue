@@ -5,24 +5,21 @@
     <section class=" chart-org">
       <div class="section-container chart-container">
         <div class="head  middle bottom">
-          <p class="label">Ir. Emi Pitoyanti <span>Ketua</span></p>
+          <p class="label">Dr. Reni Susilowati, M.Pd.I <span>Ketua</span></p>
         </div>
         <div class="member">
           <p class="label small">Anggota</p>
           <ul class="members">
             <li class="ceiling middle top">
-              <p class="label no-cap">Nur Iryani, S.Pd.I</p>
+              <p class="label no-cap">Siti Sarah Zakiyah, M.Pd</p>
             </li>
             <li class="ceiling middle top">
-              <p class="label no-cap">Hj. Sulmiati Sholeh</p>
+              <p class="label no-cap">Dra. Siti Nadjemiyah</p>
             </li>
             <li class="ceiling middle top">
               <p class="label no-cap">
-                Juhriah, M.Pd
+                Juhriyah, M.Pd
               </p>
-            </li>
-            <li class="ceiling middle top top">
-              <p class="label no-cap">Dra. Nadjemiah Waris</p>
             </li>
           </ul>
         </div>

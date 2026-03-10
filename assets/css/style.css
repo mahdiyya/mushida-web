@@ -530,26 +530,31 @@ nav .search-bar.show {
 .dropdown .dropdown-container a:nth-child(3) {
   -webkit-animation: rotateX 300ms 240ms ease-in-out forwards;
   animation: rotateX 300ms 240ms ease-in-out forwards;
+  margin-top: -1px;
 }
 
 .dropdown .dropdown-container a:nth-child(4) {
   -webkit-animation: rotateX 300ms 300ms ease-in-out forwards;
   animation: rotateX 300ms 300ms ease-in-out forwards;
+  margin-top: -1px;
 }
 
 .dropdown .dropdown-container a:nth-child(5) {
   -webkit-animation: rotateX 300ms 360ms ease-in-out forwards;
   animation: rotateX 300ms 360ms ease-in-out forwards;
+  margin-top: -1px;
 }
 
 .dropdown .dropdown-container a:nth-child(6) {
   -webkit-animation: rotateX 300ms 420ms ease-in-out forwards;
   animation: rotateX 300ms 420ms ease-in-out forwards;
+  margin-top: -1px;
 }
 
 .dropdown .dropdown-container a:nth-child(7) {
   -webkit-animation: rotateX 300ms 480ms ease-in-out forwards;
   animation: rotateX 300ms 480ms ease-in-out forwards;
+  margin-top: -1px;
 }
 
 .dropdown .dropdown-container.active a {
@@ -1226,8 +1231,8 @@ li.member.members.detach {
   content: '';
   position: absolute;
   top: 15px;
-  width: 268px;
-  transform: translateX(18px);
+  width: 308px;
+  transform: translateX(12px);
   height: 1px;
   border-top: solid 1px #a7a7a7;
 }

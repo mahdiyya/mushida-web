@@ -5,33 +5,19 @@
     <section class="chart-org">
       <div class="section-container chart-container">
         <div class="head  middle bottom">
-          <p class="label">Hj. Aida Chered <span>Ketua</span></p>
+          <p class="label">Dr. Sabriati Aziz, M.Pd.I <span>Ketua</span></p>
         </div>
         <div class="member">
           <p class="label small">Anggota</p>
           <ul class="members">
             <li class="ceiling middle top">
-              <p class="label no-cap">Hj. Bilqis Mubarokatin</p>
+              <p class="label no-cap">Ir. Emi Pitoyanti</p>
             </li>
             <li class="ceiling middle top">
-              <p class="label no-cap">Hj. Nanik Zuraidah</p>
+              <p class="label no-cap">Bilqis Mubarokatin</p>
             </li>
             <li class="ceiling middle top top">
-              <p class="label no-cap">Hj. Husniah</p>
-            </li>
-            <li class="ceiling middle top">
-              <p class="label no-cap">Dr. Sabriati Aziz, M.Pd.I</p>
-            </li>
-            <li class="ceiling middle top">
-              <p class="label no-cap">Reni Susilowati, M.Pd.I</p>
-            </li>
-            <li class="ceiling middle top">
-              <p class="label no-cap">Irawati Istadi, S.Ag.</p>
-            </li>
-            <li class="ceiling middle top">
-              <p class="label no-cap">
-                Ir. Amalia Husnah Bahar, M.M
-              </p>
+              <p class="label no-cap">Sulmiati Shaleh, B.Sc</p>
             </li>
           </ul>
         </div>
